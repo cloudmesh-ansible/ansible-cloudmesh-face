@@ -17,6 +17,13 @@ INSTALL
    python setup.py install
 
 
-
 REFERNCES
 ==========
+
+Participants
+=============
+
+* Sonal sshrivas@umail.iu.edu
+* sduvvuru@umail.iu.edu
+* hnallaga@umail.iu.edu
+* Gregor von LAszewski (laszewski@gmail.com)
