@@ -1,7 +1,9 @@
 DESCRIPTION
 ============
 
-TODO
+# Prerequiste :
++ [OPerating Systems]: Linux or OSX
++ [Docker]: Follow [Docker Mac OSX Installation Guide)[https://docs.docker.com/engine/installation/mac/] to start a docker machine and connect your shell to it prior to building the container. 
 
 Draft Goals
 ===========
