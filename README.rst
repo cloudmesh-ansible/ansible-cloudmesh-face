@@ -4,10 +4,10 @@ DESCRIPTION
  Prerequiste :
  =============
 
-* [OPerating Systems]: Linux or OSX
+* Operating Systems: Linux or OSX
 
-* [Docker]: 
-     * Follow [Docker Mac OSX Installation Guide)[https://docs.docker.com/engine/installation/mac/] to start a docker machine and connect your shell to it prior to building the container. 
+* Docker: 
+     * Follow (Docker Mac OSX Installation Guide)(https://docs.docker.com/engine/installation/mac/) to start a docker machine and connect your shell to it prior to building the container. 
 
 Draft Goals
 ===========
@@ -68,7 +68,7 @@ REFERNCES
 Participants
 =============
 
-* Sonal sshrivas@umail.iu.edu
+* Sonal Shrivastava (sshrivas@umail.iu.edu)
 * sduvvuru@umail.iu.edu
 * hnallaga@umail.iu.edu
 * Gregor von Laszewski (laszewski@gmail.com)
