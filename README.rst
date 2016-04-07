@@ -8,6 +8,13 @@ DESCRIPTION
 
 * Docker: Follow Docker Mac OSX Installation Guide `<https://docs.docker.com/engine/installation/mac/>` to start a docker machine and connect your shell to it prior to building the container. 
 
+ Installation :  Start Docker container on the host. 
+ ==============
+ ::
+   source install.sh
+   source demo2.sh
+   source demo3.sh
+
 Draft Goals
 ===========
 
