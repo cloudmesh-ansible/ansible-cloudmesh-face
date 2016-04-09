@@ -77,5 +77,4 @@ Participants
 
 * Sonal Shrivastava (sshrivas@umail.iu.edu)
 * sduvvuru@umail.iu.edu
-* hnallaga@umail.iu.edu
 * Gregor von Laszewski (laszewski@gmail.com)
