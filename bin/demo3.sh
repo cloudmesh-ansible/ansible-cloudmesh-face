@@ -1,8 +1,1 @@
-mkdir -p classify-test/raw/{lennon,clapton}
-cp images/examples/lennon-* classify-test/raw/lennon
-cp images/examples/clapton-* classify-test/raw/clapton
-./util/align-dlib.py classify-test/raw align outerEyesAndNose classify-test/aligned --size 96
-./batch-represent/main.lua -outDir classify-test/features -data classify-test/aligned
-...
-nImgs:  4
-Represent: 4/4
+echo "timetype,value" > Classifier_time_results.csv &&  (time -p ./demos/classifier.py infer ./models/openface/celeb-classifier.nn4.small2.v1.pkl images/examples/{carell,adams,lennon}* | tail -n 3) 2>> Classifier_time_results.csv && sed -i "s/\ /,/g" Classifier_time_results.csv
