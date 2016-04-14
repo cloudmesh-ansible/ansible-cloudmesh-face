@@ -1,1 +1,1 @@
-echo "timetype,value" > Classifier_time_results.csv &&  (time -p ./demos/classifier.py infer ./models/openface/celeb-classifier.nn4.small2.v1.pkl images/examples/{carell,adams,lennon}* | tail -n 3) 2>> Classifier_time_results.csv && sed -i "s/\ /,/g" Classifier_time_results.csv
+echo "real,user,sys" > classifier_time.csv && (for i in `seq 10`; do TIMEFORMAT=%R','%U','%S && time ./demos/classifier.py infer ./models/openface/celeb-classifier.nn4.small2.v1.pkl images/examples/{carell,adams,lennon}* ;done)>classifier_output.txt  2>> classifier_time.csv
