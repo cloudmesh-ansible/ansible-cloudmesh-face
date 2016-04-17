@@ -6,9 +6,9 @@ git clone –recursive https://github.com/cmusatyalab/openface.git
 #Setup Docker
 
 #Install curl
-sudo apt-get update
-sudo apt-get install curl 
-curl -fsSL https://get.docker.com/ | sh
+|sudo apt-get update
+|sudo apt-get install curl 
+|curl -fsSL https://get.docker.com/ | sh
 
 #If not logged in as root, run the command below
 sudo usermod -aG docker username
