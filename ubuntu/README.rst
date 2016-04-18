@@ -3,20 +3,22 @@ OPENFACE SETUP in UBUNTU
 
 1. Clone the openface github respository
 
-::
-    git clone –recursive https://github.com/cmusatyalab/openface.git
+    ::
+    
+        git clone –recursive https://github.com/cmusatyalab/openface.git
 
 2. Install Curl
 
-::
-    sudo apt-get update
-    sudo apt-get install curl 
+    ::
+    
+        sudo apt-get update
+        sudo apt-get install curl 
 
 2. Setup Docker
 
-::
+    ::
 
-    curl -fsSL https://get.docker.com/ | sh
+        curl -fsSL https://get.docker.com/ | sh
 
 
 If not logged in as root, run the command below ::
@@ -29,7 +31,7 @@ Verify docker is installed correctly::
 
 3. Install OpenCV
 
-::
+    ::
 
         git clone https://github.com/Itseez/opencv.git 
         cd ~/opencv 
@@ -39,7 +41,7 @@ Verify docker is installed correctly::
 
 5. Install boost libraries first 
 
-::
+    ::
         sudo apt-get install libboost-all-dev
         mkdir -p ~/src 
         cd ~/src tar xf dlib-18.16.tar.bz2 
