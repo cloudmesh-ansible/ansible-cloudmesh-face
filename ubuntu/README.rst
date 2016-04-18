@@ -57,5 +57,10 @@ OPENFACE SETUP in UBUNTU
 
     git clone https://github.com/torch/distro.git ~/torch --recursive 
     cd ~/torch; bash install-deps; ./install.sh
+    for NAME in dpnn nn optim csvigo cutorch cunn fblualib torchx; do luarocks install $NAME; done
 
 7. On Linux with bash source ~/.bashrc
+
+8. Install python dependencies::
+    cd openface
+    sudo python2 setup.py install
