@@ -62,5 +62,5 @@ OPENFACE SETUP in UBUNTU
 7. On Linux with bash source ~/.bashrc
 
 8. Install python dependencies::
-    cd openface
-    sudo python2 setup.py install
+        cd openface
+        sudo python2 setup.py install
