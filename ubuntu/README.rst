@@ -21,13 +21,13 @@ OPENFACE SETUP in UBUNTU
         curl -fsSL https://get.docker.com/ | sh
 
 
-If not logged in as root, run the command below ::
-
-    sudo usermod -aG docker username 
-
-Verify docker is installed correctly::
-
-    docker run hello-world
+    If not logged in as root, run the command below ::
+    
+        sudo usermod -aG docker username 
+    
+    Verify docker is installed correctly::
+    
+        docker run hello-world
 
 3. Install OpenCV
 
@@ -37,12 +37,13 @@ Verify docker is installed correctly::
         cd ~/opencv 
         mkdir release cd release cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local make sudo make install
 
-4. Install dlib
-
-5. Install boost libraries first 
+4. Install boost libraries first 
 
     ::
         sudo apt-get install libboost-all-dev
+
+5. Install dlib::
+
         mkdir -p ~/src 
         cd ~/src tar xf dlib-18.16.tar.bz2 
         cd dlib-18.16/python_examples 
