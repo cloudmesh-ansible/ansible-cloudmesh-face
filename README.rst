@@ -11,9 +11,10 @@ Prerequiste
 Installation 
 ==============
 ::
+
+    For Docker follow the instructions at `<https://github.com/cloudmesh/ansible-cloudmesh-face/blob/master/docker/README.rst/>`
+    For Ubuntu follow the instructions at `<https://github.com/cloudmesh/ansible-cloudmesh-face/blob/master/ubuntu/README.rst/>`
  
- || For Docker follow the instructions at `<https://github.com/cloudmesh/ansible-cloudmesh-face/blob/master/docker/README.rst/>`
- || For Ubuntu follow the instructions at `<https://github.com/cloudmesh/ansible-cloudmesh-face/blob/master/ubuntu/README.rst/>`
 
 Draft Goals
 ===========
