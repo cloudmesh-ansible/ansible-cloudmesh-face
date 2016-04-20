@@ -29,6 +29,17 @@ OPENFACE SETUP in UBUNTU
     
         docker run hello-world
 
+Install Other dependencies::
+
+        sudo apt-get install python-numpy python-scipy
+	sudo pip install -U scikit-learn
+	
+	sudo pip install bottleneck
+	sudo apt-get install python-numexpr
+	sudo pip install pandas
+
+
+
 3. Install OpenCV
 
     ::
@@ -36,6 +47,7 @@ OPENFACE SETUP in UBUNTU
         git clone https://github.com/Itseez/opencv.git 
         cd ~/opencv 
         mkdir release cd release cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local make sudo make install
+        sudo apt-get install python-opencv
 
 4. Install boost libraries first 
 

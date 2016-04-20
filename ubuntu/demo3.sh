@@ -1,0 +1,1 @@
+echo "real,user,sys" > ubuntu_classifier_time.csv && (for i in `seq 50`; do TIMEFORMAT=%R','%U','%S && time ./demos/classifier.py infer ./models/openface/celeb-classifier.nn4.small2.v1.pkl images/examples/{carell,adams,lennon}* ;done)>ubuntu_classifier_output.txt  2>> ubuntu_classifier_time.csv

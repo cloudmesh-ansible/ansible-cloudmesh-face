@@ -9,6 +9,14 @@ git clone –recursive https://github.com/cmusatyalab/openface.git
 
 echo "Installing dependencies first"
 
+sudo apt-get install python-numpy python-scipy
+sudo pip install -U scikit-learn
+
+sudo pip install bottleneck
+sudo apt-get install python-numexpr
+sudo pip install pandas
+
+
 
 echo "Installing OpenCV" 
 
@@ -21,6 +29,9 @@ echo "Installing OpenCV"
 	make 
 
 	sudo make install
+
+
+	sudo apt-get install python-opencv
 
 echo "Installing dlib"
 
