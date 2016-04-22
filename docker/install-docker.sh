@@ -31,7 +31,7 @@ echo "Automated Docker build for OpenFace"
     
     docker cp demo2.sh $SS:/root/src/openface/demo2.sh
 
-    docker cp demo2.sh $SS:/root/src/openface/demo3.sh
+    docker cp demo3.sh $SS:/root/src/openface/demo3.sh
 
     docker exec -t -i $SS /bin/bash
  
