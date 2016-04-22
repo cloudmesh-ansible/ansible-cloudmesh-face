@@ -11,9 +11,9 @@ echo "Setting up Docker"
 
 echo "Installing Curl" 
 
-    sudo apt-get update
+    brew update
  
-    sudo apt-get install curl 
+    brew install curl 
 
 echo "Installing Docker"
 
