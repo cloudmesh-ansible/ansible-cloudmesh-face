@@ -36,4 +36,4 @@ echo "Automated Docker build for OpenFace"
     
     docker run -p 9000:9000 -p 8000:8000 -t -i bamos/openface /bin/bash
     
-   /bin/sh -c 'cd /root/src/openface'
+   /bin/bash -c 'cd /root/src/openface'
