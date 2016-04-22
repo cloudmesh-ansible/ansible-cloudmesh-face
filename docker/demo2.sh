@@ -1,1 +1,1 @@
-cd root/src/openface/ && echo "real,user,sys" > ansible-cloudmesh-face/performance/compare_time.csv && (for i in `seq 10`; do TIMEFORMAT=%R','%U','%S && time ./demos/compare.py images/examples/{lennon*,clapton*};done)>compare_output.txt  2>> ansible-cloudmesh-face/performance/compare_time.csv
+echo "real,user,sys" > ansible-cloudmesh-face/performance/compare_time.csv && (for i in `seq 10`; do TIMEFORMAT=%R','%U','%S && time ./demos/compare.py images/examples/{lennon*,clapton*};done)>compare_output.txt  2>> ansible-cloudmesh-face/performance/compare_time.csv
