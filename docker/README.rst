@@ -57,13 +57,13 @@ TBD in future
         mkdir -p ansible-cloudmesh-face
         $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
         $ cd ansible-cloudmesh-face/docker/
-               
+
 2. Create the openface container::
       This will install all the required dependencies, check if docker is installed properly,copy the required scripts from host to
       docker,pull bamos/openface docker hub repositiory and create a docker container called `openface`.The prompt will change from
-      $docker> to openface> .  Once in the container's command-line change the directory to /root/src/openface.
+      $docker> to container-ID> .  Once in the container's command-line change the directory to /root/src/openface.
 
-        $ source install-docker.sh             
+        $ source install-docker.sh 
         openface> cd /root/src/openface
      
    
