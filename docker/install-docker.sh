@@ -2,28 +2,8 @@
 
 clear 
 
-
-echo "Cloning the openface github respository"
-
-git clone --recursive https://github.com/cmusatyalab/openface.git
-
-echo "Setting up Docker"
-
-echo "Installing Curl" 
-
-    brew update
- 
-    brew install curl 
-
-echo "Verifying docker is installed correctly"
-
-    eval $(docker-machine env)
-
-    docker run hello-world
-
 echo "Automated Docker build for OpenFace"
 
-    
     docker pull bamos/openface
 
     docker run -d  -p 9000:9000 -p 8000:8000 --name openface   bamos/openface
