@@ -97,6 +97,7 @@ TBD in future
       Detach the container from your command line and let it be running on the backgroud using the command:
       
        openface> cd
+      
        > cntrl p + cntrl q
 
 7. Gather the CSV files for evaluation ::
