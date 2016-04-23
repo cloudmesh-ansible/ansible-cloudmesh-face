@@ -95,7 +95,9 @@ TBD in future
 6. Detach from the running container ::
       Once the demo2.sh and demo3.sh output files from step 5 are verfied and you are ready for performance evaluation.
       Detach the container from your command line and let it be running on the backgroud using the command:
-         cntrl p + cntrl q
+      
+       openface> cd
+       > cntrl p + cntrl q
 
 7. Gather the CSV files for evaluation ::
       In the host following command will gather all the csv created in docker conatiner to "ansible-cloudmesh-face/performance” folder to
