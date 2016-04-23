@@ -1,6 +1,12 @@
 OPENFACE SETUP in DOCKER
 =========================
 
+Notation:
+
+* commands executed on the host system are indicated with $
+* commands executed on the container are indicated with openface>
+* the name of the container is `openface`
+
 1. Install docker
 -----------------
 
@@ -64,15 +70,19 @@ TBD in future
         
    This will create a container called `openface`
    
-3. To login to this container use
+3. Verify if things are properly set up::
+
+   do some docker ls or something like this that at least show things exist
+   
+4. To login to this container use
 
    TBD
 
-4. To run Face Comparison demo::
+5. To run Face Comparison demo::
     
        openface> source demo2.sh
 
-5. To run Face Recognotion demo::
+6. To run Face Recognotion demo::
     
        openface> source demo3.sh
 
