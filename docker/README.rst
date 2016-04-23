@@ -25,8 +25,28 @@ d. Test out a simple docker example::
    a. start the docker thingy via launchpap
    b. run the hello world thingy
    
-OpenFace Application
----------------------
+Windows
+^^^^^^^^
+
+TBD in future
+
+Ubuntu
+^^^^^^^
+
+TBD in future
+
+Centos
+^^^^^^^
+
+TBD in future
+
+RHEL
+^^^^^^^
+
+TBD in future
+
+2.OpenFace Application
+-----------------------
 
 1. Clone the ansible-cloudmesh-face github respository::
     
