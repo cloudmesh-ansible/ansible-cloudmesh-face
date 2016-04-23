@@ -6,13 +6,10 @@ OPENFACE SETUP in DOCKER
     ::
     
         git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
+        cd ansible-cloudmesh-face/docker/
+        source install-docker.sh
 
-
-2. cd ansible-cloudmesh-face/docker/
-
-3. source install-docker.sh
-
-4. To run Face Comparison demo
+2. To run Face Comparison demo
 
     ::
     
