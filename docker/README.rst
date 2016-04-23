@@ -127,10 +127,13 @@ TBD in future
 
    You can re-attach the saved container by : 
        $ docker exec -t -i openface /bin/bash
-      OR
+
+   OR
+      
        $ docker start openface
        $ docker attach openface
       
+
 10. To stop the docker container ::
     Warning:  This will stop the container permanently and all the container content will be deleted.
       
