@@ -17,23 +17,22 @@ echo "Installing Curl"
 
 echo "Verifying docker is installed correctly"
 
+    eval $(docker-machine env)
+
     docker run hello-world
 
 echo "Automated Docker build for OpenFace"
 
-    eval $(docker-machine env)
     
     docker pull bamos/openface
 
-    S=`docker run -d -p 9000:9000 -p 8000:8000 bamos/openface`
+    docker run -d -p 9000:9000 -p 8000:8000 -name openface bamos/openface
     
-    SS=`echo $S | cut -c1-12` 
+    SS=`docker ps --format "{{.ID}}"`
     
     docker cp demo2.sh $SS:/root/src/openface/demo2.sh
 
     docker cp demo3.sh $SS:/root/src/openface/demo3.sh
-
-    docker cp gather.sh $SS:/root/src/openface/gather.sh
 
     docker exec -t -i $SS /bin/bash
  
