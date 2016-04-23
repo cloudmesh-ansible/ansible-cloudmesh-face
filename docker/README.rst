@@ -19,18 +19,18 @@ a. Download and install docker Toolbox: https://www.docker.com/toolbox
 
 b. check if docker commands are installed in /usr/local/bin::
 
-   ls /usr/local/bin/docker*
+      $ ls /usr/local/bin/docker*
    
 c. For subsequent steps remember to login to docker::   
 
-        docker login
+      $ docker login
 
 d. Test out a simple docker example::
 
       Hopefully this can be done via commandline only and no gui tools
       TBD
-      a. start the docker thingy via launchpap
-      b. run the hello world thingy
+      $ ???
+      $ ???
    
 Windows
 ^^^^^^^^
@@ -57,16 +57,16 @@ TBD in future
 
 1. Clone the ansible-cloudmesh-face github respository::
     
-        git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
-        cd ansible-cloudmesh-face/docker/
+        $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
+        $ cd ansible-cloudmesh-face/docker/
                
 2. create the openface container::
 
-        broken: source install-docker.sh
+        broken: $ source install-docker.sh
 
         why not something like
         
-        sh install-openface.sh
+        $ sh install-openface.sh
         
    This will create a container called `openface`
    
@@ -74,9 +74,9 @@ TBD in future
 
    do some docker ls or something like this that at least show things exist
    
-4. To login to this container use
+4. To login to this container use::
 
-   TBD
+      $ TBD
 
 5. To run Face Comparison demo::
     
