@@ -30,7 +30,9 @@ echo "Automated Docker build for OpenFace"
     
     SS=`docker ps --format "{{.ID}}"`
     
-    echo $SS
+    echo "Container ID is:"$SS
+    
+    echo "Copying demo2.sh and demo3.sh"
 
     docker cp demo2.sh $SS:/root/src/openface/demo2.sh
 
