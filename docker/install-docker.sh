@@ -40,5 +40,5 @@ echo "Automated Docker build for OpenFace"
 
     docker exec -t -i $SS /bin/bash
  
-    cd ~/root/src/openface /bin/bash
+    cd ~/openface /bin/bash
    
