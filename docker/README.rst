@@ -21,10 +21,10 @@ c. For subsequent steps remember to login to docker::
 
 d. Test out a simple docker example::
 
-   Hopefully this can be done via commandline only and no gui tools
-   TBD
-   a. start the docker thingy via launchpap
-   b. run the hello world thingy
+      Hopefully this can be done via commandline only and no gui tools
+      TBD
+      a. start the docker thingy via launchpap
+      b. run the hello world thingy
    
 Windows
 ^^^^^^^^
