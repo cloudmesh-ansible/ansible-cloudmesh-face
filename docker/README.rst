@@ -126,6 +126,7 @@ TBD in future
        $ docker commit openface
 
    You can re-attach the saved container by : 
+   
        $ docker exec -t -i openface /bin/bash
 
    OR
