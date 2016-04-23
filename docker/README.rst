@@ -1,34 +1,58 @@
 OPENFACE SETUP in DOCKER
 =========================
 
-1. MAke sure you have docker installed
+1. Install docker
+-----------------
 
-   a. OSX
+OSX
+^^^
+
+To install docker on OSX follow these steps
+
+a. Download and install docker Toolbox: https://www.docker.com/toolbox
+
+b. check if docker commands are installed in /usr/local/bin::
+
+   ls /usr/local/bin/docker*
    
-        Docker Toolbox: https://www.docker.com/toolbox
-        
-        after install, do not forget::
-        
+c. For subsequent steps remember to login to docker::   
+
         docker login
+
+d. Test out a simple docker example::
+
+   TBD
+   a. start the docker thingy via launchpap
+   b. run the hello world thingy
    
-2. Clone the ansible-cloudmesh-face github respository::
+OpenFace Application
+---------------------
+
+1. Clone the ansible-cloudmesh-face github respository::
     
         git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
         cd ansible-cloudmesh-face/docker/
                
-3. 
-        source install-docker.sh
+3. create the openface container::
 
-4. To run Face Comparison demo
+        broken: source install-docker.sh
 
-    ::
+        why not something like
+        
+        sh install-openface.sh
+        
+   This will create a container called `openface`
+   
+4. To login to this container use
+
+   TBD
+
+5. To run Face Comparison demo::
     
-       source demo2.sh
+       openface> source demo2.sh
 
-5. To run Face Recognotion demo
-
-    ::
+6. To run Face Recognotion demo::
     
-       source demo3.sh
+       openface> source demo3.sh
 
     
