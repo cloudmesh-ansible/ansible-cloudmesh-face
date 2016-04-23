@@ -26,10 +26,12 @@ echo "Automated Docker build for OpenFace"
     
     docker pull bamos/openface
 
-    docker run -d -p 9000:9000 -p 8000:8000 -name openface bamos/openface
+    docker run -d -p 9000:9000 -p 8000:8000  bamos/openface
     
     SS=`docker ps --format "{{.ID}}"`
     
+    echo $SS
+
     docker cp demo2.sh $SS:/root/src/openface/demo2.sh
 
     docker cp demo3.sh $SS:/root/src/openface/demo3.sh
