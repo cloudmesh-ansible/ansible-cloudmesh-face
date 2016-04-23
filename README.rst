@@ -6,14 +6,19 @@ Prerequiste
 
 * Operating Systems: Linux or OSX
 
-* Docker: Follow Docker Mac OSX Installation Guide `<https://docs.docker.com/engine/installation/mac/>` to start a docker machine and connect your shell to it prior to building the container. 
+* Docker: Follow Docker Mac OSX Installation Guide
+  `<https://docs.docker.com/engine/installation/mac/>` to start a
+  docker machine and connect your shell to it prior to building the
+  container.
 
 Installation 
 ==============
-::
 
-    For Docker follow the instructions at `<https://github.com/cloudmesh/ansible-cloudmesh-face/blob/master/docker/README.rst/>`
-    For Ubuntu follow the instructions at `<https://github.com/cloudmesh/ansible-cloudmesh-face/blob/master/ubuntu/README.rst/>`
+
+* For Docker follow the instructions at
+  `<https://github.com/cloudmesh/ansible-cloudmesh-face/blob/master/docker/README.rst/>`
+* For Ubuntu follow the instructions at
+  `<https://github.com/cloudmesh/ansible-cloudmesh-face/blob/master/ubuntu/README.rst/>`
  
 
 Draft Goals
