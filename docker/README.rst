@@ -64,6 +64,7 @@ TBD in future
       $docker> to container-ID> .  Once in the container's command-line change the directory to /root/src/openface.
 
         $ source install-docker.sh 
+
         openface> cd /root/src/openface
      
    
@@ -79,6 +80,7 @@ TBD in future
     
       Verify these output files:
        openface> cat docker_compare_time.cv
+      
        openface> cat compare_output.txt
 
 5. To run Face Recognotion demo::
@@ -87,6 +89,7 @@ TBD in future
       
       Verify these output files:
        openface> cat docker_classifier_time.cv
+
        openface> cat classifier_output.txt
 
 6. Detach from the running container ::
@@ -102,7 +105,9 @@ TBD in future
 
 8. On the host verify the CSV files :: 
         $docker> cd ..
+
         $ansible-cloudmesh-face> cd performance
+
         $performance> ls -l
    The output files “docker_compare_time.cv” and “docker_classifier_time.cv” should be present here.
 
@@ -121,8 +126,7 @@ TBD in future
       
        openface> docker kill openface
       
-      Verify the container has been closed:
+     Verify the container has been closed:
        openface> docker ps
-       
-    
+
 
