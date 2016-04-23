@@ -132,6 +132,7 @@ TBD in future
    OR
       
        $ docker start openface
+
        $ docker attach openface
       
 
