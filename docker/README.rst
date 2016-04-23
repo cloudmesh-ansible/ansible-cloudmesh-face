@@ -45,7 +45,7 @@ RHEL
 
 TBD in future
 
-2.OpenFace Application
+2. OpenFace Application
 -----------------------
 
 1. Clone the ansible-cloudmesh-face github respository::
@@ -53,7 +53,7 @@ TBD in future
         git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
         cd ansible-cloudmesh-face/docker/
                
-3. create the openface container::
+2. create the openface container::
 
         broken: source install-docker.sh
 
@@ -63,15 +63,15 @@ TBD in future
         
    This will create a container called `openface`
    
-4. To login to this container use
+3. To login to this container use
 
    TBD
 
-5. To run Face Comparison demo::
+4. To run Face Comparison demo::
     
        openface> source demo2.sh
 
-6. To run Face Recognotion demo::
+5. To run Face Recognotion demo::
     
        openface> source demo3.sh
 
