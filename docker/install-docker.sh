@@ -4,6 +4,8 @@ clear
 
 echo "Automated Docker build for OpenFace"
 
+    eval $(docker-machine env)
+
     docker pull bamos/openface
 
     docker run -d  -p 9000:9000 -p 8000:8000 --name openface   bamos/openface
