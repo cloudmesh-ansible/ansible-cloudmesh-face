@@ -113,10 +113,6 @@ TBD in future
 
 8. On the host verify the CSV files :: 
 
-        $docker> cd ..
-
-        $ansible-cloudmesh-face> cd performance
-
         $performance> ls -l
 
    The output files “docker_compare_time.cv” and “docker_classifier_time.cv” should be present here.
