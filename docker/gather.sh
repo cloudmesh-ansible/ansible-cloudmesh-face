@@ -10,3 +10,4 @@ S=`system_profiler SPSoftwareDataType | fgrep "Computer Name"`
 echo "#Demo2, VirtualBox, Docker",$S|cat - docker_compare_time.csv > /tmp/out && mv /tmp/out docker_compare_time.csv
 echo "#Demo3, VirtualBox, Docker",$S|cat - docker_classifier_time.csv > /tmp/out && mv /tmp/out docker_classifier_time.csv
 
+system_profiler SPHardwareDataType |fgrep -v UUID |fgrep -v Serial > hardware.txt
