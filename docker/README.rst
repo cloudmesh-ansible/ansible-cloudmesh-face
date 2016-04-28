@@ -54,7 +54,7 @@ TBD in future
 
 1. Clone the ansible-cloudmesh-face github respository::
     
-        mkdir -p ansible-cloudmesh-face
+        $ mkdir -p ansible-cloudmesh-face
         $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
         $ cd ansible-cloudmesh-face/docker/
 
@@ -113,7 +113,7 @@ TBD in future
 
 8. On the host verify the CSV files :: 
 
-        $performance> ls -l
+        $ ls -l performance/
 
    The output files “docker_compare_time.cv” and “docker_classifier_time.cv” should be present here.
 
