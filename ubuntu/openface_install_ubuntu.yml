@@ -1,0 +1,73 @@
+---
+
+- name: Git openface
+  shell: git clone –recursive https://github.com/cmusatyalab/openface.git
+
+- name: Install opencv dependencies
+  apt: name={{ item }}
+  with_items:
+    - build-essential
+    - ipython
+    - python-dev
+    - python-numpy
+    - cmake
+    - git
+    - libgtk2.0-dev
+    - pkg-config
+    - libavcodec-dev
+    - libavformat-dev
+    - libswscale-dev
+    - python-numpy
+    - python-scipy
+    - libtbb2
+    - libtbb-dev
+    - libjpeg-dev
+    - libpng-dev
+    - libtiff-dev
+    - libjasper-dev
+    - libdc1394-22-dev
+    - libboost-all-dev
+    - python-opencv
+
+
+- name: Get opencv source code
+  shell: git clone https://github.com/Itseez/opencv.git 
+
+- name: Create a new release directory
+  shell:  mkdir release chdir=~/opencv
+
+- name: cmake
+  shell: cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local chdir=release 
+
+- name: Install opencv
+- shell: make 
+- shell: sudo make install
+
+- name: Install other dependencies
+  apt: name={{item}}
+  with_items:
+   - bottleneck
+   - pandas
+   - scikit-learn 
+
+-shell: mkdir -p ~/src 
+-shell: cd ~/src tar xf dlib-18.16.tar.bz2 
+-shell: cd dlib-18.16/python_examples 
+-shell: mkdir build 
+-shell: cmake ../../tools/python chdir=build 
+-shell: cmake --build . --config Release 
+-shell: sudo cp dlib.so /usr/local/lib/python2.7/dist-packages
+
+- name: Install Torch and its dependencies
+ -shell: git clone https://github.com/torch/distro.git ~/torch --recursive 
+ -shell: cd ~/torch; 
+ -shell: bash install-deps; 
+ -shell: ./install.sh
+
+# On Linux with bash 
+# source ~/.bashr
+-name: Install Openface
+ -shell: cd openface
+ -shell: sudo python2 setup.py install
+ -shell: models/get-models.sh
+
