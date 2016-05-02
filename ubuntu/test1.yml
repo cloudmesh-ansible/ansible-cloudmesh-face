@@ -54,8 +54,8 @@
         accept_hostkey: yes
 
   - name: Install Torch
-    command: bash install-deps chdir= ~/torch
-    command: ./install.sh chdir= ~/torch         	 
+    shell: bash install-deps chdir= ~/torch
+    shell: ./install.sh chdir= ~/torch         	 
     
   - name: Install Openface
     shell: cd ~/openface
