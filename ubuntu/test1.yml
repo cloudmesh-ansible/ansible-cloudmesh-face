@@ -1,0 +1,64 @@
+---
+- hosts: webservers
+  remote_user: cc
+  become: yes
+
+  tasks:
+  - name: Clone openface git directory
+    git:
+      repo: https://github.com/cmusatyalab/openface.git
+      dest: ~/openface
+      recursive: yes
+
+  - name: Install software dependencies
+    apt: pkg={{ item }} state=installed
+    with_items:
+      - build-essential
+      - ipython
+      - python-dev
+      - python-pip
+      - python-numpy
+      - cmake
+      - git
+      - libgtk2.0-dev
+      - pkg-config
+      - libavcodec-dev
+      - libavformat-dev
+      - libswscale-dev
+      - python-numpy
+      - python-scipy
+      - libtbb2
+      - libtbb-dev
+      - libjpeg-dev
+      - libpng-dev
+      - libtiff-dev
+      - libjasper-dev
+      - libdc1394-22-dev
+      - libboost-all-dev
+      - python-pandas
+      - python-opencv
+
+  - name: Install other dependencies
+    pip: name={{item}} 
+    with_items:
+      - scikit-learn 
+      - dlib
+
+  
+  - name: Clone Torch Repository
+    git:
+        repo: https://github.com/torch/distro.git
+        dest: ~/torch
+        recursive: yes
+        force: yes
+        accept_hostkey: yes
+
+  - name: Install Torch
+    command: bash install-deps chdir= ~/torch
+    command: ./install.sh chdir= ~/torch         	 
+    
+  - name: Install Openface
+    shell: cd ~/openface
+    shell: sudo python2 setup.py install
+    shell: models/get-models.sh
+
