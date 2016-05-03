@@ -4,8 +4,8 @@ OPENFACE SETUP in DOCKER
 Notation:
 
 * commands executed on the host system are indicated with $
-* commands executed on the container are indicated with openface>
-* the name of the container is `openface`
+* commands executed on the container are indicated with root11111111# , where root11111111 will be the container id.
+* the name of the container is `openface`, which can be checked by command "docker ps".
 
 1. Install docker
 -----------------
