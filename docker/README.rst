@@ -197,7 +197,7 @@ d. To check Dokcer is installed properly ::
 
 4. To run Face Comparison demo ::
 
-   This will carete files “docker_compare_time.csv" and  “compare_output.txt" as output in the current directory.
+   This will carete files “docker_compare_<container-id>.csv" and  “docker_compare_<container-id>.txt" as output in the current directory.
       
        docker# source demo2.sh <Number of times script to be run>
     
@@ -211,7 +211,7 @@ d. To check Dokcer is installed properly ::
 
 5. To run Face Recognotion demo::
 
-   This will carete files “docker_classifier_time.csv" and  “classifier_output.txt" as output in the current directory.
+   This will carete files “docker_classifier_<container-id>.csv" and  “docker_classifier_<container-id>.txt" as output in the current directory.
    
        docker# source demo3.sh <Number of times script to be run>
       
@@ -220,6 +220,8 @@ d. To check Dokcer is installed properly ::
        docker# cat docker_classifier_$CID.csv
 
        docker# cat docker_classifier_$CID.txt
+
+      Note CID is the id of the container.
 
 6. Detach from the running container ::
 
