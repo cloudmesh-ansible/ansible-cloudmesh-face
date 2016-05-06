@@ -1,5 +1,11 @@
 OPENFACE SETUP in DOCKER
 =========================
+This file gives instructions about running OpenFace project on -
+(1) docker with multiple container using docker swarm
+(2) docker with single container
+Once output are generated they are comapred with other OS for performance testing.
+
+
 
 Notation:
 
