@@ -58,8 +58,8 @@ TBD in future
 2. OpenFace Application
 -----------------------
 
-Multi-Server ::
-
+<1> MULTI-SERVER REPLICATION STEPS ::
+    ===============================
       These steps will execute openface project on multiple docker swarm nodes and collect their optputs for graph plots.
       
 1. Clone the ansible-cloudmesh-face github respository ::
@@ -140,7 +140,12 @@ Multi-Server ::
          $ docker-machine ls
 
 
-Single-Server ::
+
+
+
+
+<2>SINGLE-SERVER REPLICATION STEPS ::
+   ===============================
 
       These steps will execute openface project on single docker container collect optputs for graph plots.
 
