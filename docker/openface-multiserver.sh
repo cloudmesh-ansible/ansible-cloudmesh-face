@@ -21,9 +21,9 @@ else
 	for machine in $(docker-machine ls | tail -n +2 | awk '{ print $1 }'); do
   		eval $(docker-machine env $machine)
 
-    		docker run -p 9000:9000 -p 8000:8000 --name openface -v /Users/Sonal/ansible-cloudmesh-face/docker:/root/openface/docker  -ti bamos/openface /bin/bash  
-
+    		docker run -p 9000:9000 -p 8000:8000 --name openface -v /~/ansible-cloudmesh-face/docker:/root/openface/docker  -ti bamos/openface /bin/bash
+  
 	done
 
-	docker-machine rm $(docker-machine ls -q)
+docker-machine rm $(docker-machine ls -q)
 fi
