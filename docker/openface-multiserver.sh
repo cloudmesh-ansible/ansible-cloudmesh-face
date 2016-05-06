@@ -25,5 +25,4 @@ else
   
 	done
 
-docker-machine rm $(docker-machine ls -q)
 fi
