@@ -135,7 +135,7 @@ Multi-Server ::
 
 11. Get a pictorial presentation of docker and ubuntu time comaprision ::
 
- 12. Anytime to check the docker swarm nodes run ::
+12. Anytime to check the docker swarm nodes run ::
      
          $ docker-machine ls
 
