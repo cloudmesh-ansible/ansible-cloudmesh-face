@@ -7,7 +7,7 @@
   - name: Clone openface git directory
     git:
       repo: https://github.com/cmusatyalab/openface.git
-      dest: ~/openface
+      dest: /home/cc/openface
       recursive: yes
 
   - name: Install software dependencies
@@ -37,6 +37,7 @@
       - libboost-all-dev
       - python-pandas
       - python-opencv
+      - libreadline-dev
 
   - name: Install other dependencies
     pip: name={{item}} 
@@ -48,17 +49,38 @@
   - name: Clone Torch Repository
     git:
         repo: https://github.com/torch/distro.git
-        dest: ~/torch
+        dest: /home/cc/torch
         recursive: yes
         force: yes
         accept_hostkey: yes
 
-  - name: Install Torch
-    shell: bash install-deps chdir= ~/torch
-    shell: ./install.sh chdir= ~/torch         	 
-    
-  - name: Install Openface
-    shell: cd ~/openface
-    shell: sudo python2 setup.py install
-    shell: models/get-models.sh
+  - name: set permissions for directories
+    file: path=/home/cc/openface state=directory owner=cc group=cc mode=0777 recurse=yes
+    file: path=/home/cc/torch state=directory owner=cc group=cc mode=0777 recurse=yes
 
+  - name: Install Torch
+    shell: bash install-deps chdir=/home/cc/torch
+    shell: ./install.sh chdir=/home/cc/torch
+
+  - name: Source bashrc
+    shell: source ~/.bashrc
+    args: 
+      executable: /bin/bash          	 
+  
+  - name: Install Torch dependencies
+    shell: /home/cc/torch/install/bin/luarocks install dpnn
+    shell: /home/cc/torch/install/bin/luarocks install nn
+    shell: /home/cc/torch/install/bin/luarocks install optim
+    shell: /home/cc/torch/install/bin/luarocks install csvigo
+    shell: /home/cc/torch/install/bin/luarocks install cutorch 
+    shell: /home/cc/torch/install/bin/luarocks install cunn
+    shell: /home/cc/torch/install/bin/luarocks install fblualib
+    shell: /home/cc/torch/install/bin/luarocks install torchx
+    shell: /home/cc/torch/install/bin/luarocks install optnet 
+
+  - name: Install Openface
+    shell: sudo python2 setup.py install chdir=/home/cc/openface
+    shell: models/get-models.sh chdir=/home/cc/openface
+
+  - name: Create ubuntu directory
+    file: path=/home/cc/ubuntu state=directory owner=cc group=cc mode=u+rwx recurse=yes
