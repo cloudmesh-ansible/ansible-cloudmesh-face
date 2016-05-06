@@ -78,7 +78,7 @@ TBD in future
    Following script will create various nodes in docker swarm cluster. 
    The name of the nodes will be openface-node<number of the node>.Master node can be identified as openface-master and key-store as openface-keystore. 
    
-        docker$ source openface-multiserver.sh 
+        docker$ source openface-multiserver.sh <Number of swarn nodes to be run>
 
 
 3. Container will be created for nodes in the swarm one-by-one. First node will create the conatiner and it will pull the bamos/openface image. Upon image pull the command prompt will change from docker $ to root1111111# , i.e. promt control changes from host to container. Once on container change directory to dcoker folder by ::
