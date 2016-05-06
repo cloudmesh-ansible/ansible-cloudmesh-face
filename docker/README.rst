@@ -22,10 +22,8 @@ b. check if docker commands are installed in /usr/local/bin::
       $ ls /usr/local/bin/docker*
       
 c. Once docker is installed, got to your launch pad and click on quickstart docker icon to launch it with the terminal. 
-      NOTE : Henceforth all the commands will be executed on this terminal where docker has been started.
       
-d. To check Dokcer is installed properly ::
-      $ source openface_dep.sh
+   NOTE : Henceforth all the commands will be executed on this terminal where docker has been started.
    
 d. For subsequent steps remember to login to docker if not already::   
 
@@ -66,64 +64,72 @@ TBD in future
         $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
         $ cd ansible-cloudmesh-face/docker/
 
+d. To check Dokcer is installed properly ::
+      
+      $ source openface_dep.sh
+
+
 2. Create the openface container::
    This will install all the required dependencies, check if docker is installed properly,copy the required scripts from host to
    docker,pull bamos/openface docker hub repositiory and create a docker container called `openface`.The prompt will change from
    $docker> to container-ID> .  Once in the container's command-line change the directory to /root/src/openface.
 
-        $ source install-docker.sh 
+        $ source install-openfacedocker.sh
 
-        openface> cd /root/src/openface
+        root1111111# cd /root/openface/docker
      
    
 3. Verify if the required scripts are present in container::
    demo2.sh and demo3.sh should be present in the current directory.
    
-         openface> ls -l  
+         docker# ls -l  
       
      
 
 4. To run Face Comparison demo::
    This will carete files “docker_compare_time.csv" and  “compare_output.txt" as output in the current directory.
       
-       openface> source demo2.sh
+       docker# source demo2.sh
     
-   Verify these output files:
+   Verify these output files: 
    
-       openface> cat docker_compare_time.cv
+       docker# cat docker_compare_$CID.csv         
       
-       openface> cat compare_output.txt
+       docker# cat docker_compare_$CID.txt
+
+   Note CID is the id of the container.
 
 5. To run Face Recognotion demo::
    This will carete files “docker_compare_time.csv" and  “classifier_output.txt" as output in the current directory.
    
-       openface> source demo3.sh
+       docker# source demo3.sh
       
    Verify these output files:
    
-       openface> cat docker_classifier_time.cv
+       docker# cat docker_classifier_$CID.csv
 
-       openface> cat classifier_output.txt
+       docker# cat docker_classifier_$CID.txt
 
 6. Detach from the running container ::
    Once the demo2.sh and demo3.sh output files from step 5 are verfied and you are ready for performance evaluation.
    Detach the container from your command line and let it be running on the backgroud using the command:
       
-       openface> cd
-      
-       > cntrl p + cntrl q
+       docker# cntrl p + cntrl q
 
 7. Gather the CSV files for evaluation ::
-   In the host following command will gather all the csv created in docker conatiner to "ansible-cloudmesh-face/performance” folder to
+   In the host following command will gather all the csv created in docker conatiner to host "ansible-cloudmesh-face/docker” folder to
    be used for time evaluation.
       
        $docker>source gather.sh
 
 8. On the host verify the CSV files :: 
 
-        $ ls -l performance/
+        $docker> ls -l performance/
 
    The output files “docker_compare_time.cv” and “docker_classifier_time.cv” should be present here.
+   
+   
+   
 
 9. For future use save the container content:
 
