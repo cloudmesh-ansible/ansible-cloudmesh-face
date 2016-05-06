@@ -20,14 +20,19 @@ a. Download and install docker Toolbox: https://www.docker.com/toolbox
 b. check if docker commands are installed in /usr/local/bin::
 
       $ ls /usr/local/bin/docker*
+      
+c. Once docker is installed, got to your launch pad and click on quickstart docker icon to launch it with the terminal. 
+   NOTE : Henceforth all the commands will be executed on this terminal where docker has been started.
    
-c. For subsequent steps remember to login to docker::   
+d. For subsequent steps remember to login to docker::   
 
       $ docker login
 
-d. Test out a simple docker example::
+e. Test out a simple docker example::
 
       $ docker run hello-world
+      
+
    
 Windows
 ^^^^^^^^
