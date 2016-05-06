@@ -58,6 +58,35 @@ TBD in future
 2. OpenFace Application
 -----------------------
 
+Multi-Server ::
+
+      These steps will execute openface project on multiple docker swarm nodes and collect their optputs for graph plots.
+      
+1. Clone the ansible-cloudmesh-face github respository::
+    
+        $ mkdir -p ansible-cloudmesh-face
+        $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
+        $ cd ansible-cloudmesh-face/docker/
+
+d. To check Dokcer is installed properly ::
+      
+      $ source openface_dep.sh      
+
+2. Create the openface container::
+   This will install all the required dependencies, check if docker is installed properly,copy the required scripts from host to
+   docker,pull bamos/openface docker hub repositiory and create a docker container called `openface`.The prompt will change from
+   $docker> to container-ID> .  Once in the container's command-line change the directory to /root/src/openface.
+
+        $ source install-openfacedocker.sh
+
+        root1111111# cd /root/openface/docker
+
+
+Single-Server ::
+
+      These steps will execute openface project on single docker container collect optputs for graph plots.
+
+
 1. Clone the ansible-cloudmesh-face github respository::
     
         $ mkdir -p ansible-cloudmesh-face
