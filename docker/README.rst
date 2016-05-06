@@ -244,31 +244,38 @@ d. To check Dokcer is installed properly ::
         $docker> ls -l performance/
 
    The output files “docker_compare_time.cv” and “docker_classifier_time.cv” should be present here.
-   
+ 
+9. Gather csv files for graph plot ::  
 
-9. For future use save the container content ::
+         $docker> source gather-csv.sh 
+
+10. Get a pictorial presentation of docker and ubuntu time comaprision ::
+
+            $docker> source ../performance/compare_plots_OSX.R
+
+11. For future use save the container content ::
 
        $ docker commit openface
 
-   You can re-attach the saved container by :: 
+   You can re-attach an dettached container saved container by :: 
    
        $ docker exec -t -i openface /bin/bash
-
-   OR
-      
-       $ docker start openface
-
-       $ docker attach openface
       
 
-10. To stop the docker container ::
+12. To stop the docker container ::
       
-       openface> docker kill openface
+       $ docker kill openface
+      
+       $ docker rm openface
 
     Warning:  This will stop the container permanently and all the container content will be deleted.
       
     Verify the container has been closed ::
     
        openface> docker ps
+
+
+
+
 
 
