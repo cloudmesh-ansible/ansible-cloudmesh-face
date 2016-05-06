@@ -4,8 +4,7 @@ echo "Automated Docker build for OpenFace"
 
     docker pull bamos/openface
 
-    docker run -p 9000:9000 -p 8000:8000 --name openface -v /Users/Sonal/ansible-cloudmesh-face/docker:/root/src/openface/docker  -ti bamos/openface /bin/bash
-
+    docker run -p 9000:9000 -p 8000:8000 --name openface -v /Users/Sonal/ansible-cloudmesh-face/docker:/root/openface/docker  -ti bamos/openface /bin/bash
    
     
  
