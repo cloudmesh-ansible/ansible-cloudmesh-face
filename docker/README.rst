@@ -22,9 +22,12 @@ b. check if docker commands are installed in /usr/local/bin::
       $ ls /usr/local/bin/docker*
       
 c. Once docker is installed, got to your launch pad and click on quickstart docker icon to launch it with the terminal. 
-   NOTE : Henceforth all the commands will be executed on this terminal where docker has been started.
+      NOTE : Henceforth all the commands will be executed on this terminal where docker has been started.
+      
+d. To check Dokcer is installed properly ::
+      $ source openface_dep.sh
    
-d. For subsequent steps remember to login to docker::   
+d. For subsequent steps remember to login to docker if not already::   
 
       $ docker login
 
