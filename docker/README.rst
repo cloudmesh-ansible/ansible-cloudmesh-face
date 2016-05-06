@@ -131,6 +131,21 @@ TBD in future
 
          docker$ ls -l
 
+      If you select "NO" to kill the swarm nodes then these nodes will remain on th host in detached mode ::
+      To get into any of these nodes run following command ::
+      
+          docker$ eval $(docker-machine env --swarm openface-node<node_number>)
+      
+      To check the swarm node information ::
+      
+           docker$ docker-machine ls
+      
+      To kill all the swarm nodes  ::
+      
+          docker-machine rm $(docker-machine ls -q)
+      
+      
+
 10. Gather csv files for graph plot ::
 
 11. Get a pictorial presentation of docker and ubuntu time comaprision ::
