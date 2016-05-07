@@ -1,4 +1,4 @@
-summaryPlots <- function(demo2)
+summaryPlots <- function()
 {
 
 #Check for required R packages otherwise install them
