@@ -88,8 +88,8 @@ TBD in future
         docker$ source openface-multiserver.sh <Number of swarn nodes to be run>
 
    NOTE : If you get an error saying "openface" container already exists or "openface" name has been given to another container,
-   then you could kill the existing openface container using commands in step:12 for fresh installation OR you could attach to 
-   this existing container using commands in step:9.  
+   then you could kill the existing openface container using commands in step:13 for fresh installation OR you could attach to 
+   this existing container using commands in step:12.  
 
 
 
@@ -147,7 +147,13 @@ TBD in future
 
          docker$ ls -l
 
-      The swarm nodes will remain on th host in detached mode ::
+10. Gather csv files for graph plot ::
+ 
+          docker$ source gather-csv.sh 
+
+11. Get a pictorial presentation of docker and ubuntu time comaprision ::
+
+12. The swarm nodes will remain on th host in detached mode ::
       To get attached to any of these nodes run following command ::
       
           docker$ eval $(docker-machine env --swarm openface-node<node_number>)
@@ -156,11 +162,7 @@ TBD in future
       
            docker$ docker-machine ls
 
-10. Gather csv files for graph plot ::
-
-11. Get a pictorial presentation of docker and ubuntu time comaprision ::
-
-12. To kill all the swarm nodes  ::
+13. To kill all the swarm nodes  ::
       
           docker-machine rm $(docker-machine ls -q)
       
@@ -199,8 +201,8 @@ d. To check Dokcer is installed properly ::
         root1111111# cd /root/openface/docker
      
      NOTE : If you get an error saying "openface" container already exists or "openface" name has been given to another container,
-     then you could kill and remove the existing openface container using commands in step:12 for fresh installation OR you could attach
-     to this existing container using commands in step:11.   
+     then you could kill and remove the existing openface container using commands in step:11 for fresh installation OR you could attach
+     to this existing container using commands in step:10.   
    
 3. Verify if the required scripts are present in container::
 
@@ -239,35 +241,25 @@ d. To check Dokcer is installed properly ::
 
       Note CID is the id of the container.
 
-6. Detach from the running container ::
+6. Exit from the container of node1 ::
+  
+       docker# exit
 
-   Once the demo2.sh and demo3.sh output files from step 5 are verfied and you are ready for performance evaluation.
-   Detach the container from your command line and let it be running on the backgroud using the command:
-      
-       docker# cntrl p + cntrl q
+7. On the host verify the CSV files :: 
 
-7. Gather the CSV files for evaluation ::
+        docker$ ls -l performance/
 
-   In the host following command will gather all the csv created in docker conatiner to host "ansible-cloudmesh-face/docker” folder to
-   be used for time evaluation.
-      
-       $docker>source gather.sh
-
-8. On the host verify the CSV files :: 
-
-        $docker> ls -l performance/
-
-   The output files “docker_compare_time.cv” and “docker_classifier_time.cv” should be present here.
+   The output files “docker_compare_<container-id>.csv” and “docker_classifier_<container-id>.csv” should be present here.
  
-9. Gather csv files for graph plot ::  
+8. Gather csv files for graph plot ::  
 
-         $docker> source gather-csv.sh 
+         docker$ source gather-csv.sh 
 
-10. Get a pictorial presentation of docker and ubuntu time comaprision ::
+9. Get a pictorial presentation of docker and ubuntu time comaprision ::
 
             $docker> source ../performance/compare_plots_OSX.R
 
-11. For future use save the container content ::
+10. For future use save the container content ::
 
        $ docker commit openface
 
@@ -276,7 +268,7 @@ d. To check Dokcer is installed properly ::
        $ docker exec -t -i openface /bin/bash
       
 
-12. To stop the docker container ::
+11. To stop the docker container ::
       
        $ docker kill openface
       
