@@ -81,11 +81,14 @@ TBD in future
 
 2. Create the docker swarm cluster with openface containers ::
    
-        docker$ source openface-multiserver.sh <Number of swarn nodes to be run>
+        docker$ source openface-multiserver.sh <Number of swarm nodes to be run>
 
-   This command will create various nodes in docker swarm cluster. 
-   The name of the nodes will be openface-node<number of the node>.Master node can be identified as openface-master and key-store as
-   openface-machine.
+   This command will create required number of nodes in docker swarm cluster. In the above command 2nd argument takes number of node that
+   you want to run.
+   
+   Note:Please be aware that in addition to the swarm nodes you specified there will always a Master-node and Machine-node created to
+   enable the process. The name of the nodes will be openface-node<number of the node>.Master node can be identified as openface-master
+   and key-store as openface-machine.
    
    NOTE : If you get an error saying "openface" container already exists or "openface" name has been given to another container,
    then you could kill the existing openface container using commands in step:13 for fresh installation OR you could attach to 
