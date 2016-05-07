@@ -69,7 +69,7 @@ p <- p +
     panel.background = element_blank(),
 	legend.position="none") 
 
-ggsave(paste(demo,"real_plot.png",sep="_"))
+ggsave("demo2_real_plot.png")
 
 # Sys time plot
 
@@ -84,7 +84,7 @@ p <- p +
     panel.background = element_blank(),
 	legend.position="none") 
 
-ggsave(paste(demo,"sys_plot.png",sep="_"))
+ggsave("demo2_sys_plot.png")
 
 # User time plot
 
@@ -99,8 +99,8 @@ p <- p +
     panel.background = element_blank(),
 	legend.position="none") 
 
-ggsave(paste(demo,"user_plot.png",sep="-"))
+ggsave("demo2_user_plot.png")
 
 }
 
-summaryPlots("demo2")
+summaryPlots()
