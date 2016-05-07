@@ -83,7 +83,7 @@ TBD in future
 
    Following script will create various nodes in docker swarm cluster. 
    The name of the nodes will be openface-node<number of the node>.Master node can be identified as openface-master and key-store as
-   openface-keystore. 
+   openface-keystore. ::
    
         docker$ source openface-multiserver.sh <Number of swarn nodes to be run>
 
@@ -106,7 +106,7 @@ TBD in future
 
 5. To run Face Comparison demo ::
    This will create files “docker_compare_<container-id>.csv" and  “docker_compare_<container-id>.txt" as output in the current 
-   directory.
+   directory. ::
       
        docker# source demo2.sh <Number of times script to be run>
     
@@ -119,7 +119,7 @@ TBD in future
    Note: CID is the id of the container.
 
 6. To run Face Recognotion demo ::
-   This will carete files “docker_classifier_<container-id>.csv" and  “docker_classifier_<container-id>.txt" as output in the current directory.
+   This will carete files “docker_classifier_<container-id>.csv" and  “docker_classifier_<container-id>.txt" as output in the current directory. ::
    
        docker# source demo3.sh <Number of times script to be run>
       
@@ -137,7 +137,7 @@ TBD in future
        docker# exit
   
 8. As soon as node1 is exited new container for next node will open and it will pull the bamos/openface image. Upon image pull the
-   command prompt will change from docker $ to root1111111# and this will be repeated for all the nodes in the swarm cluster::
+   command prompt will change from docker $ to root1111111# and this will be repeated for all the nodes in the swarm cluster ::
 
         Repeat step 3 to 7 for all the nodes
    
@@ -194,7 +194,7 @@ d. To check Dokcer is installed properly ::
 
    This will install all the required dependencies, check if docker is installed properly,copy the required scripts from host to
    docker,pull bamos/openface docker hub repositiory and create a docker container called `openface`.The prompt will change from
-   $docker> to container-ID> .  Once in the container's command-line change the directory to /root/src/openface.
+   $docker> to container-ID> .  Once in the container's command-line change the directory to /root/src/openface. ::
 
         $ source install-openfacedocker.sh
 
@@ -215,7 +215,7 @@ d. To check Dokcer is installed properly ::
 4. To run Face Comparison demo ::
 
    This will carete files “docker_compare_<container-id>.csv" and  “docker_compare_<container-id>.txt" as output in the 
-   current directory.
+   current directory. ::
       
        docker# source demo2.sh <Number of times script to be run>
     
@@ -229,7 +229,7 @@ d. To check Dokcer is installed properly ::
 
 5. To run Face Recognotion demo::
 
-   This will carete files “docker_classifier_<container-id>.csv" and  “docker_classifier_<container-id>.txt" as output in the current directory.
+   This will carete files “docker_classifier_<container-id>.csv" and  “docker_classifier_<container-id>.txt" as output in the current directory. ::
    
        docker# source demo3.sh <Number of times script to be run>
       
