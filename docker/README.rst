@@ -10,7 +10,7 @@ Once output are generated they are comapred with other OS for performance testin
 Notation:
 
 * commands executed on the host system are indicated with $
-* commands executed on the container are indicated with root11111111# , where root11111111 will be the container id.
+* commands executed on the container are indicated with root11111111# , where root<some number> will be the container id.
 * the name of the container is `openface`, which can be checked by command "docker ps".
 
 1. Install docker
