@@ -175,6 +175,11 @@ TBD in future
       
     NOTE: This command will kill all the swarm nodes from the host and they have to be recreated if required , using step 2.
 
+LIMITATIONS :
+
+Docker Swarm instead of pulling private image automatically on all the swarm nodes simultaneously, performs a one-by-one pull on each
+swarm node container.
+
 
 =========================================================================================================================================
 
