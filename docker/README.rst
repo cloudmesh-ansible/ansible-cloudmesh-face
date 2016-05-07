@@ -86,6 +86,10 @@ TBD in future
    
         docker$ source openface-multiserver.sh <Number of swarn nodes to be run>
 
+   NOTE : If you get an error saying "openface" container already exists or "openface" name has been given to another container,
+          then you could kill the existing openface container using commands in step:12 for fresh installation OR you could attach to this existing container using commands in step:9.  
+
+
 
 3. Container will be created for nodes in the swarm one-by-one. First node will create the conatiner and it will pull the bamos/openface image. Upon image pull the command prompt will change from docker $ to root1111111# , i.e. promt control changes from host to container. Once on container change directory to dcoker folder by ::
 
@@ -188,6 +192,8 @@ d. To check Dokcer is installed properly ::
 
         root1111111# cd /root/openface/docker
      
+     NOTE : If you get an error saying "openface" container already exists or "openface" name has been given to another container,
+          then you could kill and remove the existing openface container using commands in step:12 for fresh installation OR you could attach to this existing container using commands in step:11.   
    
 3. Verify if the required scripts are present in container::
 
