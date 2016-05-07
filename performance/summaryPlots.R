@@ -1,6 +1,4 @@
-#This fuction reads all the files starting with docker_compare*#and ubuntu_compare* and outputs 3 .png files containing boxplo# ts comparing docker vs ubuntu for real,user and sys times
- 
-summaryPlots <- function()
+summaryPlots <- function(demo2)
 {
 
 #Check for required R packages otherwise install them
@@ -71,7 +69,7 @@ p <- p +
     panel.background = element_blank(),
 	legend.position="none") 
 
-ggsave("real_plot.png")
+ggsave(paste(demo,"real_plot.png",sep="_"))
 
 # Sys time plot
 
@@ -86,7 +84,7 @@ p <- p +
     panel.background = element_blank(),
 	legend.position="none") 
 
-ggsave("sys_plot.png")
+ggsave(paste(demo,"sys_plot.png",sep="_"))
 
 # User time plot
 
@@ -101,7 +99,8 @@ p <- p +
     panel.background = element_blank(),
 	legend.position="none") 
 
-ggsave("user_plot.png")
+ggsave(paste(demo,"user_plot.png",sep="-"))
 
 }
 
+summaryPlots("demo2")
