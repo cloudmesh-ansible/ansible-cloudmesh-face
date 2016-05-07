@@ -43,15 +43,14 @@ Installation
   https://github.com/cloudmesh/ansible-cloudmesh-face/blob/master/ubuntu/README.rst/
  
 
-Draft Goals
+Goals
 ===========
 
 * automated deployment with docker on OSX
-* automated deployment on centos
 * automated deployment on ubunto
 
-* automated repetable perfomance applications derived form the 3 demos
-* performance study of the three frameworks
+* automated repetable perfomance applications derived form the 2 demos
+* performance study of the frameworks
 * comparision of capability of systems while using a standard benchmark as to not 
   only compare performance of algorithms, but actual  capability of machines
 * develop unit tests for testing the deployment
@@ -76,11 +75,6 @@ We assume you create with some script (possibly an enhanced version of cloudmesh
 * AWS, I think students get free hours, please be conservative with your use, so 
   get this one first on kilo and chameleon before going to AWS
 * Azure, I am not sure if they offer free hours please lete me know
-
-Preparation and Presentation
-============================
-
-The info here will not be a substitute for the presentation that BAdi and Hyungro are asking for. 
 
 INSTALL
 ========
