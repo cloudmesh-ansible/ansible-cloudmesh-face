@@ -87,7 +87,8 @@ TBD in future
         docker$ source openface-multiserver.sh <Number of swarn nodes to be run>
 
    NOTE : If you get an error saying "openface" container already exists or "openface" name has been given to another container,
-          then you could kill the existing openface container using commands in step:12 for fresh installation OR you could attach to this existing container using commands in step:9.  
+   then you could kill the existing openface container using commands in step:12 for fresh installation OR you could attach to 
+   this existing container using commands in step:9.  
 
 
 
