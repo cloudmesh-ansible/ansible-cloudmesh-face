@@ -1,0 +1,3151 @@
+real,user,sys
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.892,2.702,0.109
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.730,2.587,0.132
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.695,2.584,0.108
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.682,2.581,0.099
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.733,2.614,0.117
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.739,2.665,0.072
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.678,2.581,0.095
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.761,2.629,0.128
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.685,2.587,0.096
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.622,2.530,0.088
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.702,2.595,0.105
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.760,2.666,0.092
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.799,2.727,0.069
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.789,2.695,0.086
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.816,2.711,0.103
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.629,2.558,0.069
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.757,2.638,0.117
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.743,2.566,0.120
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.697,2.615,0.080
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.776,2.663,0.111
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.740,2.654,0.085
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.751,2.669,0.085
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.948,2.870,0.076
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.756,2.672,0.082
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.783,2.665,0.111
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.774,2.683,0.088
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.849,2.772,0.075
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.804,2.689,0.113
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.692,2.568,0.122
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.613,2.530,0.080
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.753,2.661,0.089
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.691,2.624,0.065
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.739,2.653,0.084
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.807,2.685,0.117
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.771,2.692,0.077
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.700,2.606,0.092
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.782,2.666,0.114
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.805,2.690,0.112
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.789,2.687,0.099
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.883,2.700,0.123
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.811,2.714,0.095
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.758,2.625,0.131
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.817,2.696,0.105
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.630,2.552,0.076
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.705,2.592,0.116
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.811,2.713,0.095
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.719,2.609,0.107
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.753,2.650,0.100
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.779,2.682,0.096
+/home/cc/torch/install/bin/luajit: /home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: module 'dpnn' not found:No LuaRocks module found for dpnn
+	no field package.preload['dpnn']
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/.luarocks/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn.lua'
+	no file '/home/cc/torch/install/share/lua/5.1/dpnn/init.lua'
+	no file './dpnn.lua'
+	no file '/home/cc/torch/install/share/luajit-2.1.0-beta1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn.lua'
+	no file '/usr/local/share/lua/5.1/dpnn/init.lua'
+	no file '/home/cc/.luarocks/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/lua/5.1/dpnn.so'
+	no file '/home/cc/torch/install/lib/dpnn.so'
+	no file './dpnn.so'
+	no file '/usr/local/lib/lua/5.1/dpnn.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'error'
+	/home/cc/torch/install/share/lua/5.1/trepl/init.lua:384: in function 'require'
+	...lib/python2.7/dist-packages/openface/openface_server.lua:20: in main chunk
+	[C]: in function 'dofile'
+	...e/cc/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:145: in main chunk
+	[C]: at 0x00406670
+Traceback (most recent call last):
+  File "./demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "./demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/home/cc/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.781,2.666,0.112
