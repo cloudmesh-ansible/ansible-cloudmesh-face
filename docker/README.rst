@@ -156,7 +156,7 @@ TBD in future
 
 11. Get a pictorial presentation of docker and ubuntu time comaprision ::
  
-        docker$ Rscript ../performance/compare_plots_OSX.R
+        docker$ Rscript ../performance/summarPlotsOSX.R
 
 12. The swarm nodes will remain on the host in detached mode.To get attached to any of these nodes run following command ::
       
@@ -258,7 +258,7 @@ d. To check Dokcer is installed properly ::
 
 9. Get a pictorial presentation of docker and ubuntu time comaprision ::
 
-        docker$ Rscript ../performance/compare_plots_OSX.R
+        docker$ Rscript ../performance/summarPlotsOSX.R
 
 10. For future use save the container content ::
 
