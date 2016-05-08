@@ -1,14 +1,16 @@
-eval $(docker-machine env)
+#!/bin/bash
 
 id=$(which docker)
 
-if [ -x $id ];then
+if $ [ -d $id ]
+echo $id
+then
    echo "Docker installed at following location: " $id   
 else
    echo "Docker is not installed. Installing  Docker!!!"
   
-   brew apt-get update
-   brew apt-get install curl
+   brew  update
+   brew  install curl
    curl -fsSL https://get.docker.com/ | sh
   
    sudo usermod -aG docker username
@@ -18,5 +20,5 @@ else
    docker run hello-world	
 	
 fi
-
+eval $(docker-machine env)
 

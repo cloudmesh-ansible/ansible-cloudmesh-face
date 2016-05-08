@@ -2,8 +2,8 @@ summaryPlots <- function()
 {
 
 #Check for required R packages otherwise install them
-if("ggplot2" %in% rownames(installed.packages()) == FALSE) {install.packages("ggplot2")}
-if("tidyr" %in% rownames(installed.packages()) == FALSE) {install.packages("tidyr")}
+if("ggplot2" %in% rownames(installed.packages()) == FALSE) {install.packages("ggplot2",repos="http://cran.rstudio.com/")}
+if("tidyr" %in% rownames(installed.packages()) == FALSE) {install.packages("tidyr",repos="http://cran.rstudio.com/")}
 
 #load packages
 library(ggplot2)
