@@ -63,6 +63,7 @@ TBD in future
 
 2. OpenFace Application
 -----------------------
+All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED !!!
 
 <1> MULTI-SERVER REPLICATION STEPS ::
     ===============================
@@ -181,13 +182,36 @@ TBD in future
       
     NOTE: This command will kill all the swarm nodes from the host and they have to be recreated if required , using step 2.
 
-LIMITATIONS :
+LIMITATIONS ::
 
 Docker Swarm instead of pulling private image automatically on all the swarm nodes simultaneously, performs a one-by-one pull on each
 swarm node container.
 
+BIG DATA ::
+
+The current models in openface project are trained with a combination of the two largest (of August 2015) publicly-available face
+recognition datasets based on names: FaceScrub and CASIA-WebFace.
+
+The models can be found under "openface/models" folder which is downloaded while pulling bamos/openface image ::
+
+nn4.v1
+nn4.v2
+nn4.small1.v1
+nn4.small2.v1
+
+The performance is measured by averaging 500 forward passes with util/profile-network.lua and the following results use OpenBLAS on an 8
+core 3.70 GHz CPU and a Tesla K40 GPU.
+
+Model	            Runtime (CPU)	      Runtime (GPU)
+nn4.v1	      75.67 ms ± 19.97 ms	21.96 ms ± 6.71 ms
+nn4.v2	      82.74 ms ± 19.96 ms	20.82 ms ± 6.03 ms
+nn4.small1.v1	69.58 ms ± 16.17 ms	15.90 ms ± 5.18 ms
+nn4.small2.v1	58.9 ms ± 15.36 ms	13.72 ms ± 4.64 ms
+
 
 =========================================================================================================================================
+
+
 
 <2>SINGLE-SERVER REPLICATION STEPS ::
    ===============================
