@@ -1,7 +1,7 @@
 OPENFACE SETUP in UBUNTU
 =========================
 
-0. Preapere the system
+0. Preapere the system::
 
         sudo apt-get update
         sudo apt-get install curl 
