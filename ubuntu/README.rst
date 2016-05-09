@@ -1,16 +1,37 @@
 OPENFACE SETUP in UBUNTU
 =========================
 
-1. Clone the openface github respository::
-    
-        git clone –recursive https://github.com/cmusatyalab/openface.git
+GVL: Which version of ubunto?
+GVL: several installs need to be done
 
-2. Install Curl::
-    
+GVL: instructions did not tell how much memory needed thus  i get::
+
+  virtual memory exhausted: Cannot allocate memory
+  make[2]: *** [CMakeFiles/dlib_.dir/src/svm_c_trainer.cpp.o] Error 1
+  make[1]: *** [CMakeFiles/dlib_.dir/all] Error 2
+  make: *** [all] Error 2
+
+
+0. Preapere the system::
+
         sudo apt-get update
         sudo apt-get install curl 
+        sudo apt-get install git
+        sudo apt-get install python-numpy python-scipy
+        sudo apt-get install python-pip
+        sudo pip install -U scikit-learn
+        sudo pip install bottleneck
+        sudo apt-get install python-numexpr
+        sudo pip install pandas
+        sudo apt-get intall cmake
+        
+1. Clone the openface github respository::
+    
+        git clone –recursive https://github.com/cmusatyalab/openface.git # GVL: this does not work
+        git clone https://github.com/cmusatyalab/openface.git 
 
-2. Setup Docker::
+# GVL: WHY IS THIS NECESSARY????
+2. Setup Docker:: 
 
       curl -fsSL https://get.docker.com/ | sh
 
@@ -25,14 +46,6 @@ OPENFACE SETUP in UBUNTU
 
 Install Other dependencies::
 
-   sudo apt-get install python-numpy python-scipy
-   sudo pip install -U scikit-learn
-   
-   sudo pip install bottleneck
-   sudo apt-get install python-numexpr
-   sudo pip install pandas
-
-
 
 3. Install OpenCV::
 
@@ -46,6 +59,12 @@ Install Other dependencies::
         sudo apt-get install libboost-all-dev
 
 5. Install dlib::
+
+        GVL WHAT IS DLIB, WHER IS IT COMMING FROM?
+        GVL is dlib from here?
+        
+        wget https://sourceforge.net/projects/dclib/files/dlib/v18.16/dlib-18.16.tar.bz2/download
+        mv download dlib-18.16.tar.bz2
 
         mkdir -p ~/src 
         cd ~/src tar xf dlib-18.16.tar.bz2 
