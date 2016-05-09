@@ -1,4 +1,3 @@
-
 VM Replication steps
 ====================
 
