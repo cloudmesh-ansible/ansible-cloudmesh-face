@@ -1,0 +1,600 @@
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
+Predict SteveCarell with 0.50 confidence.
+
+=== ../images/examples/lennon-2.jpg ===
+Predict DavidBoreanaz with 0.43 confidence.
