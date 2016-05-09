@@ -56,7 +56,8 @@ Install Other dependencies::
         GVL WHAT IS DLIB, WHER IS IT COMMING FROM?
         GVL is dlib from here?
         
-        wget http://en.osdn.jp/frs/g_redir.php?m=kent&f=%2Fdclib%2Fdlib%2Fv18.16%2Fdlib-18.16.tar.bz2
+        wget https://sourceforge.net/projects/dclib/files/dlib/v18.16/dlib-18.16.tar.bz2/download
+        mv download dlib-18.16.tar.bz2
 
         mkdir -p ~/src 
         cd ~/src tar xf dlib-18.16.tar.bz2 
