@@ -183,13 +183,15 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
     
 14. BIG DATA: Test Openface on big dataset (MUCT)  
  
-- Download the MUCT dataset via git 
+- Download the MUCT dataset via git ::
+
         cd  ansible-cloudmesh-face
         git clone https://github.com/StephenMilborrow/muct.git  
  
   Start the docker swarm container using step 2 and 3 and run the following commands inside the containers:
  
- - Run the demos using a big dataset 
+ - Run the demos using a big dataset ::
+ 
         ./demo2big.sh N 
         ./demo3big.sh N 
 
