@@ -6,12 +6,19 @@ OPENFACE SETUP in UBUNTU
         sudo apt-get update
         sudo apt-get install curl 
         sudo apt-get install git
+        sudo apt-get install python-numpy python-scipy
+        sudo pip install -U scikit-learn
+        sudo pip install bottleneck
+        sudo apt-get install python-numexpr
+        sudo pip install pandas
         
 1. Clone the openface github respository::
     
-        git clone –recursive https://github.com/cmusatyalab/openface.git
+        git clone –recursive https://github.com/cmusatyalab/openface.git # GVL: this does not work
+        git clone https://github.com/cmusatyalab/openface.git 
 
-2. Setup Docker::
+# GVL: WHY IS THIS NECESSARY????
+2. Setup Docker:: 
 
       curl -fsSL https://get.docker.com/ | sh
 
@@ -26,12 +33,7 @@ OPENFACE SETUP in UBUNTU
 
 Install Other dependencies::
 
-   sudo apt-get install python-numpy python-scipy
-   sudo pip install -U scikit-learn
-   
-   sudo pip install bottleneck
-   sudo apt-get install python-numexpr
-   sudo pip install pandas
+
 
 
 
