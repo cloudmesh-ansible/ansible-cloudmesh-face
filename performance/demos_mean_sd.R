@@ -67,12 +67,16 @@ colnames(demo2_mean_sd)=c("Mean","SD")
 
 write.csv(demo2_mean_sd,"demo2_mean_sd.csv")
 
-
+rm(ufiles)
+rm(dfiles)
+rm(f1)
+rm(f2)
+rm(f12)
 ###Demo3
 
 
-ufiles=list.files(path=".", pattern="^ubuntu_classifer.*csv$")
-dfiles=list.files(path=".", pattern="^docker_classifer.*csv$")
+ufiles=list.files(path=".", pattern="^ubuntu_classifier.*csv$")
+dfiles=list.files(path=".", pattern="^docker_classifier.*csv$")
 
 for (file in ufiles)
 {
