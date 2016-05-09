@@ -2,6 +2,15 @@ OPENFACE SETUP in UBUNTU
 =========================
 
 GVL: Which version of ubunto?
+GVL: several installs need to be done
+
+GVL: instructions did not tell how much memory needed thus  i get::
+
+  virtual memory exhausted: Cannot allocate memory
+  make[2]: *** [CMakeFiles/dlib_.dir/src/svm_c_trainer.cpp.o] Error 1
+  make[1]: *** [CMakeFiles/dlib_.dir/all] Error 2
+  make: *** [all] Error 2
+
 
 0. Preapere the system::
 
@@ -14,6 +23,7 @@ GVL: Which version of ubunto?
         sudo pip install bottleneck
         sudo apt-get install python-numexpr
         sudo pip install pandas
+        sudo apt-get intall cmake
         
 1. Clone the openface github respository::
     
@@ -35,9 +45,6 @@ GVL: Which version of ubunto?
         docker run hello-world
 
 Install Other dependencies::
-
-
-
 
 
 3. Install OpenCV::
