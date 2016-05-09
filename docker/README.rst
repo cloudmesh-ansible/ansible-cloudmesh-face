@@ -92,8 +92,8 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
    and key-store as openface-machine.
    
    NOTE : If you get an error saying "openface" container already exists or "openface" name has been given to another container,
-   then you could kill the existing openface container using commands in step:13 for fresh installation OR you could attach to 
-   this existing container using commands in step:12.  
+   then you could kill the existing openface container using commands in step:13 - 
+   "**docker-machine rm $(docker-machine ls -q)**".
 
 
 
