@@ -53,7 +53,7 @@ Install Other dependencies::
 
 5. Install dlib::
 
-        WHAT IS DLIB, WHER IS IT COMMING FROM?
+        GVL WHAT IS DLIB, WHER IS IT COMMING FROM?
 
         mkdir -p ~/src 
         cd ~/src tar xf dlib-18.16.tar.bz2 
