@@ -93,7 +93,8 @@ Step 1:  Install Openface ::
 
 Step 2: Copy Scripts for running demo2 (demo2b.sh) and demo3 (demo3b.sh) to VMs ::
  
- Once the installation is complete, run a script to copy the demo2, demo3 script to run on the examples and demo2, demo3 scripts
+ Once the installation is complete, run a script to copy the demo2, demo3 scripts to run on the example data and MUCT data
+
      ./democopy.sh
 
 Step 3:  Execute the demo2 and demo 3 for a certain number of iterations on VMs (used N=50) ::
