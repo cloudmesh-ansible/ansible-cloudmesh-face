@@ -1,17 +1,16 @@
 ---
-- hosts: webservers
-  remote_user: cc
-  become: yes
-
+- hosts: webservers1
+  
   tasks:
   - name: Clone openface git directory
     git:
       repo: https://github.com/cmusatyalab/openface.git
-      dest: /home/cc/openface
+      dest: ~/openface
       recursive: yes
 
   - name: Install software dependencies
     apt: pkg={{ item }} state=installed
+    become: yes
     with_items:
       - build-essential
       - ipython
@@ -40,7 +39,8 @@
       - libreadline-dev
 
   - name: Install other dependencies
-    pip: name={{item}} 
+    pip: name={{item}}
+    become: yes 
     with_items:
       - scikit-learn 
       - dlib
@@ -49,7 +49,7 @@
   - name: Clone Torch Repository
     git:
         repo: https://github.com/torch/distro.git
-        dest: /home/cc/torch
+        dest: ~/torch
         recursive: yes
         force: yes
         accept_hostkey: yes
@@ -59,28 +59,31 @@
     file: path=/home/cc/torch state=directory owner=cc group=cc mode=0777 recurse=yes
 
   - name: Install Torch
-    shell: bash install-deps chdir=/home/cc/torch
-    shell: ./install.sh chdir=/home/cc/torch
+    become_method: sudo
+    shell: bash install-deps chdir=~/torch
+    shell: yes | ./install.sh chdir=~/torch
 
   - name: Source bashrc
-    shell: source ~/.bashrc
-    args: 
-      executable: /bin/bash          	 
+    shell: source ~/.bashrc chdir=~/torch
+    args:
+      executable: /bin/bash 
   
   - name: Install Torch dependencies
-    shell: /home/cc/torch/install/bin/luarocks install dpnn
-    shell: /home/cc/torch/install/bin/luarocks install nn
-    shell: /home/cc/torch/install/bin/luarocks install optim
-    shell: /home/cc/torch/install/bin/luarocks install csvigo
-    shell: /home/cc/torch/install/bin/luarocks install cutorch 
-    shell: /home/cc/torch/install/bin/luarocks install cunn
-    shell: /home/cc/torch/install/bin/luarocks install fblualib
-    shell: /home/cc/torch/install/bin/luarocks install torchx
-    shell: /home/cc/torch/install/bin/luarocks install optnet 
+    become_method: sudo
+    shell: ~/torch/install/bin/luarocks install dpnn
+    shell: ~/torch/install/bin/luarocks install nn
+    shell: ~/torch/install/bin/luarocks install optim
+    shell: ~/torch/install/bin/luarocks install csvigo
+    shell: ~/torch/install/bin/luarocks install cutorch 
+    shell: ~/torch/install/bin/luarocks install cunn
+    shell: ~/torch/install/bin/luarocks install fblualib
+    shell: ~/torch/install/bin/luarocks install torchx
+    shell: ~/torch/install/bin/luarocks install optnet 
 
-  - name: Install Openface
-    shell: sudo python2 setup.py install chdir=/home/cc/openface
-    shell: models/get-models.sh chdir=/home/cc/openface
+  - name: Install openface
+    become_method: sudo
+    shell: python setup.py install chdir=~/openface
+    shell: models/get-models.sh chdir=~/openface
 
-  - name: Create ubuntu directory
-    file: path=/home/cc/ubuntu state=directory owner=cc group=cc mode=u+rwx recurse=yes
+
+ 
