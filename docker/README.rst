@@ -180,6 +180,20 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
         $ docker-machine rm $(docker-machine ls -q)
       
     NOTE: This command will kill all the swarm nodes from the host and they have to be recreated if required , using step 2.
+    
+14. BIG DATA: Test Openface on big dataset (MUCT)  
+ 
+- Download the MUCT dataset via git 
+        cd  ansible-cloudmesh-face
+        git clone https://github.com/StephenMilborrow/muct.git  
+ 
+  Start the docker swarm container using step 2 and 3 and run the following commands inside the containers:
+ 
+ - Run the demos using a big dataset 
+        ./demo2big.sh N 
+        ./demo3big.sh N 
+
+    
 
 LIMITATIONS ::
 
@@ -206,6 +220,10 @@ nn4.v1	      75.67 ms ± 19.97 ms	21.96 ms ± 6.71 ms
 nn4.v2	      82.74 ms ± 19.96 ms	20.82 ms ± 6.03 ms
 nn4.small1.v1	69.58 ms ± 16.17 ms	15.90 ms ± 5.18 ms
 nn4.small2.v1	58.9 ms ± 15.36 ms	13.72 ms ± 4.64 ms
+
+For this project, for majority of the simulations, a subset of images from the dataset that is already being provided as part of the images directory of openface installation was utilized for the assessment of performance of ubuntu and docker runs on multiple VMs. 
+
+MUCT (Milborrow / University of Cape Town) dataset: In addition, images from MUCT database [5] was used for a quick evaluation of the Ubuntu performance on a single VM. The MUCT database consists of 3755 images from 276 unique subjects. The main motivation for the creation of the database was to provide more variety than the existing publicly available landmarked databases — variety in terms of lighting, age, and ethnicity. The MUCT landmarks are the 68 points defined by the popular FGnet [3] markup of the XM2VTS database [2], plus four extra points for each eye. This dataset is available for download via github at https://github.com/StephenMilborrow/muct.git   
 
 
 =========================================================================================================================================
