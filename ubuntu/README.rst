@@ -117,6 +117,7 @@ Step 5: Run analysis to generate descriptives and box plots ::
        Rscript demo_mean_sd.R
 
 Step 6: Test Openface on big dataset (MUCT) ::
+
  - Download the MUCT dataset via git
         ssh cc@vm-ip
         git clone https://github.com/StephenMilborrow/muct.git 
