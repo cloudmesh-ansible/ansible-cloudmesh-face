@@ -80,13 +80,13 @@ Step 1:  Install Openface
 * (i) using the ansible script (ubuntu_openface.yml) that using ansible methods to install 
   all the dependencies and the openface software::
   
-      ansible-playbook  ubuntu_openface.yml -i inventory.txt -u cc 
+    ansible-playbook  ubuntu_openface.yml -i inventory.txt -u cc 
       
 OR
 
 * (ii) Run the shell script directly on the VMs::
  
-     ./openface_ubuntu.install.sh
+    ./openface_ubuntu.install.sh
 
 Step 2: Copy Scripts for running demo2 (demo2b.sh) and demo3 (demo3b.sh) to VMs. 
 Once the installation is complete, run a script to copy the demo2, demo3 scripts 
@@ -103,8 +103,9 @@ The results files (ubuntu_compare_uid.csv and ubuntu_classifier_uid.csv ) are be
 
 Step 4: Copy the results to the local git directory (ansible-cloudmesh-face/performance folder) for analysis ::
 
- scp cc@vm-ip:openface/ubuntu* .csv .
- Repeat this for all VMs
+   scp cc@vm-ip:openface/ubuntu* .csv .
+ 
+Repeat this for all VMs
 
 Step 5: Run analysis to generate descriptives and box plots 
 
