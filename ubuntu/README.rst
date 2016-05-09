@@ -1,14 +1,15 @@
 OPENFACE SETUP in UBUNTU
 =========================
 
+0. Preapere the system
+
+        sudo apt-get update
+        sudo apt-get install curl 
+        sudo apt-get install git
+        
 1. Clone the openface github respository::
     
         git clone –recursive https://github.com/cmusatyalab/openface.git
-
-2. Install Curl::
-    
-        sudo apt-get update
-        sudo apt-get install curl 
 
 2. Setup Docker::
 
