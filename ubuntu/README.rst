@@ -7,6 +7,7 @@ OPENFACE SETUP in UBUNTU
         sudo apt-get install curl 
         sudo apt-get install git
         sudo apt-get install python-numpy python-scipy
+        sudo apt-get install python-pip
         sudo pip install -U scikit-learn
         sudo pip install bottleneck
         sudo apt-get install python-numexpr
