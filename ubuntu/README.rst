@@ -12,14 +12,14 @@ OPENFACE SETUP in UBUNTU
 
 2. Setup Docker::
 
-        curl -fsSL https://get.docker.com/ | sh
+      curl -fsSL https://get.docker.com/ | sh
 
 
-    If not logged in as root, run the command below ::
+   If not logged in as root, run the command below ::
     
         sudo usermod -aG docker username 
     
-    Verify docker is installed correctly::
+   Verify docker is installed correctly::
     
         docker run hello-world
 
