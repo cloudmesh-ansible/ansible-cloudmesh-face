@@ -1,22 +1,16 @@
 OPENFACE SETUP in UBUNTU
 =========================
 
-1. Clone the openface github respository
-
-    ::
+1. Clone the openface github respository::
     
         git clone –recursive https://github.com/cmusatyalab/openface.git
 
-2. Install Curl
-
-    ::
+2. Install Curl::
     
         sudo apt-get update
         sudo apt-get install curl 
 
-2. Setup Docker
-
-    ::
+2. Setup Docker::
 
         curl -fsSL https://get.docker.com/ | sh
 
@@ -31,7 +25,7 @@ OPENFACE SETUP in UBUNTU
 
 Install Other dependencies::
 
-        sudo apt-get install python-numpy python-scipy
+   sudo apt-get install python-numpy python-scipy
    sudo pip install -U scikit-learn
    
    sudo pip install bottleneck
@@ -40,18 +34,15 @@ Install Other dependencies::
 
 
 
-3. Install OpenCV
-
-    ::
+3. Install OpenCV::
 
         git clone https://github.com/Itseez/opencv.git 
         cd ~/opencv 
         mkdir release cd release cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local make sudo make install
         sudo apt-get install python-opencv
 
-4. Install boost libraries first 
+4. Install boost libraries first::
 
-    ::
         sudo apt-get install libboost-all-dev
 
 5. Install dlib::
@@ -71,12 +62,14 @@ Install Other dependencies::
     cd ~/torch; bash install-deps; ./install.sh
     for NAME in dpnn nn optim csvigo cutorch cunn fblualib torchx; do luarocks install $NAME; done
 
-7. On Linux with bash source ~/.bashrc
+7. On Linux with bash::
+
+    source ~/.bashrc
 
 8. Install python dependencies::
 
-        cd openface
-        sudo python2 setup.py install
+    cd openface
+    sudo python2 setup.py install
 
 
 VM Replication steps
