@@ -1,6 +1,8 @@
 OPENFACE SETUP in UBUNTU
 =========================
 
+GVL: Which version of ubunto?
+
 0. Preapere the system::
 
         sudo apt-get update
@@ -50,6 +52,8 @@ Install Other dependencies::
         sudo apt-get install libboost-all-dev
 
 5. Install dlib::
+
+        WHAT IS DLIB, WHER IS IT COMMING FROM?
 
         mkdir -p ~/src 
         cd ~/src tar xf dlib-18.16.tar.bz2 
