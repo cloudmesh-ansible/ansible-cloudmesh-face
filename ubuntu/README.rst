@@ -77,17 +77,20 @@ VM Replication steps
 
 Step 1:  Install Openface
  
-   * (i) using the ansible script (ubuntu_openface.yml) that using ansible methods to install all the dependencies and the openface software::
-   
-         ansible-playbook  ubuntu_openface.yml -i inventory.txt -u cc 
+* (i) using the ansible script (ubuntu_openface.yml) that using ansible methods to install 
+  all the dependencies and the openface software::
   
-  OR
+      ansible-playbook  ubuntu_openface.yml -i inventory.txt -u cc 
+      
+OR
 
- * (ii) Run the shell script directly on the VMs::
+* (ii) Run the shell script directly on the VMs::
  
      ./openface_ubuntu.install.sh
 
-Step 2: Copy Scripts for running demo2 (demo2b.sh) and demo3 (demo3b.sh) to VMs. Once the installation is complete, run a script to copy the demo2, demo3 scripts to run on the example data and MUCT data::
+Step 2: Copy Scripts for running demo2 (demo2b.sh) and demo3 (demo3b.sh) to VMs. 
+Once the installation is complete, run a script to copy the demo2, demo3 scripts 
+to run on the example data and MUCT data::
 
      ./democopy.sh
 
@@ -105,7 +108,11 @@ Step 4: Copy the results to the local git directory (ansible-cloudmesh-face/perf
 
 Step 5: Run analysis to generate descriptives and box plots 
 
- Once the docker files were generated then run the Rscripts to generate 3 plots for demo2 and 3 plots for demo3 corresponding to use, real and sys times and further generate the means and SDs for comparison. This script needs to be run from the local directory ((ansible-cloudmesh-face/performance folder) containing all the results csv files
+ Once the docker files were generated then run the Rscripts to generate 
+ 3 plots for demo2 and 3 plots for demo3 corresponding to use, real and 
+ sys times and further generate the means and SDs for comparison. This 
+ script needs to be run from the local directory 
+ ((ansible-cloudmesh-face/performance folder) containing all the results csv files::
        
        Rscript demo2_summaryPlots.R
        Rscript demo3_summaryPlots.R
