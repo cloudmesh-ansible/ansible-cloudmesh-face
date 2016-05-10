@@ -72,13 +72,11 @@ RHEL
 
 TBD in future
 
-2. OpenFace Application
------------------------
+
+1.  OpenFace Application: MULTI-SERVER REPLICATION STEPS
+--------------------------------------------------------
 
 The next  commands should be executed on the terminal on which docker is launched.
-
-Step 2.1 MULTI-SERVER REPLICATION STEPS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These steps will execute openface project on multiple docker swarm
 nodes and collect their optputs for graph plots.
@@ -226,17 +224,15 @@ nodes and collect their optputs for graph plots.
         source demo3big.sh  <No. of times script to be run> 
 
 
-    
-
-LIMITATIONS
-===========
+1.1 LIMITATIONS
+^^^^^^^^^^^^^^^
 
 Docker Swarm instead of pulling private image automatically on all the
 swarm nodes simultaneously, performs a one-by-one pull on each swarm
 node container.
 
-BIG DATA
---------
+1.2 BIG DATA
+^^^^^^^^^^^^
 
 The current models in openface project are trained with a combination
 of the two largest (of August 2015) publicly-available face
@@ -284,8 +280,8 @@ points for each eye. This dataset is available for download via github
 at https://github.com/StephenMilborrow/muct.git
 
 
-SINGLE-SERVER REPLICATION STEPS
-=====================================
+2.  OpenFace Application: SINGLE-SERVER REPLICATION STEPS
+---------------------------------------------------------
 
 These steps will execute openface project on single docker container
 collect optputs for graph plots.
