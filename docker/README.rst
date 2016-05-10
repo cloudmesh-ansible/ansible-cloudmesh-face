@@ -44,7 +44,34 @@ To install docker on OSX follow these steps
 5. Test out a simple docker example::
 
       $ docker run hello-world
-      
+
+6. To compare results the information about the system can be found on
+   OSX with::
+
+     system_profiler SPHardwareDataType | fgrep -v UUID | fgrep -v Serial
+
+   You will see something like::
+
+
+     Hardware:
+
+        Hardware Overview:
+
+          Model Name: MacBook Pro
+          Model Identifier: MacBookPro11,3
+          Processor Name: Intel Core i7
+          Processor Speed: 2.8 GHz
+          Number of Processors: 1
+          Total Number of Cores: 4
+          L2 Cache (per Core): 256 KB
+          L3 Cache: 6 MB
+          Memory: 16 GB
+          Boot ROM Version: MBP112.0138.B17
+          SMC Version (system): 2.19f12
+
+
+
+   
    
 Step 0.2 Install Docker on Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -203,7 +230,7 @@ docker swarm nodes and collect their optputs for graph plots.
 
     The files are stored in the `ansible-cloudmesh-face/performance`
     folder.
-	
+        
 
 
 12. The swarm nodes will remain on the host in detached mode.To get
