@@ -22,12 +22,14 @@ import numpy as np
 import pandas as pd
 from pandas import DataFrame
 import matplotlib.pyplot as plt
+from pprint import pprint
 
 import warnings;
 
 with warnings.catch_warnings():
     warnings.simplefilter("ignore");
     import matplotlib.pyplot as plt
+
 
 if __name__ == '__main__':
     arguments = docopt(__doc__)
@@ -96,7 +98,7 @@ if __name__ == '__main__':
                     data["value"] = v
                     values.append([data['value'], "{os}_{host}".format(**data)])
 
-    print(values)
+    pprint(values)
 
     df = DataFrame(values)
     df.columns = ['time', 'host']
