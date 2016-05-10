@@ -1,25 +1,33 @@
 #!/bin/bash
 
+now=$(date +"%m_%d_%Y_%H_%M_%S")
+
 if [ -z "$*" ]; then echo "Usage: ./sh <NUMBER OF TIMES SCRIPTS TO BE RUN>";
 
 else
 
-    CID="$(cat /proc/self/cgroup | grep "docker" | sed s/\\//\\n/g | tail -n1 | cut -c -12)"
-
     echo "Generating output ..."
 
-    echo "real,user,sys" > docker_classifier_$CID.csv && \
+    CID="$(cat /proc/self/cgroup | grep "docker" | sed s/\\//\\n/g | tail -n1 | cut -c -12)"
+
+    NAME="$HOST""_""$now""_""$CID"
+    echo "Date: $now"
+    echo "Host: $HOST"
+    echo "ID:   $NAME"
+
+
+    echo "real,user,sys" > results/docker_classifier_$CID.csv && \
     (for i in `seq $1`; do \
       TIMEFORMAT=%R','%U','%S && \
       time ../demos/classifier.py infer ../models/openface/celeb-classifier.nn4.small2.v1.pkl ../images/examples/{carell,adams,lennon}* \
-    ;done)>docker_classifier_$CID.txt  2>> docker_classifier_$CID.csv
+    ;done)>results/docker_classifier_$NAME.txt  2>> results/docker_classifier_$NAME.csv
 
-    echo "Output generated for Container: $CID"
+    echo "Output generated for Container: $NAME"
     echo
     echo "Outputfiles generated:"
-    echo "docker_classifier_$CID.txt"
-    echo "docker_classifier_$CID.csv"
+    echo "results/docker_classifier_$NAME.txt"
+    echo "results/docker_classifier_$NAME.csv"
     echo
-    cat docker_compare_$CID.csv
+    cat results/docker_compare_$NAME.csv
 
 fi
