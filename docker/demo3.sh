@@ -16,7 +16,7 @@ else
     echo "ID:   $NAME"
 
 
-    echo "real,user,sys" > results/docker_classifier_$CID.csv && \
+    echo "real,user,sys" > results/docker_classifier_$NAME.csv && \
     (for i in `seq $1`; do \
       TIMEFORMAT=%R','%U','%S && \
       time ../demos/classifier.py infer ../models/openface/celeb-classifier.nn4.small2.v1.pkl ../images/examples/{carell,adams,lennon}* \
