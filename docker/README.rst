@@ -392,7 +392,7 @@ d. To check Dokcer is installed properly ::
 
        $ docker commit openface
 
-   You can re-attach an dettached container saved container by :: 
+    You can re-attach an dettached container saved container by :: 
    
        $ docker exec -t -i openface /bin/bash
       
