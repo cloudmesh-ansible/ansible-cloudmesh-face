@@ -361,7 +361,8 @@ d. To check Dokcer is installed properly::
    
         docker# ls -l  
       
-    demo2.sh and demo3.sh should be present in the current directory. 
+
+   demo2.sh and demo3.sh should be present in the current directory. 
 
 4. To run Face Comparison demo::
       
