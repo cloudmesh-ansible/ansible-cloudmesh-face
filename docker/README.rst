@@ -349,7 +349,7 @@ d. To check Docker is installed properly (use only on OSX)::
         root1111111# cd /root/openface/docker
      
    This will install all the required dependencies, check if docker is
-   installed properly,copy the required scripts from host to
+   installed properly, copy the required scripts from host to
    docker, pull bamos/openface docker hub repositiory and create a
    docker container called `openface`. The prompt will change from
    `$docker>` to `container-ID>`.  Once in the container's command-line
