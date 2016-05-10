@@ -22,55 +22,55 @@ if __name__ == '__main__':
     arguments = docopt(__doc__)
     print(arguments)
 
-kinds = ['classifier', 'compare']
+    kinds = ['classifier', 'compare']
 
-hosts = Parameter.expand(arguments["--host"])
-oses = Parameter.expand(arguments["--os"])
+    hosts = Parameter.expand(arguments["--host"])
+    oses = Parameter.expand(arguments["--os"])
 
-print (hosts)
-print (oses)
+    print (hosts)
+    print (oses)
 
-#
-# CLEAN
-#
-for host in hosts:
-    for osystem in oses:
-        for kind in kinds:
-            data = {
-                "os": osystem,
-                "host": host,
-                "kind": kind
-            }
+    #
+    # CLEAN
+    #
+    for host in hosts:
+        for osystem in oses:
+            for kind in kinds:
+                data = {
+                    "os": osystem,
+                    "host": host,
+                    "kind": kind
+                }
 
-            name = "{os}_{kind}_{host}.csv".format(**data)
-            if os.path.isfile(name):
-                os.remove(name)
-                print ("delete", name)
-for host in hosts:
-    for osystem in oses:
-        for kind in kinds:
-            data = {
-                "os": osystem,
-                "host": host,
-                "kind": kind
-            }
-            data["name"] = "{os}_{kind}_{host}".format(**data)
-            pattern = "{name}_*.csv".format(**data)
-            files = glob.glob(pattern)
-            if files != []:
-                r = ["real,user,sys\n"]
+                name = "{os}_{kind}_{host}.csv".format(**data)
+                if os.path.isfile(name):
+                    os.remove(name)
+                    print ("delete", name)
+    for host in hosts:
+        for osystem in oses:
+            for kind in kinds:
+                data = {
+                    "os": osystem,
+                    "host": host,
+                    "kind": kind
+                }
+                data["name"] = "{os}_{kind}_{host}".format(**data)
+                pattern = "{name}_*.csv".format(**data)
+                files = glob.glob(pattern)
+                if files != []:
+                    r = ["real,user,sys\n"]
 
-                for f in files:
-                    with open(f) as f:
-                        lines = f.readlines()[1:]
-                    r = r + lines
+                    for f in files:
+                        with open(f) as f:
+                            lines = f.readlines()[1:]
+                        r = r + lines
 
-                print ("Merge Files -> {name}.csv\n".format(**data))
-                for f in files:
-                    print ('  ', f)
-                print()
-                with open("{name}.csv".format(**data), 'w') as f:
-                    f.write(''.join(r))
+                    print ("Merge Files -> {name}.csv\n".format(**data))
+                    for f in files:
+                        print ('  ', f)
+                    print()
+                    with open("{name}.csv".format(**data), 'w') as f:
+                        f.write(''.join(r))
 
 '''
 
