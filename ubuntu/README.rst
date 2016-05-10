@@ -6,11 +6,16 @@ Step 1:  Install Openface
 
 You can install openface either with ansible or a shell script.
 
-**Ansible**: using the ansible script (ubuntu_openface.yml) that using ansible methods to install all the dependencies and the openface software::
+Step 1.a: Ansible
+~~~~~~~~~~~~~~~~~
+
+Using the ansible script (ubuntu_openface.yml) that using ansible methods to install all the dependencies and the openface software::
   
     ansible-playbook  ubuntu_openface.yml -i inventory.txt -u cc 
       
-or **Shell Script**: run the shell script directly on the VMs::
+Step 1.b: Shell script
+~~~~~~~~~~~~~~~~~~~~~~
+This is an alternative install to the ansible script using just a shell script and installs directly into the VM. If you have done the ansible install, you can skip this step::
 
     ./openface_ubuntu.install.sh
 
