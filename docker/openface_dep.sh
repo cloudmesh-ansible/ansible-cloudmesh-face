@@ -2,7 +2,7 @@
 
 id=$(which docker)
 
-if $ [ -d $id ]
+if [ -d $id ]
 echo $id
 then
    echo "Docker installed at following location: " $id   
