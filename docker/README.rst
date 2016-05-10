@@ -183,7 +183,7 @@ docker swarm nodes and collect their optputs for graph plots.
  
         docker$ source gather-csv.sh 
 
-11. Get a pictorial presentation of docker and ubuntu time comaprision:: 
+11. Get a pictorial presentation of docker and ubuntu time comparison:: 
  
         cd ../performance
         performance$ Rscript plot_demo2.R
@@ -195,7 +195,7 @@ docker swarm nodes and collect their optputs for graph plots.
     * `demo2_sys_plot.png`
     * `demo2_user_plot.png`
 
-    For Demo2 Face comparison graphs are saved by the names:
+    For Demo 3, Face comparison graphs are saved by the names:
 
     * `demo3_real_plot.png`
     * `demo3_sys_plot.png`
@@ -393,7 +393,7 @@ d. To check Dokcer is installed properly::
    * `demo2_sys_plot.png`
    * `demo2_user_plot.png`
 
-   For Demo2 Face comparison graphs are saved by the names:
+   For Demo 3, Face comparison graphs are saved by the names:
 
    * `demo3_real_plot.png`
    * `demo3_sys_plot.png`
