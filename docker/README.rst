@@ -15,7 +15,7 @@ Notation:
 * commands executed on the container are indicated with root11111111#
   , where root<some number> will be the container id.
 * the name of the container is `openface`, which can be checked by
-  command "docker ps".
+  command `docker ps`.
 
 0. INSTALL DOCKER
 -----------------
@@ -32,7 +32,7 @@ To install docker on OSX follow these steps
       $ ls /usr/local/bin/docker*
       
 3. Once docker is installed, got to your launch pad and click on
-   quickstart docker icon to launch it with the terminal. ::
+   quickstart docker icon to launch it with the terminal::
       
    NOTE: Henceforth all the commands will be executed on this
    terminal where docker has been started.
@@ -76,10 +76,9 @@ TBD in future
 1.  OpenFace Application: MULTI-SERVER REPLICATION STEPS
 --------------------------------------------------------
 
-The next  commands should be executed on the terminal on which docker is launched.
-
-These steps will execute openface project on multiple docker swarm
-nodes and collect their optputs for graph plots.
+The next commands should be executed on the terminal on which docker
+is launched. These steps will execute openface project on multiple
+docker swarm nodes and collect their optputs for graph plots.
       
 1. Clone the ansible-cloudmesh-face github respository ::
     
@@ -102,12 +101,15 @@ nodes and collect their optputs for graph plots.
    
    Note: Please be aware that in addition to the swarm nodes you
    specified there will always a Master-node and Machine-node created
-   to enable the process. The name of the nodes will be
-   openface-node<number of the node>.Master node can be identified as
-   openface-master and key-store as openface-machine.
+   to enable the process. The name of the nodes will be::
    
-   NOTE: If you get an error saying "openface" container already
-   exists or "openface" name has been given to another container, then
+     openface-node<number of the node>
+
+   Master node can be identified as
+   `openface-master` and key-store as `openface-machine`.
+   
+   NOTE: If you get an error saying `openface` container already
+   exists or `openface` name has been given to another container, then
    you could kill the existing openface container using commands -
    docker-machine rm $(docker-machine ls -q).
 
@@ -131,8 +133,8 @@ nodes and collect their optputs for graph plots.
       
        docker# source demo2.sh <Number of times script to be run>
     
-   This command will create files `docker_compare_<container-id>.csv"
-   and `docker_compare_<container-id>.txt" as output in the current
+   This command will create files `docker_compare_<container-id>.csv`
+   and `docker_compare_<container-id>.txt` as output in the current
    directory.
    
    Verify these output files :: 
