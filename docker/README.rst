@@ -377,23 +377,21 @@ d. To check Dokcer is installed properly::
         docker# cat docker_compare_$CID.csv         
         docker# cat docker_compare_$CID.txt
 
+	
    Note CID is the id of the container.
 
 5. To run Face Recognotion demo::
    
         docker# source demo3.sh <Number of times script to be run>
 
-   This command will carete files
-   `docker_classifier_<container-id>.csv` and
-   `docker_classifier_<container-id>.txt` as output in the current
-   directory.
-      
-   Verify these output files::
+   It will create the following files in the current
+   directory::
    
         docker# cat docker_classifier_$CID.csv
         docker# cat docker_classifier_$CID.txt
 
-      Note CID is the id of the container.
+	
+   Note CID is the id of the container.
 
 6. Exit from the container of node1::
   
