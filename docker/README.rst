@@ -12,7 +12,7 @@ performance testing.
 Notation:
 
 * commands executed on the host system are indicated with $
-* commands executed on the container are indicated with root11111111#
+* commands executed on the container are indicated with root#
   , where root<some number> will be the container id.
 * the name of the container is `openface`, which can be checked by
   command `docker ps`.
@@ -146,10 +146,10 @@ docker swarm nodes and collect their optputs for graph plots.
 3. Container will be created for nodes in the swarm one-by-one. First
    node will create the conatiner and it will pull the bamos/openface
    image. Upon image pull the command prompt will change from `docker $`
-   to `root1111111#`, i.e. promt control changes from host to
+   to `root#`, i.e. promt control changes from host to
    container. Once on container change directory to dcoker folder by::
 
-        root1111111# cd /root/openface/docker
+        root# cd /root/openface/docker
 
 4. Verify if the required scripts are present in container::
    
@@ -194,7 +194,7 @@ docker swarm nodes and collect their optputs for graph plots.
   
 8. As soon as node1 is exited new container for next node will open
    and it will pull the bamos/openface image. Upon image pull the
-   command prompt will change from `docker $` to `root1111111#` and this
+   command prompt will change from `docker $` to `root#` and this
    will be repeated for all the nodes in the swarm cluster::
 
         Repeat step 3 to 7 for all the nodes
@@ -361,37 +361,93 @@ d. To check Docker is installed properly (use only on OSX)::
    commands in step:11 for fresh installation OR you could attach to
    this existing container using commands in step:10.
    
-3. Verify if the required scripts are present in the container::
+3. Optionally you can verify if the required scripts are present in
+   the container::
    
-        docker# ls -l  
+        root# ls demo*.sh  
       
-
+   
    demo2.sh and demo3.sh should be present in the current directory. 
 
 4. To run the face comparison demo execute the following command::
       
-        docker# source demo2.sh <Number of times script to be run>
+        root# source demo2.sh <Number of times script to be run>
 
    This command will create the output files::
    
-        docker# cat docker_compare_$CID.csv         
-        docker# cat docker_compare_$CID.txt
+        root# cat docker_compare_$NAME.csv         
+        root# cat docker_compare_$NAME.txt
 
-	
-   Note CID is the id of the container.
+   where NAME contains the hostname on which you run the docker
+   container, the date, the time, and a unique ID for the
+   container. Thus it will allow you to run the command multiple times
+   and generate new output each time.
 
-5. To run Face Recognotion demo::
+   Example: run the demo2 10 times
+
+        root# source demo2.sh 10
+
+        Generating Output ...
+	Date: 05_10_2016_13_52_16
+	Host: big
+	ID:   big_05_10_2016_13_52_16_457ab6d989b4
+	Output generated for Container: big_05_10_2016_13_52_16_457ab6d989b4 
+
+	Outputfiles generated:
+	results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.txt
+	results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.csv
+
+	real,user,sys
+	9.368,9.230,0.090
+	9.097,9.000,0.060
+	8.705,8.530,0.140
+	8.920,8.730,0.150
+	9.202,9.040,0.130
+	8.929,8.750,0.150
+	9.357,9.170,0.150
+	9.026,8.810,0.180
+	9.287,9.080,0.170
+	8.923,8.750,0.140
+
    
-        docker# source demo3.sh <Number of times script to be run>
 
-   It will create the following files in the current
-   directory::
+5. To run the face recognotion demo use::
    
-        docker# cat docker_classifier_$CID.csv
-        docker# cat docker_classifier_$CID.txt
+        root# source demo3.sh <Number of times script to be run>
 
-	
-   Note CID is the id of the container.
+   This command will create the output files::
+   
+        root# cat docker_classifier_$NAME.csv         
+        root# cat docker_classifier_$NAME.txt
+
+   NAME is constructed in the same was as in step 4.
+
+   Example run the demo3 10 times::
+
+        root# source demo3.sh 10
+
+	Generating output ...
+	Date: 05_10_2016_13_50_53
+	Host: big
+	ID:   big_05_10_2016_13_50_53_457ab6d989b4
+	Output generated for Container: big_05_10_2016_13_50_53_457ab6d989b4
+
+	Outputfiles generated:
+	results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.txt
+	results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.csv
+
+	real,user,sys
+	4.641,4.300,0.300
+	4.598,4.340,0.220
+	4.722,4.550,0.130
+	4.746,4.520,0.180
+	4.882,4.610,0.240
+	4.736,4.560,0.140
+	4.667,4.420,0.200
+	4.907,4.640,0.230
+	4.859,4.700,0.120
+	4.735,4.490,0.200
+
 
 6. Exit from the container of node1::
   
@@ -399,10 +455,10 @@ d. To check Docker is installed properly (use only on OSX)::
 
 7. On the host verify the CSV files:: 
 
-        docker$ ls -l performance/
+        docker$ ls -1 results/
 
-   The output files `docker_compare_<container-id>.csv` and
-   `docker_classifier_<container-id>.csv` should be present here.
+   It will contain all output files that you have created with step 4
+   and 5.
  
 8. Gather csv files for graph plot::  
 
