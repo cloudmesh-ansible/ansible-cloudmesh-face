@@ -464,23 +464,21 @@ d. To check Docker is installed properly (use only on OSX)::
 
         docker$ sh gather-csv.sh 
 
-9. Get a pictorial presentation of docker and ubuntu time comparison::
+9. Get a pictorial presentation of docker and ubuntu time
+   comparison. The nice thing about this program is that you can
+   selectively include results from other runs conducted by other
+   people. YOu can specify the OS, and the hostname of the machine
+   that provided the output. AN example to produce the two diagrams
+   for the classifier and te compare demo are::
 
         cd ../performance
-        $ Rscript plot_demo2.R
-        $ Rscript plot_demo3.R
+        $ boxplot.py --kind=classifier --os=docker --host=big,fuwangs-MBP
+        $ boxplot.py --kind=compare --os=docker --host=big,fuwangs-MBP
 
    Graphs are saved by the names:
 
-   * `demo2_real_plot.png`
-   * `demo2_sys_plot.png`
-   * `demo2_user_plot.png`
-
-   For Demo 3, Face comparison graphs are saved by the names:
-
-   * `demo3_real_plot.png`
-   * `demo3_sys_plot.png`
-   * `demo3_user_plot.png`
+   * `boxplot-classifier.pdf`
+   * `boxplot-compare.pdf`
 
    The files are stored , under `ansible-cloudmesh-face/performance`
    folder.

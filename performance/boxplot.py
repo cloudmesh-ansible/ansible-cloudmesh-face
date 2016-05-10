@@ -107,7 +107,8 @@ if __name__ == '__main__':
 
     plt.suptitle('Performance Comparison OpenFace: {}'.format(kind))
 
-    plt.savefig("test.pdf")
+    pdf = "boxplot-{}.pdf".format(kind)
+    plt.savefig(pdf)
     plt.close()
 
-    os.system("open test.pdf")
+    os.system("open {}".format(pdf))
