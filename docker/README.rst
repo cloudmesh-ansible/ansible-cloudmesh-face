@@ -327,7 +327,7 @@ These steps will execute openface on single docker container and
 collect outputs for graph plots.
 
 
-1. Clone the ansible-cloudmesh-face github respository::
+1. Clone the ansible-cloudmesh-face github repository::
     
         $ mkdir -p ansible-cloudmesh-face
         $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
