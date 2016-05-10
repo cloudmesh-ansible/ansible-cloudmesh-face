@@ -6,21 +6,21 @@ Step 0:
 
 We assume that you are using the following ubuntu distribution::
 
-  TBD
+  Ubuntu Version 14.04
 
 You must make sure that you have enough memory available. In case you
 run it in a virtual machine you need at least::
 
-  XYZ GB
+  20 GB
 
 On clouds such as kilo or chameloen this can be achieved with the
 flavor::
 
-  TBD
+  m1.small
 
 In case you run it on virtualbox you need at least::
 
-  XYZ GB
+  20 GB
 
 
 Step 1:  Install Openface
