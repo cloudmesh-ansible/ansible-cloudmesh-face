@@ -189,11 +189,22 @@ docker swarm nodes and collect their optputs for graph plots.
         performance$ Rscript plot_demo2.R
         performance$ Rscript plot_demo3.R
 
-    Graphs saved by the name `demo2_real_plot.png`, `demo2_sys_plot.png`
-    and `demo2_user_plot.png` for Demo2 Face comparision and
-    `demo3_real_plot.png`, `demo3_sys_plot.png` and `demo3_user_plot.png`
-    for Demo3 Face classifier, under
-    `ansible-cloudmesh-face/performance` folder.
+    Graphs are saved by the names:
+
+    * `demo2_real_plot.png`
+    * `demo2_sys_plot.png`
+    * `demo2_user_plot.png`
+
+    For Demo2 Face comparison graphs are saved by the names:
+
+    * `demo3_real_plot.png`
+    * `demo3_sys_plot.png`
+    * `demo3_user_plot.png`
+
+    The files are stored in the `ansible-cloudmesh-face/performance`
+    folder.
+	
+
 
 12. The swarm nodes will remain on the host in detached mode.To get
     attached to any of these nodes run following command::
@@ -376,7 +387,7 @@ d. To check Dokcer is installed properly::
         performance$ Rscript plot_demo2.R
         performance$ Rscript plot_demo3.R
 
-   Graphs saved by the names:
+   Graphs are saved by the names:
 
    * `demo2_real_plot.png`
    * `demo2_sys_plot.png`
