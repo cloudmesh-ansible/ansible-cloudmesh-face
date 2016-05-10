@@ -69,9 +69,9 @@ Goals
 ===========
 
 * automated deployment with docker on OSX
-* automated deployment on ubunto
+* automated deployment on ubuntu
 
-* automated repetable perfomance applications derived form the 2 demos
+* automated repetable performance applications derived form the 2 demos
 * performance study of the frameworks
 * comparision of capability of systems while using a standard benchmark as to not 
   only compare performance of algorithms, but actual  capability of machines
@@ -125,3 +125,4 @@ Contributors
 * Sonal Shrivastava (sshrivas@umail.iu.edu)
 * sduvvuru@umail.iu.edu
 * Gregor von Laszewski (laszewski@gmail.com)
+* Fugang Wang (kevinwangfg@gmail.com)
