@@ -1,15 +1,32 @@
 #!/bin/bash
 
+now=$(date +"%m_%d_%Y_%H_%M_%S")
+
 if [ -z "$*" ]; then echo "Usage: ./sh <NUMBER OF TIMES SCRIPTS TO BE RUN>";
 
 else
 
-CID="$(cat /proc/self/cgroup | grep "docker" | sed s/\\//\\n/g | tail -n1 | cut -c -12)"
+    echo "Generating Output ..."
 
-echo "Generating Output!!!"
+    CID="$(cat /proc/self/cgroup | grep "docker" | sed s/\\//\\n/g | tail -n1 | cut -c -12)"
 
-echo "real,user,sys" > docker_compare_$CID.csv && (for i in `seq $1`; do TIMEFORMAT=%R','%U','%S && time ../demos/compare.py ../images/examples/{lennon*,clapton*};
-done)>docker_compare_$CID.txt  2>> docker_compare_$CID.csv
+    NAME="$HOST""_""$now""_""$CID"
+    echo "Date: $now"
+    echo "Host: $HOST"
+    echo "ID:   $NAME"
 
-echo "Output generated for Container :"$CID" !! Please verify the csv and txt files using ls -l";
+    echo "real,user,sys" > results/docker_compare_$NAME.csv && \
+    (for i in `seq $1`; do \
+        TIMEFORMAT=%R','%U','%S && \
+        time ../demos/compare.py ../images/examples/{lennon*,clapton*}; \
+    done) > results/docker_compare_$NAME.txt  2>> results/docker_compare_$NAME.csv
+
+    echo "Output generated for Container: $NAME "
+    echo
+    echo "Outputfiles generated:"
+    echo "results/docker_compare_$NAME.txt"
+    echo "results/docker_compare_$NAME.csv"
+    echo
+    cat results/docker_compare_$NAME.csv
+
 fi

@@ -3,24 +3,46 @@ DESCRIPTION
 Openface Software description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-OpenFace is a Python and Torch implementation of face recognition with deep neural networks and is based on the CVPR 2015 paper FaceNet: A Unified Embedding for Face Recognition and Clustering by Florian Schroff, Dmitry Kalenichenko, and James Philbin at Google. The Openface software workflow involves the following steps: 
+OpenFace is a Python and Torch implementation of face recognition with
+deep neural networks and is based on the CVPR 2015 paper FaceNet: A
+Unified Embedding for Face Recognition and Clustering by Florian
+Schroff, Dmitry Kalenichenko, and James Philbin at Google. The
+Openface software workflow involves the following steps:
 
-1.	Detect faces with a pre-trained models from dlib or OpenCV.
-2.	Transform the face for the neural network. This repository uses dlib's real-time pose estimation with OpenCV's affine transformation to try to make the eyes and bottom lip appear in the same location on each image.
-3.	Use a deep neural network to represent (or embed) the face on a 128-dimensional unit hypersphere. 
-4.	Applies clustering or classification techniques to the features to complete the recognition task. 
+1. Detect faces with a pre-trained models from dlib or OpenCV.
+2. Transform the face for the neural network. This repository uses
+   dlib's real-time pose estimation with OpenCV's affine
+   transformation to try to make the eyes and bottom lip appear in the
+   same location on each image.
+3. Use a deep neural network to represent (or embed) the face on a
+   128-dimensional unit hypersphere.
+4. Applies clustering or classification techniques to the features to
+   complete the recognition task.
 
 There are different demonstrations that are done by software:
 
-* Demo 1: Real time web: This demo does the full face recognition pipeline on every frame. In practice, object tracking like dlib's should be used once the face recognizer has predicted a face.
-* Demo 2: Comparing two images: The comparison demo outputs the predicted similarity score of two faces by computing the squared L2 distance between their representations.
-* Demo 3: Classifier demo : OpenFace's core provides a feature extraction method to obtain low-dimensional representation of any face. demos/classifier.pyshows a demo of how these representations can be used to create a face classifier.
+* Demo 1. Real time web: This demo does the full face recognition
+  pipeline on every frame. In practice, object tracking like
+  dlib's should be used once the face recognizer has predicted a face.
+* Demo 2. Comparing two images: The comparison demo outputs the
+  predicted similarity score of two faces by computing the squared L2
+  distance between their representations.
+* Demo 3. Classifier demo : OpenFace's core provides a feature
+  extraction method to obtain low-dimensional representation of any
+  face. demos/classifier.pyshows a demo of how these representations
+  can be used to create a face classifier.
 
-The goal of project is openface software deployment on ubuntu and docker systems. A sensible performance study delineating the different frameworks for the various demonstrations that needs to be created for the face detection software. The performance study will be be repeatable and in some fashion new results on different machines will be integrated once they become available
-The two key steps are:
+The goal of project is openface software deployment on ubuntu and
+docker systems. A sensible performance study delineating the different
+frameworks for the various demonstrations that needs to be created for
+the face detection software. The performance study will be be
+repeatable and in some fashion new results on different machines will
+be integrated once they become available The two key steps are:
 
-1.	docker deployment (may use ansible for demos, will use Dockerfiles) and demo2, demo3: (Sonal Srivatsava)
-2.	ubuntu deployment (will use ansible): and demo2, demo3 ( by Suman Duvvuru)
+1. docker deployment (may use ansible for demos, will use Dockerfiles)
+   and demo2, demo3: (Sonal Srivatsava, modifications to the demo
+   files and the README conducted by Gregor von Laszewski)
+2. ubuntu deployment (will use ansible): and demo2, demo3 ( by Suman Duvvuru)
 
 
 Prerequiste 
@@ -70,10 +92,13 @@ Accessing clouds
 We assume you create with some script (possibly an enhanced version of cloudmesh client that we work on right now) a number of vms that you will use to deploy the infrastructure
 
 * kilo you should have access to
-* chameleon, please register for account and send me your account name so I can add you, Gregor
-* cybera, you do not apply for account, I will run your project on it to test reproducability
-* AWS, I think students get free hours, please be conservative with your use, so 
-  get this one first on kilo and chameleon before going to AWS
+* chameleon, please register for account and send me your account name
+  so I can add you, Gregor
+* cybera, you do not apply for account, I will run your project on it
+  to test reproducability
+* AWS, I think students get free hours, please be conservative with
+  your use, so get this one first on kilo and chameleon before going
+  to AWS
 * Azure, I am not sure if they offer free hours please lete me know
 
 INSTALL
@@ -90,11 +115,11 @@ INSTALL
    python setup.py install
 
 
-REFERNCES
+Refernces
 ==========
 * https://cmusatyalab.github.io/openface/
 
-Participants
+Contributors
 =============
 
 * Sonal Shrivastava (sshrivas@umail.iu.edu)
