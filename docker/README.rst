@@ -361,22 +361,18 @@ d. To check Docker is installed properly (use only on OSX)::
    commands in step:11 for fresh installation OR you could attach to
    this existing container using commands in step:10.
    
-3. Verify if the required scripts are present in container::
+3. Verify if the required scripts are present in the container::
    
         docker# ls -l  
       
 
    demo2.sh and demo3.sh should be present in the current directory. 
 
-4. To run Face Comparison demo::
+4. To run the face comparison demo execute the following command::
       
         docker# source demo2.sh <Number of times script to be run>
 
-   This command will create files `docker_compare_<container-id>.csv`
-   and `docker_compare_<container-id>.txt` as output in the current
-   directory.
-    
-   Verify these output files:: 
+   This command will create the output files::
    
         docker# cat docker_compare_$CID.csv         
         docker# cat docker_compare_$CID.txt
