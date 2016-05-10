@@ -181,17 +181,18 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
       
     NOTE: This command will kill all the swarm nodes from the host and they have to be recreated if required , using step 2.
     
-14. BIG DATA: Test Openface on big dataset (MUCT)  
+14. BIG DATA: Test Openface on big dataset (MUCT) ::
+
+- Check the MUCT dataset using below commands:
+        cd  ansible-cloudmesh-face/docker
+        docker# ls –l
+   MUCT folder has “jpg” sub-folder, which has all the jpg images unzipped and saved.
+   
+  - Run the demos using a big dataset::
  
-- Download the MUCT dataset via git 
-        cd  ansible-cloudmesh-face
-        git clone https://github.com/StephenMilborrow/muct.git  
- 
-  Start the docker swarm container using step 2 and 3 and run the following commands inside the containers:
- 
- - Run the demos using a big dataset 
-        ./demo2big.sh N 
-        ./demo3big.sh N 
+        source demo2big.sh  <No. of times script to be run>
+        source demo3big.sh  <No. of times script to be run> 
+
 
     
 
