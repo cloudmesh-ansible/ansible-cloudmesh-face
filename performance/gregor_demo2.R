@@ -1,10 +1,8 @@
 #! /usr/bin/env RScript
 
-if (length(args)==0) {
-  stop("Please spicify the hosts to compare.n", call.=FALSE)
-} else if (length(args)==1) {
-  print (args)
-}
+args<-commandArgs(TRUE)
+
+print (args)
 
 summaryPlots <- function()
 {
