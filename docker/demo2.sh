@@ -16,8 +16,8 @@ echo "real,user,sys" > docker_compare_$CID.csv && \
     time ../demos/compare.py ../images/examples/{lennon*,clapton*}; \
 done) > docker_compare_$CID.txt  2>> docker_compare_$CID.csv
 
-echo "Output generated for Container :"$CID" !! Please verify the csv and txt files using ls -l";
-
+echo "Output generated for Container: $CID "
+echo
 echo "Outputfiles generated:"
 echo "docker_compare_$CID.txt"
 echo "docker_compare_$CID.csv"
