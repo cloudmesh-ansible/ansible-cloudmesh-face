@@ -338,7 +338,7 @@ d. To check Docker is installed properly (use only on OSX)::
       $ source openface_dep.sh
 
 
-   On OSX: If you see an error such as host is not running, you need to start
+   If you see an error such as host is not running, you need to start
    the docker terminal via the launchpad. It will open a terminal and
    you can use that to execute the commands. 
    
