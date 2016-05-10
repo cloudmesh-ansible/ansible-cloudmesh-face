@@ -155,6 +155,7 @@ docker swarm nodes and collect their optputs for graph plots.
    
          docker# ls -l  
       
+
    demo2.sh and demo3.sh should be present in the current directory.      
 
 5. To run Face Comparison demo::
