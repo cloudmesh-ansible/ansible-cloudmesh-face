@@ -17,10 +17,10 @@ Notation:
 * the name of the container is `openface`, which can be checked by
   command "docker ps".
 
-Step 1. Install docker
+Step 0. Install docker
 ----------------------
 
-Step 1. Install Docker on OSX
+Step 0.1 Install Docker on OSX
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To install docker on OSX follow these steps
@@ -46,20 +46,26 @@ To install docker on OSX follow these steps
       $ docker run hello-world
       
    
-Windows
-^^^^^^^^
+Step 0.2 Install Docker on Windows
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 TBD in future
 
-Ubuntu
-^^^^^^^
+Step 0.3 Install Docker on Ubuntu
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 TBD in future
 
-Centos
-^^^^^^^
+Step 0.4 Install Docker on Centos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 TBD in future
+
+Step 0,5 Use Docker on Chameleon cloud
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Docker can be used as part of the centos image distributed in the
+chameleon cloud.
 
 RHEL
 ^^^^^^^
@@ -113,8 +119,7 @@ nodes and collect their optputs for graph plots.
    node will create the conatiner and it will pull the bamos/openface
    image. Upon image pull the command prompt will change from docker $
    to root1111111# , i.e. promt control changes from host to
-   container. Once on container change directory to dcoker folder by
-   ::
+   container. Once on container change directory to dcoker folder by::
 
         root1111111# cd /root/openface/docker
 
@@ -128,11 +133,11 @@ nodes and collect their optputs for graph plots.
       
        docker# source demo2.sh <Number of times script to be run>
     
-   This command will create files “docker_compare_<container-id>.csv"
-   and “docker_compare_<container-id>.txt" as output in the current
+   This command will create files `docker_compare_<container-id>.csv"
+   and `docker_compare_<container-id>.txt" as output in the current
    directory.
    
-  Verify these output files :: 
+   Verify these output files :: 
    
        docker# cat docker_compare_$CID.csv         
       
@@ -144,8 +149,8 @@ nodes and collect their optputs for graph plots.
    
        docker# source demo3.sh <Number of times script to be run>
 
-   This will carete files “docker_classifier_<container-id>.csv" and
-   “docker_classifier_<container-id>.txt" as output in the current
+   This will carete files `docker_classifier_<container-id>.csv` and
+   `docker_classifier_<container-id>.txt` as output in the current
    directory.
       
    Verify these output files ::
@@ -189,7 +194,7 @@ nodes and collect their optputs for graph plots.
    and demo2_user_plot.png for Demo2 Face comparision and
    demo3_real_plot.png , demo3_sys_plot.png and demo3_user_plot.png
    for Demo3 Face classifier , under
-   "ansible-cloudmesh-face/performance" folder.
+   `ansible-cloudmesh-face/performance` folder.
 
 12. The swarm nodes will remain on the host in detached mode.To get
     attached to any of these nodes run following command ::
@@ -213,7 +218,7 @@ nodes and collect their optputs for graph plots.
         cd  ansible-cloudmesh-face/docker
         docker# ls –l
 
-      MUCT folder has “jpg” sub-folder, which has all the jpg images unzipped and saved.
+      MUCT folder has `jpg` sub-folder, which has all the jpg images unzipped and saved.
    
     - Run the demos using a big dataset::
  
@@ -237,23 +242,30 @@ The current models in openface project are trained with a combination
 of the two largest (of August 2015) publicly-available face
 recognition datasets based on names: FaceScrub and CASIA-WebFace.
 
-The models can be found under "openface/models" folder which is
+The models can be found under `openface/models` folder which is
 downloaded while pulling bamos/openface image ::
 
-nn4.v1
-nn4.v2
-nn4.small1.v1
-nn4.small2.v1
+  nn4.v1
+  nn4.v2
+  nn4.small1.v1
+  nn4.small2.v1
 
 The performance is measured by averaging 500 forward passes with
 util/profile-network.lua and the following results use OpenBLAS on an
-8 core 3.70 GHz CPU and a Tesla K40 GPU.
+8 core 3.70 GHz CPU and a Tesla K40 GPU:
 
-Model	            Runtime (CPU)	      Runtime (GPU)
-nn4.v1	      75.67 ms ± 19.97 ms	21.96 ms ± 6.71 ms
-nn4.v2	      82.74 ms ± 19.96 ms	20.82 ms ± 6.03 ms
-nn4.small1.v1	69.58 ms ± 16.17 ms	15.90 ms ± 5.18 ms
-nn4.small2.v1	58.9 ms ± 15.36 ms	13.72 ms ± 4.64 ms
++---------------+---------------------+--------------------+
+| Model         | Runtime (CPU)       | Runtime (GPU)      |
++---------------+---------------------+--------------------+
+| nn4.v1        | 75.67 ms ± 19.97 ms | 21.96 ms ± 6.71 ms |
++---------------+---------------------+--------------------+
+| nn4.v2        | 82.74 ms ± 19.96 ms | 20.82 ms ± 6.03 ms |
++---------------+---------------------+--------------------+
+| nn4.small1.v1 | 69.58 ms ± 16.17 ms | 15.90 ms ± 5.18 ms |
++---------------+---------------------+--------------------+
+| nn4.small2.v1 | 58.9 ms ± 15.36 ms  | 13.72 ms ± 4.64 ms |
++---------------+---------------------+--------------------+
+
 
 For this project, for majority of the simulations, a subset of images
 from the dataset that is already being provided as part of the images
@@ -272,9 +284,7 @@ points for each eye. This dataset is available for download via github
 at https://github.com/StephenMilborrow/muct.git
 
 
-
-
-<2>SINGLE-SERVER REPLICATION STEPS
+SINGLE-SERVER REPLICATION STEPS
 =====================================
 
 These steps will execute openface project on single docker container
@@ -305,8 +315,8 @@ d. To check Dokcer is installed properly ::
    $docker> to container-ID> .  Once in the container's command-line
    change the directory to /root/src/openface.
      
-   NOTE : If you get an error saying "openface" container already
-   exists or "openface" name has been given to another container, then
+   NOTE : If you get an error saying `openface` container already
+   exists or `openface` name has been given to another container, then
    you could kill and remove the existing openface container using
    commands in step:11 for fresh installation OR you could attach to
    this existing container using commands in step:10.
@@ -321,8 +331,8 @@ d. To check Dokcer is installed properly ::
       
         docker# source demo2.sh <Number of times script to be run>
 
-   This command will create files “docker_compare_<container-id>.csv"
-   and “docker_compare_<container-id>.txt" as output in the current
+   This command will create files `docker_compare_<container-id>.csv`
+   and `docker_compare_<container-id>.txt` as output in the current
    directory.
     
    Verify these output files :: 
@@ -338,8 +348,8 @@ d. To check Dokcer is installed properly ::
         docker# source demo3.sh <Number of times script to be run>
 
    This command will carete files
-   “docker_classifier_<container-id>.csv" and
-   “docker_classifier_<container-id>.txt" as output in the current
+   `docker_classifier_<container-id>.csv` and
+   `docker_classifier_<container-id>.txt` as output in the current
    directory.
       
    Verify these output files ::
@@ -358,8 +368,8 @@ d. To check Dokcer is installed properly ::
 
         docker$ ls -l performance/
 
-   The output files “docker_compare_<container-id>.csv” and
-   “docker_classifier_<container-id>.csv” should be present here.
+   The output files `docker_compare_<container-id>.csv` and
+   `docker_classifier_<container-id>.csv` should be present here.
  
 8. Gather csv files for graph plot ::  
 
@@ -375,7 +385,7 @@ d. To check Dokcer is installed properly ::
    and demo2_user_plot.png for Demo2 Face comparision and
    demo3_real_plot.png , demo3_sys_plot.png and demo3_user_plot.png
    for Demo3 Face classifier , under
-   "ansible-cloudmesh-face/performance" folder.
+   `ansible-cloudmesh-face/performance` folder.
 
 
 10. For future use save the container content ::
