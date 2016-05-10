@@ -388,26 +388,26 @@ d. To check Docker is installed properly (use only on OSX)::
         root# source demo2.sh 10
 
         Generating Output ...
-	Date: 05_10_2016_13_52_16
-	Host: big
-	ID:   big_05_10_2016_13_52_16_457ab6d989b4
-	Output generated for Container: big_05_10_2016_13_52_16_457ab6d989b4 
+        Date: 05_10_2016_13_52_16
+        Host: big
+        ID:   big_05_10_2016_13_52_16_457ab6d989b4
+        Output generated for Container: big_05_10_2016_13_52_16_457ab6d989b4
 
-	Outputfiles generated:
-	results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.txt
-	results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.csv
+        Outputfiles generated:
+        results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.txt
+        results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.csv
 
-	real,user,sys
-	9.368,9.230,0.090
-	9.097,9.000,0.060
-	8.705,8.530,0.140
-	8.920,8.730,0.150
-	9.202,9.040,0.130
-	8.929,8.750,0.150
-	9.357,9.170,0.150
-	9.026,8.810,0.180
-	9.287,9.080,0.170
-	8.923,8.750,0.140
+        real,user,sys
+        9.368,9.230,0.090
+        9.097,9.000,0.060
+        8.705,8.530,0.140
+        8.920,8.730,0.150
+        9.202,9.040,0.130
+        8.929,8.750,0.150
+        9.357,9.170,0.150
+        9.026,8.810,0.180
+        9.287,9.080,0.170
+        8.923,8.750,0.140
 
    
 
@@ -426,27 +426,27 @@ d. To check Docker is installed properly (use only on OSX)::
 
         root# source demo3.sh 10
 
-	Generating output ...
-	Date: 05_10_2016_13_50_53
-	Host: big
-	ID:   big_05_10_2016_13_50_53_457ab6d989b4
-	Output generated for Container: big_05_10_2016_13_50_53_457ab6d989b4
+        Generating output ...
+        Date: 05_10_2016_13_50_53
+        Host: big
+        ID:   big_05_10_2016_13_50_53_457ab6d989b4
+        Output generated for Container: big_05_10_2016_13_50_53_457ab6d989b4
 
-	Outputfiles generated:
-	results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.txt
-	results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.csv
+        Outputfiles generated:
+        results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.txt
+        results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.csv
 
-	real,user,sys
-	4.641,4.300,0.300
-	4.598,4.340,0.220
-	4.722,4.550,0.130
-	4.746,4.520,0.180
-	4.882,4.610,0.240
-	4.736,4.560,0.140
-	4.667,4.420,0.200
-	4.907,4.640,0.230
-	4.859,4.700,0.120
-	4.735,4.490,0.200
+        real,user,sys
+        4.641,4.300,0.300
+        4.598,4.340,0.220
+        4.722,4.550,0.130
+        4.746,4.520,0.180
+        4.882,4.610,0.240
+        4.736,4.560,0.140
+        4.667,4.420,0.200
+        4.907,4.640,0.230
+        4.859,4.700,0.120
+        4.735,4.490,0.200
 
 
 6. Exit from the container of node1::
