@@ -467,8 +467,8 @@ d. To check Docker is installed properly (use only on OSX)::
 9. Get a pictorial presentation of docker and ubuntu time comparison::
 
         cd ../performance
-        performance$ Rscript plot_demo2.R
-        performance$ Rscript plot_demo3.R
+        $ Rscript plot_demo2.R
+        $ Rscript plot_demo3.R
 
    Graphs are saved by the names:
 
