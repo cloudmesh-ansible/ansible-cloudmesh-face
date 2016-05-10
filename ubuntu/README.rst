@@ -12,7 +12,7 @@ OR
 
 * (ii) Run the shell script directly on the VMs::
  
-    ./openface_ubuntu.install.sh
+      ./openface_ubuntu.install.sh
 
 Step 2: Copy Scripts for running demo2 (demo2b.sh) and demo3 (demo3b.sh) to VMs. 
 Once the installation is complete, run a script to copy the demo2, demo3 scripts 
