@@ -124,11 +124,8 @@ docker swarm nodes and collect their optputs for graph plots.
      $ ./demo.py --count=10 --kind=compare
      $ ./demo.py --count=10 --kind=classifier
 
-8. Gather csv files for graph plot::
 
-      $ ./demo.py --gather
-
-9. Get a pictorial presentation of docker and ubuntu time
+3. To get a pictorial presentation of docker and ubuntu time
    comparison. The nice thing about this program is that you can
    selectively include results from other runs conducted by other
    people. YOu can specify the OS, and the hostname of the machine
