@@ -115,12 +115,12 @@ docker swarm nodes and collect their optputs for graph plots.
 
     To check Docker is installed properly::
       
-        $ source openface_dep.sh 
+        $ source openface-preparesh
   
 
 2. Create the docker swarm cluster with openface containers::
    
-        docker$ source openface-multiserver.sh <Number of swarm nodes to be run>
+        docker$ source openface-multi.sh <Number of swarm nodes to be run>
 
    This command will create required number of nodes in docker swarm
    cluster. In the above command 2nd argument takes number of node
@@ -335,7 +335,7 @@ collect outputs for graph plots.
 
 d. To check Docker is installed properly (use only on OSX)::
       
-      $ source openface_dep.sh
+      $ source openface-prepare.sh
 
 
    If you see an error such as host is not running, you need to start
@@ -344,7 +344,7 @@ d. To check Docker is installed properly (use only on OSX)::
    
 2. Create the openface container::
 
-        $ source install-openfacedocker.sh
+        $ source openface-single.sh
 
         root# cd /root/openface/docker
      
