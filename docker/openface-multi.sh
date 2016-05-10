@@ -9,11 +9,20 @@ else
 	eval "$(docker-machine env openface-machine)"
 	docker run -d -p "8500:8500" -h "consul" progrium/consul -server –bootst	rap
 	
-	docker-machine create -d virtualbox --swarm --swarm-master --swarm-discovery="consul://$(docker-machine ip openface-machine):8500" --engine-opt="cluster-store=consul://$(docker-machine ip openface-machine):8500" --engine-opt="cluster-advertise=eth1:2376" openface-master	
+	docker-machine create -d virtualbox \
+	                      --swarm \
+	                      --swarm-master \
+	                      --swarm-discovery="consul://$(docker-machine ip openface-machine):8500" \
+	                      --engine-opt="cluster-store=consul://$(docker-machine ip openface-machine):8500" \
+	                      --engine-opt="cluster-advertise=eth1:2376" openface-master
 	
 	for ((i = 1; i <= $1; i++)); do
 		
-		docker-machine create -d virtualbox --swarm  --swarm-discovery="consul://$(docker-machine ip openface-machine):8500" --engine-opt="cluster-store=consul://$(docker-machine ip openface-machine):8500" --engine-opt="cluster-advertise=eth1:2376" openface-node-$i;        
+		docker-machine create -d virtualbox \
+		                         --swarm  \
+		                         --swarm-discovery="consul://$(docker-machine ip openface-machine):8500" \
+		                         --engine-opt="cluster-store=consul://$(docker-machine ip openface-machine):8500" \
+		                         --engine-opt="cluster-advertise=eth1:2376" openface-node-$i;
 	done	
 	eval $(docker-machine env --swarm openface-master)
 	docker pull bamos/openface
