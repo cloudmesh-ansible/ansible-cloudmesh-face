@@ -3,8 +3,9 @@ OPENFACE SETUP in DOCKER
 
 This file gives instructions about running OpenFace project on
 
-1. docker with multiple container using docker swarm
-2. docker with single container
+1. demo running in a single container
+2. docker with multiple container using docker swarm
+3. interactive docker with single container
 
 Once output are generated they are comapred with other OS for
 performance testing.
@@ -106,6 +107,46 @@ TBD in future
 The next commands should be executed on the terminal on which docker
 is launched. These steps will execute openface project on multiple
 docker swarm nodes and collect their optputs for graph plots.
+
+1. Clone the ansible-cloudmesh-face github respository::
+
+        $ mkdir -p ansible-cloudmesh-face
+        $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
+        $ cd ansible-cloudmesh-face/docker/
+
+    To check Docker is installed properly::
+
+        $ source openface-prepare.sh
+
+2. Next run the two demos with::
+
+     $ docker rm openface   # just in case we have one running with that name
+     $ ./demo.py --count=10 --kind=compare
+     $ ./demo.py --count=10 --kind=classifier
+
+8. Gather csv files for graph plot::
+
+      $ ./demo.py --gather
+
+9. Get a pictorial presentation of docker and ubuntu time
+   comparison. The nice thing about this program is that you can
+   selectively include results from other runs conducted by other
+   people. YOu can specify the OS, and the hostname of the machine
+   that provided the output. AN example to produce the two diagrams
+   for the classifier and te compare demo are::
+
+        cd ../performance
+        $ boxplot.py --kind=classifier --os=docker --host=big,fuwangs-MBP
+        $ boxplot.py --kind=compare --os=docker --host=big,fuwangs-MBP
+
+
+
+2.  OpenFace Application: MULTI-SERVER REPLICATION STEPS
+--------------------------------------------------------
+
+The next commands should be executed on the terminal on which docker
+is launched. These steps will execute openface project on multiple
+docker swarm nodes and collect their optputs for graph plots.
       
 1. Clone the ansible-cloudmesh-face github respository::
     
@@ -115,7 +156,7 @@ docker swarm nodes and collect their optputs for graph plots.
 
     To check Docker is installed properly::
       
-        $ source openface-preparesh
+        $ source openface-prepare.sh
   
 
 2. Create the docker swarm cluster with openface containers::
@@ -208,30 +249,22 @@ docker swarm nodes and collect their optputs for graph plots.
         docker$ ls -l
 
 10. Gather csv files for graph plot::
- 
-        docker$ source gather-csv.sh 
 
-11. Get a pictorial presentation of docker and ubuntu time comparison:: 
- 
+        docker$ sh gather-csv.sh
+
+11. Get a pictorial presentation of docker and ubuntu time
+    comparison. The nice thing about this program is that you can
+    selectively include results from other runs conducted by other
+    people. YOu can specify the OS, and the hostname of the machine
+    that provided the output. AN example to produce the two diagrams
+    for the classifier and te compare demo are::
+
         cd ../performance
-        performance$ Rscript plot_demo2.R
-        performance$ Rscript plot_demo3.R
-
-    Graphs are saved by the names:
-
-    * `demo2_real_plot.png`
-    * `demo2_sys_plot.png`
-    * `demo2_user_plot.png`
-
-    For Demo 3, Face comparison graphs are saved by the names:
-
-    * `demo3_real_plot.png`
-    * `demo3_sys_plot.png`
-    * `demo3_user_plot.png`
+        $ boxplot.py --kind=classifier --os=docker --host=big,fuwangs-MBP
+        $ boxplot.py --kind=compare --os=docker --host=big,fuwangs-MBP
 
     The files are stored in the `ansible-cloudmesh-face/performance`
     folder.
-        
 
 
 12. The swarm nodes will remain on the host in detached mode.To get
@@ -320,8 +353,8 @@ points for each eye. This dataset is available for download via github
 at https://github.com/StephenMilborrow/muct.git
 
 
-2.  OpenFace Application: SINGLE-SERVER REPLICATION STEPS
----------------------------------------------------------
+3.  OpenFace Application: INTERFACTIVE SINGLE-SERVER REPLICATION STEPS
+-----------------------------------------------------------------------
 
 These steps will execute openface on single docker container and
 collect outputs for graph plots.
@@ -341,7 +374,8 @@ d. To check Docker is installed properly (use only on OSX)::
    If you see an error such as host is not running, you need to start
    the docker terminal via the launchpad. It will open a terminal and
    you can use that to execute the commands. 
-   
+
+
 2. Create the openface container::
 
         $ source openface-single.sh
