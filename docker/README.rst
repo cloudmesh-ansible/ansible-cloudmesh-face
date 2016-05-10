@@ -113,7 +113,7 @@ docker swarm nodes and collect their optputs for graph plots.
         $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
         $ cd ansible-cloudmesh-face/docker/
 
-    To check Dokcer is installed properly::
+    To check Docker is installed properly::
       
         $ source openface_dep.sh 
   
@@ -333,7 +333,7 @@ collect optputs for graph plots.
         $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
         $ cd ansible-cloudmesh-face/docker/
 
-d. To check Dokcer is installed properly::
+d. To check Docker is installed properly::
       
       $ source openface_dep.sh
 
