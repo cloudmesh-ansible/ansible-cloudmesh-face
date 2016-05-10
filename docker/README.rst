@@ -323,8 +323,8 @@ at https://github.com/StephenMilborrow/muct.git
 2.  OpenFace Application: SINGLE-SERVER REPLICATION STEPS
 ---------------------------------------------------------
 
-These steps will execute openface project on single docker container
-collect optputs for graph plots.
+These steps will execute openface on single docker container and
+collect outputs for graph plots.
 
 
 1. Clone the ansible-cloudmesh-face github respository::
