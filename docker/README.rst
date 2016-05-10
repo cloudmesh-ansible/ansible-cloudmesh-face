@@ -346,7 +346,7 @@ d. To check Docker is installed properly (use only on OSX)::
 
         $ source install-openfacedocker.sh
 
-        root1111111# cd /root/openface/docker
+        root# cd /root/openface/docker
      
    This will install all the required dependencies, check if docker is
    installed properly, copy the required scripts from host to
