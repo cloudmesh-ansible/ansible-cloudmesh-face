@@ -159,7 +159,7 @@ nodes and collect their optputs for graph plots.
 
        docker# cat docker_classifier_$CID.txt
 
-  Note: CID is the id of the container.
+   Note: CID is the id of the container.
   
 7. Exit from the container of node1 ::
   
