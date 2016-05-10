@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 
-"""Usage: gregor_demo.py --kind=KIND --os=OS --host=HOST
+"""Usage: boxplot.py --kind=KIND --os=OS --host=HOST
 
 Arguments:
   HOST     Host name
