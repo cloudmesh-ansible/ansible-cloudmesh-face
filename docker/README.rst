@@ -1,46 +1,50 @@
 OPENFACE SETUP in DOCKER
-=========================
+========================
 
-This file gives instructions about running OpenFace project on -
-(1) docker with multiple container using docker swarm
-(2) docker with single container
-Once output are generated they are comapred with other OS for performance testing.
+This file gives instructions about running OpenFace project on
 
+1. docker with multiple container using docker swarm
+2. docker with single container
 
+Once output are generated they are comapred with other OS for
+performance testing.
 
 Notation:
 
 * commands executed on the host system are indicated with $
-* commands executed on the container are indicated with root11111111# , where root<some number> will be the container id.
-* the name of the container is `openface`, which can be checked by command "docker ps".
+* commands executed on the container are indicated with root11111111#
+  , where root<some number> will be the container id.
+* the name of the container is `openface`, which can be checked by
+  command "docker ps".
 
-1. Install docker
------------------
+Step 1. Install docker
+----------------------
 
-OSX
-^^^
+Step 1. Install Docker on OSX
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To install docker on OSX follow these steps
 
-a. Download and install docker Toolbox: https://www.docker.com/toolbox
+1. Download and install docker Toolbox: https://www.docker.com/toolbox
 
-b. check if docker commands are installed in /usr/local/bin::
+2. check if docker commands are installed in /usr/local/bin::
 
       $ ls /usr/local/bin/docker*
       
-c. Once docker is installed, got to your launch pad and click on quickstart docker icon to launch it with the terminal. ::
+3. Once docker is installed, got to your launch pad and click on
+   quickstart docker icon to launch it with the terminal. ::
       
-   NOTE : Henceforth all the commands will be executed on this terminal where docker has been started.
+   NOTE: Henceforth all the commands will be executed on this
+   terminal where docker has been started.
    
-d. For subsequent steps remember to login to docker if not already::   
+4. For subsequent steps remember to login to docker if not already::
 
       $ docker login
 
-e. Test out a simple docker example::
+5. Test out a simple docker example::
 
       $ docker run hello-world
       
-
    
 Windows
 ^^^^^^^^
@@ -64,11 +68,14 @@ TBD in future
 
 2. OpenFace Application
 -----------------------
-All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED !!!
 
-<1> MULTI-SERVER REPLICATION STEPS ::
-    ===============================
-      These steps will execute openface project on multiple docker swarm nodes and collect their optputs for graph plots.
+The next  commands should be executed on the terminal on which docker is launched.
+
+Step 2.1 MULTI-SERVER REPLICATION STEPS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+These steps will execute openface project on multiple docker swarm
+nodes and collect their optputs for graph plots.
       
 1. Clone the ansible-cloudmesh-face github respository ::
     
@@ -85,21 +92,29 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
    
         docker$ source openface-multiserver.sh <Number of swarm nodes to be run>
 
-   This command will create required number of nodes in docker swarm cluster. In the above command 2nd argument takes number of node that
-   you want to run.
+   This command will create required number of nodes in docker swarm
+   cluster. In the above command 2nd argument takes number of node
+   that you want to run.
    
-   Note:Please be aware that in addition to the swarm nodes you specified there will always a Master-node and Machine-node created to
-   enable the process. The name of the nodes will be openface-node<number of the node>.Master node can be identified as openface-master
-   and key-store as openface-machine.
+   Note: Please be aware that in addition to the swarm nodes you
+   specified there will always a Master-node and Machine-node created
+   to enable the process. The name of the nodes will be
+   openface-node<number of the node>.Master node can be identified as
+   openface-master and key-store as openface-machine.
    
-   NOTE : If you get an error saying "openface" container already exists or "openface" name has been given to another container,
-   then you could kill the existing openface container using commands -  docker-machine rm $(docker-machine ls -q).
+   NOTE: If you get an error saying "openface" container already
+   exists or "openface" name has been given to another container, then
+   you could kill the existing openface container using commands -
+   docker-machine rm $(docker-machine ls -q).
 
 
 
-3. Container will be created for nodes in the swarm one-by-one. First node will create the conatiner and it will pull the bamos/openface
-   image. Upon image pull the command prompt will change from docker $ to root1111111# , i.e. promt control changes from host to
-   container. Once on container change directory to dcoker folder by ::
+3. Container will be created for nodes in the swarm one-by-one. First
+   node will create the conatiner and it will pull the bamos/openface
+   image. Upon image pull the command prompt will change from docker $
+   to root1111111# , i.e. promt control changes from host to
+   container. Once on container change directory to dcoker folder by
+   ::
 
         root1111111# cd /root/openface/docker
 
@@ -113,7 +128,8 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
       
        docker# source demo2.sh <Number of times script to be run>
     
-   This command will create files “docker_compare_<container-id>.csv" and  “docker_compare_<container-id>.txt" as output in the current 
+   This command will create files “docker_compare_<container-id>.csv"
+   and “docker_compare_<container-id>.txt" as output in the current
    directory.
    
   Verify these output files :: 
@@ -128,8 +144,9 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
    
        docker# source demo3.sh <Number of times script to be run>
 
-   This will carete files “docker_classifier_<container-id>.csv" and  “docker_classifier_<container-id>.txt" as output in the current
-   directory.  
+   This will carete files “docker_classifier_<container-id>.csv" and
+   “docker_classifier_<container-id>.txt" as output in the current
+   directory.
       
    Verify these output files ::
    
@@ -143,14 +160,18 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
   
        docker# exit
   
-8. As soon as node1 is exited new container for next node will open and it will pull the bamos/openface image. Upon image pull the
-   command prompt will change from docker $ to root1111111# and this will be repeated for all the nodes in the swarm cluster ::
+8. As soon as node1 is exited new container for next node will open
+   and it will pull the bamos/openface image. Upon image pull the
+   command prompt will change from docker $ to root1111111# and this
+   will be repeated for all the nodes in the swarm cluster ::
 
         Repeat step 3 to 7 for all the nodes
    
    
-9.  The results from all the containers will be saved in mounted folder i.e /ansible-cloudmesh-face/docker on host.On host machine 
-    under docker folder verify the output files generated by multiple containers ::
+9.  The results from all the containers will be saved in mounted
+    folder i.e /ansible-cloudmesh-face/docker on host.On host machine
+    under docker folder verify the output files generated by multiple
+    containers ::
 
         docker$ ls -l
 
@@ -164,11 +185,14 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
         performance$ Rscript plot_demo2.R
         performance$ Rscript plot_demo3.R
 
-   Graphs saved by the name demo2_real_plot.png , demo2_sys_plot.png and demo2_user_plot.png for Demo2 Face comparision and 
-   demo3_real_plot.png , demo3_sys_plot.png and demo3_user_plot.png for Demo3 Face classifier , under 
+   Graphs saved by the name demo2_real_plot.png , demo2_sys_plot.png
+   and demo2_user_plot.png for Demo2 Face comparision and
+   demo3_real_plot.png , demo3_sys_plot.png and demo3_user_plot.png
+   for Demo3 Face classifier , under
    "ansible-cloudmesh-face/performance" folder.
 
-12. The swarm nodes will remain on the host in detached mode.To get attached to any of these nodes run following command ::
+12. The swarm nodes will remain on the host in detached mode.To get
+    attached to any of these nodes run following command ::
       
         $ eval $(docker-machine env --swarm openface-node<node_number>)
       
@@ -180,16 +204,18 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
       
         $ docker-machine rm $(docker-machine ls -q)
       
-    NOTE: This command will kill all the swarm nodes from the host and they have to be recreated if required , using step 2.
+    NOTE: This command will kill all the swarm nodes from the host and
+    they have to be recreated if required , using step 2.
     
 14. BIG DATA: Test Openface on big dataset (MUCT) ::
 
-- Check the MUCT dataset using below commands:
+    - Check the MUCT dataset using below commands:
         cd  ansible-cloudmesh-face/docker
         docker# ls –l
-   MUCT folder has “jpg” sub-folder, which has all the jpg images unzipped and saved.
+
+      MUCT folder has “jpg” sub-folder, which has all the jpg images unzipped and saved.
    
-  - Run the demos using a big dataset::
+    - Run the demos using a big dataset::
  
         source demo2big.sh  <No. of times script to be run>
         source demo3big.sh  <No. of times script to be run> 
@@ -197,25 +223,31 @@ All THE COMMANDS SHOULD BE EXECUTED ON THE TERMINAL ON WHICH DOCKER IS LAUNCHED 
 
     
 
-LIMITATIONS ::
+LIMITATIONS
+===========
 
-Docker Swarm instead of pulling private image automatically on all the swarm nodes simultaneously, performs a one-by-one pull on each
-swarm node container.
+Docker Swarm instead of pulling private image automatically on all the
+swarm nodes simultaneously, performs a one-by-one pull on each swarm
+node container.
 
-BIG DATA ::
+BIG DATA
+--------
 
-The current models in openface project are trained with a combination of the two largest (of August 2015) publicly-available face
+The current models in openface project are trained with a combination
+of the two largest (of August 2015) publicly-available face
 recognition datasets based on names: FaceScrub and CASIA-WebFace.
 
-The models can be found under "openface/models" folder which is downloaded while pulling bamos/openface image ::
+The models can be found under "openface/models" folder which is
+downloaded while pulling bamos/openface image ::
 
 nn4.v1
 nn4.v2
 nn4.small1.v1
 nn4.small2.v1
 
-The performance is measured by averaging 500 forward passes with util/profile-network.lua and the following results use OpenBLAS on an 8
-core 3.70 GHz CPU and a Tesla K40 GPU.
+The performance is measured by averaging 500 forward passes with
+util/profile-network.lua and the following results use OpenBLAS on an
+8 core 3.70 GHz CPU and a Tesla K40 GPU.
 
 Model	            Runtime (CPU)	      Runtime (GPU)
 nn4.v1	      75.67 ms ± 19.97 ms	21.96 ms ± 6.71 ms
@@ -223,14 +255,21 @@ nn4.v2	      82.74 ms ± 19.96 ms	20.82 ms ± 6.03 ms
 nn4.small1.v1	69.58 ms ± 16.17 ms	15.90 ms ± 5.18 ms
 nn4.small2.v1	58.9 ms ± 15.36 ms	13.72 ms ± 4.64 ms
 
-For this project, for majority of the simulations, a subset of images from the dataset that is already being provided as part of the
-images directory of openface installation was utilized for the assessment of performance of ubuntu and docker runs on multiple VMs. 
+For this project, for majority of the simulations, a subset of images
+from the dataset that is already being provided as part of the images
+directory of openface installation was utilized for the assessment of
+performance of ubuntu and docker runs on multiple VMs.
 
-MUCT (Milborrow / University of Cape Town) dataset: In addition, images from MUCT database [5] was used for a quick evaluation of the
-Ubuntu performance on a single VM. The MUCT database consists of 3755 images from 276 unique subjects. The main motivation for the
-creation of the database was to provide more variety than the existing publicly available landmarked databases — variety in terms of
-lighting, age, and ethnicity. The MUCT landmarks are the 68 points defined by the popular FGnet [3] markup of the XM2VTS database [2],
-plus four extra points for each eye. This dataset is available for download via github at https://github.com/StephenMilborrow/muct.git   
+MUCT (Milborrow / University of Cape Town) dataset: In addition,
+images from MUCT database [5] was used for a quick evaluation of the
+Ubuntu performance on a single VM. The MUCT database consists of 3755
+images from 276 unique subjects. The main motivation for the creation
+of the database was to provide more variety than the existing publicly
+available landmarked databases — variety in terms of lighting, age,
+and ethnicity. The MUCT landmarks are the 68 points defined by the
+popular FGnet [3] markup of the XM2VTS database [2], plus four extra
+points for each eye. This dataset is available for download via github
+at https://github.com/StephenMilborrow/muct.git
 
 
 
@@ -238,7 +277,8 @@ plus four extra points for each eye. This dataset is available for download via 
 <2>SINGLE-SERVER REPLICATION STEPS
 =====================================
 
-These steps will execute openface project on single docker container collect optputs for graph plots.
+These steps will execute openface project on single docker container
+collect optputs for graph plots.
 
 
 1. Clone the ansible-cloudmesh-face github respository::
@@ -258,13 +298,18 @@ d. To check Dokcer is installed properly ::
 
         root1111111# cd /root/openface/docker
      
-   This will install all the required dependencies, check if docker is installed properly,copy the required scripts from host to
-   docker,pull bamos/openface docker hub repositiory and create a docker container called `openface`.The prompt will change from
-   $docker> to container-ID> .  Once in the container's command-line change the directory to /root/src/openface. 
+   This will install all the required dependencies, check if docker is
+   installed properly,copy the required scripts from host to
+   docker,pull bamos/openface docker hub repositiory and create a
+   docker container called `openface`.The prompt will change from
+   $docker> to container-ID> .  Once in the container's command-line
+   change the directory to /root/src/openface.
      
-     NOTE : If you get an error saying "openface" container already exists or "openface" name has been given to another container,
-     then you could kill and remove the existing openface container using commands in step:11 for fresh installation OR you could attach
-     to this existing container using commands in step:10.   
+   NOTE : If you get an error saying "openface" container already
+   exists or "openface" name has been given to another container, then
+   you could kill and remove the existing openface container using
+   commands in step:11 for fresh installation OR you could attach to
+   this existing container using commands in step:10.
    
 3. Verify if the required scripts are present in container::
    
@@ -276,8 +321,9 @@ d. To check Dokcer is installed properly ::
       
         docker# source demo2.sh <Number of times script to be run>
 
-   This command will create files “docker_compare_<container-id>.csv" and  “docker_compare_<container-id>.txt" as output in the 
-   current directory.
+   This command will create files “docker_compare_<container-id>.csv"
+   and “docker_compare_<container-id>.txt" as output in the current
+   directory.
     
    Verify these output files :: 
    
@@ -291,8 +337,10 @@ d. To check Dokcer is installed properly ::
    
         docker# source demo3.sh <Number of times script to be run>
 
-   This command will carete files “docker_classifier_<container-id>.csv" and  “docker_classifier_<container-id>.txt" as output in the
-   current directory.
+   This command will carete files
+   “docker_classifier_<container-id>.csv" and
+   “docker_classifier_<container-id>.txt" as output in the current
+   directory.
       
    Verify these output files ::
    
@@ -310,7 +358,8 @@ d. To check Dokcer is installed properly ::
 
         docker$ ls -l performance/
 
-   The output files “docker_compare_<container-id>.csv” and “docker_classifier_<container-id>.csv” should be present here.
+   The output files “docker_compare_<container-id>.csv” and
+   “docker_classifier_<container-id>.csv” should be present here.
  
 8. Gather csv files for graph plot ::  
 
@@ -322,8 +371,10 @@ d. To check Dokcer is installed properly ::
         performance$ Rscript plot_demo2.R
         performance$ Rscript plot_demo3.R
 
-   Graphs saved by the name demo2_real_plot.png , demo2_sys_plot.png and demo2_user_plot.png for Demo2 Face comparision and 
-   demo3_real_plot.png , demo3_sys_plot.png and demo3_user_plot.png for Demo3 Face classifier , under 
+   Graphs saved by the name demo2_real_plot.png , demo2_sys_plot.png
+   and demo2_user_plot.png for Demo2 Face comparision and
+   demo3_real_plot.png , demo3_sys_plot.png and demo3_user_plot.png
+   for Demo3 Face classifier , under
    "ansible-cloudmesh-face/performance" folder.
 
 
@@ -342,7 +393,8 @@ d. To check Dokcer is installed properly ::
       
        $ docker rm openface
 
-    Warning:  This will stop the container permanently and all the container content will be deleted.
+    Warning: This will stop the container permanently and all the
+    container content will be deleted.
       
     Verify the container has been closed ::
     
