@@ -383,7 +383,7 @@ d. To check Docker is installed properly (use only on OSX)::
    container. Thus it will allow you to run the command multiple times
    and generate new output each time.
 
-   Example: run the demo2 10 times
+   Example: run the demo2 10 times::
 
         root# source demo2.sh 10
 
