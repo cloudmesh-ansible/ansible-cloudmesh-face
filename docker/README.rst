@@ -462,7 +462,7 @@ d. To check Docker is installed properly (use only on OSX)::
  
 8. Gather csv files for graph plot::  
 
-        docker$ source gather-csv.sh 
+        docker$ sh gather-csv.sh 
 
 9. Get a pictorial presentation of docker and ubuntu time comparison::
 

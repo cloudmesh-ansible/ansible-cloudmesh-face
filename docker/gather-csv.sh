@@ -1,5 +1,7 @@
-cp docker_compare_*.csv ../performance/
+#! /bin/sh
 
-cp docker_classifier_*.csv ../performance/
+HOST=`hostname`
 
-system_profiler SPHardwareDataType |fgrep -v UUID |fgrep -v Serial >> ../performance/hardware.txt 
+cp results/*.csv ../performance/
+
+system_profiler SPHardwareDataType |fgrep -v UUID |fgrep -v Serial >> ../performance/hardware_$HOST.txt
