@@ -214,7 +214,7 @@ nodes and collect their optputs for graph plots.
     
 14. BIG DATA: Test Openface on big dataset (MUCT) ::
 
-    Check the MUCT dataset using below commands:
+    Check the MUCT dataset using below commands::
 
       cd  ansible-cloudmesh-face/docker
       docker# ls –l
