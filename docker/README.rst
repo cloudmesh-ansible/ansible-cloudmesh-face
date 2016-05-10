@@ -233,14 +233,12 @@ lighting, age, and ethnicity. The MUCT landmarks are the 68 points defined by th
 plus four extra points for each eye. This dataset is available for download via github at https://github.com/StephenMilborrow/muct.git   
 
 
-=========================================================================================================================================
 
 
+<2>SINGLE-SERVER REPLICATION STEPS
+=====================================
 
-<2>SINGLE-SERVER REPLICATION STEPS ::
-   ===============================
-
-      These steps will execute openface project on single docker container collect optputs for graph plots.
+These steps will execute openface project on single docker container collect optputs for graph plots.
 
 
 1. Clone the ansible-cloudmesh-face github respository::
