@@ -28,6 +28,6 @@ else
     echo "results/docker_classifier_$NAME.txt"
     echo "results/docker_classifier_$NAME.csv"
     echo
-    cat results/docker_compare_$NAME.csv
+    cat results/docker_classifier_$NAME.csv
 
 fi
