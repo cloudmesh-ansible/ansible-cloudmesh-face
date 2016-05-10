@@ -334,7 +334,6 @@ d. To check Dokcer is installed properly ::
    Verify these output files :: 
    
         docker# cat docker_compare_$CID.csv         
-      
         docker# cat docker_compare_$CID.txt
 
    Note CID is the id of the container.
@@ -351,7 +350,6 @@ d. To check Dokcer is installed properly ::
    Verify these output files ::
    
         docker# cat docker_classifier_$CID.csv
-
         docker# cat docker_classifier_$CID.txt
 
       Note CID is the id of the container.
