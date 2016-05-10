@@ -17,8 +17,8 @@ Notation:
 * the name of the container is `openface`, which can be checked by
   command "docker ps".
 
-Step 0. Install docker
-----------------------
+0. INSTALL DOCKER
+-----------------
 
 Step 0.1 Install Docker on OSX
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
