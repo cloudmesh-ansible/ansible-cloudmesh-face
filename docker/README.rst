@@ -333,11 +333,15 @@ collect outputs for graph plots.
         $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
         $ cd ansible-cloudmesh-face/docker/
 
-d. To check Docker is installed properly::
+d. To check Docker is installed properly (use only on OSX)::
       
       $ source openface_dep.sh
 
 
+   On OSX: If you see an error such as host is not running, you need to start
+   the docker terminal via the launchpad. It will open a terminal and
+   you can use that to execute the commands. 
+   
 2. Create the openface container::
 
         $ source install-openfacedocker.sh
