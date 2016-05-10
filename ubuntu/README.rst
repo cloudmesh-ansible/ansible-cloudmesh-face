@@ -18,7 +18,7 @@ flavor::
 
   TBD
 
-In case you run it on virtualbox you need at least
+In case you run it on virtualbox you need at least::
 
   XYZ GB
 
