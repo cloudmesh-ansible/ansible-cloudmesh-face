@@ -350,12 +350,12 @@ d. To check Docker is installed properly (use only on OSX)::
      
    This will install all the required dependencies, check if docker is
    installed properly,copy the required scripts from host to
-   docker,pull bamos/openface docker hub repositiory and create a
-   docker container called `openface`.The prompt will change from
-   $docker> to container-ID> .  Once in the container's command-line
+   docker, pull bamos/openface docker hub repositiory and create a
+   docker container called `openface`. The prompt will change from
+   `$docker>` to `container-ID>`.  Once in the container's command-line
    change the directory to `/root/src/openface`.
      
-   NOTE : If you get an error saying `openface` container already
+   NOTE: If you get an error saying `openface` container already
    exists or `openface` name has been given to another container, then
    you could kill and remove the existing openface container using
    commands in step:11 for fresh installation OR you could attach to
