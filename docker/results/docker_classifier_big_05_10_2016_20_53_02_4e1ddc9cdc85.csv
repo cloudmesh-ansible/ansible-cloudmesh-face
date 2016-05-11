@@ -1,0 +1,13 @@
+real,user,sys
+Traceback (most recent call last):
+  File "../demos/classifier.py", line 201, in <module>
+    infer(args)
+  File "../demos/classifier.py", line 124, in infer
+    rep = getRep(img).reshape(1, -1)
+  File "../demos/classifier.py", line 65, in getRep
+    bb = align.getLargestFaceBoundingBox(rgbImg)
+  File "/usr/local/lib/python2.7/dist-packages/openface/align_dlib.py", line 124, in getLargestFaceBoundingBox
+    faces = self.getAllFaceBoundingBoxes(rgbImg)
+  File "/usr/local/lib/python2.7/dist-packages/openface/align_dlib.py", line 105, in getAllFaceBoundingBoxes
+    return self.detector(rgbImg, 1)
+KeyboardInterrupt

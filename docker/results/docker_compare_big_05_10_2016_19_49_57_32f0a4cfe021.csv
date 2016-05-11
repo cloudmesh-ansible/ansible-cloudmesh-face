@@ -1,0 +1,411 @@
+real,user,sys
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.107,2.010,0.090
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.149,2.020,0.120
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.112,2.040,0.060
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.080,1.950,0.120
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.135,2.070,0.060
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.170,2.080,0.080
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.099,1.980,0.110
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.157,2.080,0.070
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.284,2.200,0.070
+/usr/bin/env: th: No such file or directory
+Traceback (most recent call last):
+  File "../demos/compare.py", line 101, in <module>
+    d = getRep(img1) - getRep(img2)
+  File "../demos/compare.py", line 92, in getRep
+    rep = net.forward(alignedFace)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 156, in forward
+    rep = self.forwardPath(t)
+  File "/usr/local/lib/python2.7/dist-packages/openface/torch_neural_net.py", line 113, in forwardPath
+    """.format(self.cmd, self.p.stdout.read()))
+Exception: 
+
+
+OpenFace: `openface_server.lua` subprocess has died.
+
++ Is the Torch command `th` on your PATH? Check with `which th`.
+
++ If `th` is on your PATH, try running `./util/profile-network.lua`
+  to see if Torch can correctly load and run the network.
+
+  + If this gives illegal instruction errors, see the section on
+    this in our FAQ at http://cmusatyalab.github.io/openface/faq/
+
+  + In Docker, use a Bash login shell or source
+     /root/torch/install/bin/torch-activate for the Torch environment.
+
++ See this GitHub issue if you are running on a non-64-bit machine:
+  https://github.com/cmusatyalab/openface/issues/42
+
++ Please post further issues to our mailing list at
+  https://groups.google.com/forum/#!forum/cmu-openface
+
+Diagnostic information:
+
+cmd: ['/usr/bin/env', 'th', '/usr/local/lib/python2.7/dist-packages/openface/openface_server.lua', '-model', '/root/openface/demos/../models/openface/nn4.small2.v1.t7', '-imgDim', '96']
+
+============
+
+stdout: 
+
+2.237,2.140,0.090

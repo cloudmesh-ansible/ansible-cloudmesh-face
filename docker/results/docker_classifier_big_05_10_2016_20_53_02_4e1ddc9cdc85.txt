@@ -1,0 +1,8 @@
+
+=== ../images/examples/carell.jpg ===
+Predict SteveCarell with 0.97 confidence.
+
+=== ../images/examples/adams.jpg ===
+Predict AmyAdams with 0.81 confidence.
+
+=== ../images/examples/lennon-1.jpg ===
