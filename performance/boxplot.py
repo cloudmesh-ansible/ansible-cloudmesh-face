@@ -1,5 +1,10 @@
-#! /usr/bin/env python
-
+#! /usr/local/bin/python
+#
+# ON OSX THERE IS A BUG USING MATPLOTLIB IN VIRTUALENV THUS WE JUST
+# USE THE USR LOCAL BASED MATPLOTLIB
+#
+# DO NOT USE /usr/bin/env python
+# ON OSX
 
 """Usage: boxplot.py --kind=KIND --os=OS --host=HOST
 
@@ -109,7 +114,7 @@ if __name__ == '__main__':
 
     plt.suptitle('Performance Comparison OpenFace: {}'.format(kind))
 
-    pdf = "boxplot-{}.pdf".format(kind)
+    pdf = "boxplot-{}.png".format(kind)
     plt.savefig(pdf)
     plt.close()
 
