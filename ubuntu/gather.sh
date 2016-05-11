@@ -1,7 +1,6 @@
+cp /home/$(whoami)/openface/ubuntu_compare_time.csv ../performance/ubuntu_compare_time.csv
 
-    cp /home/$(whoami)/openface/ubuntu_compare_time.csv ../performance/ubuntu_compare_time.csv
-
-    cp /home/$(whoami)/openface/ubuntu_classifier_time.csv ../performance/ubuntu_classifier_time.csv 
+cp /home/$(whoami)/openface/ubuntu_classifier_time.csv ../performance/ubuntu_classifier_time.csv
 
 cd ../performance
 

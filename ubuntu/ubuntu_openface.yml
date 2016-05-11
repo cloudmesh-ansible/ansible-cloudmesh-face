@@ -1,5 +1,5 @@
 ---
-- hosts: webservers1
+- hosts: webservers
   
   tasks:
   - name: Clone openface git directory
@@ -38,7 +38,7 @@
       - python-opencv
       - libreadline-dev
 
-  - name: Install other dependencies
+  - name: Install additional dependencies
     pip: name={{item}}
     become: yes 
     with_items:
@@ -46,7 +46,7 @@
       - dlib
 
   
-  - name: Clone Torch Repository
+  - name: Clone torch repository
     git:
         repo: https://github.com/torch/distro.git
         dest: ~/torch
@@ -58,7 +58,7 @@
     file: path=/home/cc/openface state=directory owner=cc group=cc mode=0777 recurse=yes
     file: path=/home/cc/torch state=directory owner=cc group=cc mode=0777 recurse=yes
 
-  - name: Install Torch
+  - name: Install torch
     become_method: sudo
     shell: bash install-deps chdir=~/torch
     shell: yes | ./install.sh chdir=~/torch
@@ -68,7 +68,7 @@
     args:
       executable: /bin/bash 
   
-  - name: Install Torch dependencies
+  - name: Install torch dependencies
     become_method: sudo
     shell: ~/torch/install/bin/luarocks install dpnn
     shell: ~/torch/install/bin/luarocks install nn
