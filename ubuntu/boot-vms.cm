@@ -7,7 +7,8 @@ debug off
 key add --ssh
 default cloud=$cloud
 secgroup upload --cloud=$cloud
-
+cm default image=CC-Ubuntu14.04
+cm default flavor=m1.medium
 
 #
 # GET 3 VMS WITH IP
@@ -23,3 +24,9 @@ var vm2=default.vm
 vm boot
 vm ip assign
 var vm3=default.vm
+
+sleep 10
+
+vm list
+
+vm ip inventory $vm1,$vm2,$vm3

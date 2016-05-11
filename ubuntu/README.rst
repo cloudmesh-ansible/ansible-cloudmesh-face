@@ -1,80 +1,47 @@
-VM Replication steps
-====================
+Insatlation
+===========
 
-
-USING Chameleon
-
-cm default image=CC-Ubuntu14.04
-cm default flavor=m1.medium
-cm vm boot
-cm vm ip assign
-cm vm ssh
-
-cc$ python --version
-Python 2.7.6
-cc$ git --version
-git version 1.9.1
-
-Step 0:
--------
-
-We assume that you are using the following ubuntu distribution::
-
-  Ubuntu Version 14.04
-
-You must make sure that you have enough memory available. In case you
-run it in a virtual machine you need at least::
-
-  20 GB # THIS CONTRADICTS small
-
-On clouds such as kilo or chameloen this can be achieved with the
-flavor::
-
-  m1.small
-
-In case you run it on virtualbox you need at least::
-
-  20 GB # THIS CONTRADICTS small
-
-
-Step 0.1: Instalation on ubuntu server 14.0.4
-----------------------------------------------
-
-::
-
-    sudo apt-get install git -y
-    git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
-    cd ansible-cloudmesh-face/
-
-    wget --no-check-certificate https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
-    tar -xzf Python-2.7.11.tgz
-    cd Python-2.7.11
-    ./configure
-    make
-    sudo make install
-
-logout and login to activate the new python version.
-
-
-
-Step 1:  Install Openface
--------------------------
-
-You can install openface either with ansible or a shell script.
-
-Step 1.a: Ansible
-^^^^^^^^^^^^^^^^^
-
-Using the ansible script (ubuntu_openface.yml) that using ansible
-methods to install all the dependencies and the openface software::
-
-TODO: no explenation about inventory given
-TODO: naming of webserver vs webserver1 in yaml and inventory
+Please, download the code as follows and change to the appropriate directory:
 
     git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
-    cd ansible-cloudmesh-face
+    cd ansible-cloudmesh-face/ubuntu
+
+
+Step 1: Create 3 vms
+--------------------
+
+First, we assume that you have 3 virtual machines started on a cloud. To
+simplify the setup we have provided a cloudmesh script that does this and
+also creates an inventory file that can be used for the ansible script.
+Please change the cloud `cm` in the script to the cloud you like to use.
+You execute this script after you have installed cloudmesh_client::
+
+    cm boot-vms.cm
+
+This will create the file `inventory.txt` that will be used by ansible
+
+It is advisable to ping the VMs wth ansible::
+
     ansible all -i inventory.txt -m ping -u cc
-    ansible-playbook  ubuntu_openface.yml -i inventory.txt -u cc 
+
+You should see that all listed vms return::
+
+   "ping": "pong"
+
+If this is not the case please make sure to remove faulty vms and add
+new once so you have 3 vms.
+
+Step 2:  Install Openface with Ansible
+--------------------------------------
+
+Using the ansible script `ubuntu_openface.yml` we can now install all needed software into the VMs.
+
+2:50
+
+    ansible-playbook  ubuntu_openface.yml -i inventory.txt -u cc
+
+This procees while take some time.
+
 
 TODO: no mentioning how long this process will take
 TODO: how can we debug/verbose look at the install
@@ -91,17 +58,6 @@ last defined value only.
  [WARNING]: While constructing a mapping from /Users/big/github/cloudmesh-new/ansible-cloudmesh-face/ubuntu/ubuntu_openface.yml, line 83, column 5, found a duplicate dict key (shell).  Using
 last defined value only.
 
-Step 1.b: Shell script
-^^^^^^^^^^^^^^^^^^^^^^
-
-TODO: DOES NOT WORK
-
-This is an alternative install to the ansible script using just a
-shell script and installs directly into the VM. If you have done the
-ansible install, you can skip this step::
-
-    cd ~/ansible-cloudmesh-face/ubuntu
-    ./openface_ubuntu_install.sh
 
 Step 2: Prepare Demos
 ---------------------
@@ -250,3 +206,33 @@ Installing openface::
      sudo python2 setup.py install
      models/get-models.sh
  
+NOW JUNK
+Step 1.b: Shell script
+^^^^^^^^^^^^^^^^^^^^^^
+
+TODO: DOES NOT WORK
+
+This is an alternative install to the ansible script using just a
+shell script and installs directly into the VM. If you have done the
+ansible install, you can skip this step::
+
+    cd ~/ansible-cloudmesh-face/ubuntu
+    ./openface_ubuntu_install.sh
+
+NOW JUNK: Step 0.1: Instalation on ubuntu server 14.0.4
+----------------------------------------------
+
+::
+
+    sudo apt-get install git -y
+    git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
+    cd ansible-cloudmesh-face/
+
+    wget --no-check-certificate https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
+    tar -xzf Python-2.7.11.tgz
+    cd Python-2.7.11
+    ./configure
+    make
+    sudo make install
+
+logout and login to activate the new python version.

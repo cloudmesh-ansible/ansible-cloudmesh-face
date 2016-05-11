@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: servers
   
   tasks:
   - name: Clone openface git directory
@@ -55,13 +55,18 @@
         accept_hostkey: yes
 
   - name: set permissions for directories
-    file: path=/home/cc/openface state=directory owner=cc group=cc mode=0777 recurse=yes
-    file: path=/home/cc/torch state=directory owner=cc group=cc mode=0777 recurse=yes
+    file: path={{ item }} state=directory owner=cc group=cc mode=0777 recurse=yes
+    with_items:
+      - /home/cc/openface
+      - /home/cc/torch
 
   - name: Install torch
+    tags: install_torch
     become_method: sudo
-    shell: bash install-deps chdir=~/torch
-    shell: yes | ./install.sh chdir=~/torch
+    shell: "{{ item }} chdir=~/torch"
+    with_items:
+      - bash install-deps
+      - yes | ./install.sh
 
   - name: Source bashrc
     shell: source ~/.bashrc chdir=~/torch
@@ -70,20 +75,24 @@
   
   - name: Install torch dependencies
     become_method: sudo
-    shell: ~/torch/install/bin/luarocks install dpnn
-    shell: ~/torch/install/bin/luarocks install nn
-    shell: ~/torch/install/bin/luarocks install optim
-    shell: ~/torch/install/bin/luarocks install csvigo
-    shell: ~/torch/install/bin/luarocks install cutorch 
-    shell: ~/torch/install/bin/luarocks install cunn
-    shell: ~/torch/install/bin/luarocks install fblualib
-    shell: ~/torch/install/bin/luarocks install torchx
-    shell: ~/torch/install/bin/luarocks install optnet 
+    shell: ~/torch/install/bin/luarocks install {{ item }}
+    with_items:
+      - dpnn
+      - nn
+      - optim
+      - csvigo
+      - cutorch
+      - cunn
+      - fblualib
+      - torchx
+      - optnet
 
   - name: Install openface
     become_method: sudo
-    shell: python setup.py install chdir=~/openface
-    shell: models/get-models.sh chdir=~/openface
+    shell: "{{ item }} chdir=~/openface"
+    with_items:
+      - python setup.py install
+      - models/get-models.sh chdir=~/openface
 
 
  
