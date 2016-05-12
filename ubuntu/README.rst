@@ -31,6 +31,12 @@ You should see that all listed vms return::
 If this is not the case please make sure to remove faulty vms and add
 new once so you have 3 vms.
 
+Add the host to known_hosts::
+
+    ssh cc@129.114.111.57 uname
+    ...
+
+
 Step 2:  Install Openface with Ansible
 --------------------------------------
 
@@ -44,19 +50,10 @@ This procees while take some time.
 
 
 TODO: no mentioning how long this process will take
-TODO: how can we debug/verbose look at the install
+TODO: how can we debug/verbose look at the install -vvv
 
-TODO:  [WARNING]: While constructing a mapping from /Users/big/github/cloudmesh-new/ansible-cloudmesh-face/ubuntu/ubuntu_openface.yml, line 57, column 5, found a duplicate dict key (file).  Using
-last defined value only.
 
- [WARNING]: While constructing a mapping from /Users/big/github/cloudmesh-new/ansible-cloudmesh-face/ubuntu/ubuntu_openface.yml, line 61, column 5, found a duplicate dict key (shell).  Using
-last defined value only.
-
- [WARNING]: While constructing a mapping from /Users/big/github/cloudmesh-new/ansible-cloudmesh-face/ubuntu/ubuntu_openface.yml, line 71, column 5, found a duplicate dict key (shell).  Using
-last defined value only.
-
- [WARNING]: While constructing a mapping from /Users/big/github/cloudmesh-new/ansible-cloudmesh-face/ubuntu/ubuntu_openface.yml, line 83, column 5, found a duplicate dict key (shell).  Using
-last defined value only.
+ -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
 
 
 Step 2: Prepare Demos

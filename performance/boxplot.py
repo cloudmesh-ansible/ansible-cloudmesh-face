@@ -101,16 +101,17 @@ if __name__ == '__main__':
                 d = pd.read_csv("{name}".format(**data))
                 for v in d.real:
                     data["value"] = v
-                    values.append([data['value'], "{os}_{host}".format(**data)])
+                    values.append([data['value'], "{os}\n{host}".format(**data)])
 
     pprint(values)
 
     df = DataFrame(values)
-    df.columns = ['time', 'host']
+    df.columns = ['Time in s', 'Host']
     print(df)
 
-    df.boxplot(column='time',
-               by='host')
+    df.boxplot(column='Time in s',
+               by='Host',
+               rot=0)
 
     plt.suptitle('Performance Comparison OpenFace: {}'.format(kind))
 
