@@ -3,8 +3,9 @@ OPENFACE SETUP in DOCKER
 
 This file gives instructions about running OpenFace project on
 
-1. docker with multiple container using docker swarm
-2. docker with single container
+1. demo running in a single container
+2. docker with multiple container using docker swarm
+3. interactive docker with single container
 
 Once output are generated they are comapred with other OS for
 performance testing.
@@ -106,6 +107,43 @@ TBD in future
 The next commands should be executed on the terminal on which docker
 is launched. These steps will execute openface project on multiple
 docker swarm nodes and collect their optputs for graph plots.
+
+1. Clone the ansible-cloudmesh-face github respository::
+
+        $ mkdir -p ansible-cloudmesh-face
+        $ git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
+        $ cd ansible-cloudmesh-face/docker/
+
+    To check Docker is installed properly::
+
+        $ source openface-prepare.sh
+
+2. Next run the two demos with::
+
+     $ docker rm openface   # just in case we have one running with that name
+     $ ./demo.py --count=10 --kind=compare
+     $ ./demo.py --count=10 --kind=classifier
+
+
+3. To get a pictorial presentation of docker and ubuntu time
+   comparison. The nice thing about this program is that you can
+   selectively include results from other runs conducted by other
+   people. YOu can specify the OS, and the hostname of the machine
+   that provided the output. AN example to produce the two diagrams
+   for the classifier and te compare demo are::
+
+        cd ../performance
+        $ boxplot.py --kind=classifier --os=docker --host=big,fuwangs-MBP
+        $ boxplot.py --kind=compare --os=docker --host=big,fuwangs-MBP
+
+
+
+2.  OpenFace Application: MULTI-SERVER REPLICATION STEPS
+--------------------------------------------------------
+
+The next commands should be executed on the terminal on which docker
+is launched. These steps will execute openface project on multiple
+docker swarm nodes and collect their optputs for graph plots.
       
 1. Clone the ansible-cloudmesh-face github respository::
     
@@ -115,12 +153,12 @@ docker swarm nodes and collect their optputs for graph plots.
 
     To check Docker is installed properly::
       
-        $ source openface_dep.sh 
+        $ source openface-prepare.sh
   
 
 2. Create the docker swarm cluster with openface containers::
    
-        docker$ source openface-multiserver.sh <Number of swarm nodes to be run>
+        docker$ source openface-multi.sh <Number of swarm nodes to be run>
 
    This command will create required number of nodes in docker swarm
    cluster. In the above command 2nd argument takes number of node
@@ -208,30 +246,22 @@ docker swarm nodes and collect their optputs for graph plots.
         docker$ ls -l
 
 10. Gather csv files for graph plot::
- 
-        docker$ source gather-csv.sh 
 
-11. Get a pictorial presentation of docker and ubuntu time comparison:: 
- 
+        docker$ sh gather-csv.sh
+
+11. Get a pictorial presentation of docker and ubuntu time
+    comparison. The nice thing about this program is that you can
+    selectively include results from other runs conducted by other
+    people. YOu can specify the OS, and the hostname of the machine
+    that provided the output. AN example to produce the two diagrams
+    for the classifier and te compare demo are::
+
         cd ../performance
-        performance$ Rscript plot_demo2.R
-        performance$ Rscript plot_demo3.R
-
-    Graphs are saved by the names:
-
-    * `demo2_real_plot.png`
-    * `demo2_sys_plot.png`
-    * `demo2_user_plot.png`
-
-    For Demo 3, Face comparison graphs are saved by the names:
-
-    * `demo3_real_plot.png`
-    * `demo3_sys_plot.png`
-    * `demo3_user_plot.png`
+        $ boxplot.py --kind=classifier --os=docker --host=big,fuwangs-MBP
+        $ boxplot.py --kind=compare --os=docker --host=big,fuwangs-MBP
 
     The files are stored in the `ansible-cloudmesh-face/performance`
     folder.
-        
 
 
 12. The swarm nodes will remain on the host in detached mode.To get
@@ -320,8 +350,8 @@ points for each eye. This dataset is available for download via github
 at https://github.com/StephenMilborrow/muct.git
 
 
-2.  OpenFace Application: SINGLE-SERVER REPLICATION STEPS
----------------------------------------------------------
+3.  OpenFace Application: INTERFACTIVE SINGLE-SERVER REPLICATION STEPS
+-----------------------------------------------------------------------
 
 These steps will execute openface on single docker container and
 collect outputs for graph plots.
@@ -335,16 +365,17 @@ collect outputs for graph plots.
 
 d. To check Docker is installed properly (use only on OSX)::
       
-      $ source openface_dep.sh
+      $ source openface-prepare.sh
 
 
    If you see an error such as host is not running, you need to start
    the docker terminal via the launchpad. It will open a terminal and
    you can use that to execute the commands. 
-   
+
+
 2. Create the openface container::
 
-        $ source install-openfacedocker.sh
+        $ source openface-single.sh
 
         root# cd /root/openface/docker
      
@@ -383,31 +414,31 @@ d. To check Docker is installed properly (use only on OSX)::
    container. Thus it will allow you to run the command multiple times
    and generate new output each time.
 
-   Example: run the demo2 10 times
+   Example: run the demo2 10 times::
 
         root# source demo2.sh 10
 
         Generating Output ...
-	Date: 05_10_2016_13_52_16
-	Host: big
-	ID:   big_05_10_2016_13_52_16_457ab6d989b4
-	Output generated for Container: big_05_10_2016_13_52_16_457ab6d989b4 
+        Date: 05_10_2016_13_52_16
+        Host: big
+        ID:   big_05_10_2016_13_52_16_457ab6d989b4
+        Output generated for Container: big_05_10_2016_13_52_16_457ab6d989b4
 
-	Outputfiles generated:
-	results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.txt
-	results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.csv
+        Outputfiles generated:
+        results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.txt
+        results/docker_compare_big_05_10_2016_13_52_16_457ab6d989b4.csv
 
-	real,user,sys
-	9.368,9.230,0.090
-	9.097,9.000,0.060
-	8.705,8.530,0.140
-	8.920,8.730,0.150
-	9.202,9.040,0.130
-	8.929,8.750,0.150
-	9.357,9.170,0.150
-	9.026,8.810,0.180
-	9.287,9.080,0.170
-	8.923,8.750,0.140
+        real,user,sys
+        9.368,9.230,0.090
+        9.097,9.000,0.060
+        8.705,8.530,0.140
+        8.920,8.730,0.150
+        9.202,9.040,0.130
+        8.929,8.750,0.150
+        9.357,9.170,0.150
+        9.026,8.810,0.180
+        9.287,9.080,0.170
+        8.923,8.750,0.140
 
    
 
@@ -426,27 +457,27 @@ d. To check Docker is installed properly (use only on OSX)::
 
         root# source demo3.sh 10
 
-	Generating output ...
-	Date: 05_10_2016_13_50_53
-	Host: big
-	ID:   big_05_10_2016_13_50_53_457ab6d989b4
-	Output generated for Container: big_05_10_2016_13_50_53_457ab6d989b4
+        Generating output ...
+        Date: 05_10_2016_13_50_53
+        Host: big
+        ID:   big_05_10_2016_13_50_53_457ab6d989b4
+        Output generated for Container: big_05_10_2016_13_50_53_457ab6d989b4
 
-	Outputfiles generated:
-	results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.txt
-	results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.csv
+        Outputfiles generated:
+        results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.txt
+        results/docker_classifier_big_05_10_2016_13_50_53_457ab6d989b4.csv
 
-	real,user,sys
-	4.641,4.300,0.300
-	4.598,4.340,0.220
-	4.722,4.550,0.130
-	4.746,4.520,0.180
-	4.882,4.610,0.240
-	4.736,4.560,0.140
-	4.667,4.420,0.200
-	4.907,4.640,0.230
-	4.859,4.700,0.120
-	4.735,4.490,0.200
+        real,user,sys
+        4.641,4.300,0.300
+        4.598,4.340,0.220
+        4.722,4.550,0.130
+        4.746,4.520,0.180
+        4.882,4.610,0.240
+        4.736,4.560,0.140
+        4.667,4.420,0.200
+        4.907,4.640,0.230
+        4.859,4.700,0.120
+        4.735,4.490,0.200
 
 
 6. Exit from the container of node1::
@@ -464,23 +495,21 @@ d. To check Docker is installed properly (use only on OSX)::
 
         docker$ sh gather-csv.sh 
 
-9. Get a pictorial presentation of docker and ubuntu time comparison::
+9. Get a pictorial presentation of docker and ubuntu time
+   comparison. The nice thing about this program is that you can
+   selectively include results from other runs conducted by other
+   people. YOu can specify the OS, and the hostname of the machine
+   that provided the output. AN example to produce the two diagrams
+   for the classifier and te compare demo are::
 
         cd ../performance
-        $ Rscript plot_demo2.R
-        $ Rscript plot_demo3.R
+        $ boxplot.py --kind=classifier --os=docker --host=big,fuwangs-MBP
+        $ boxplot.py --kind=compare --os=docker --host=big,fuwangs-MBP
 
    Graphs are saved by the names:
 
-   * `demo2_real_plot.png`
-   * `demo2_sys_plot.png`
-   * `demo2_user_plot.png`
-
-   For Demo 3, Face comparison graphs are saved by the names:
-
-   * `demo3_real_plot.png`
-   * `demo3_sys_plot.png`
-   * `demo3_user_plot.png`
+   * `boxplot-classifier.pdf`
+   * `boxplot-compare.pdf`
 
    The files are stored , under `ansible-cloudmesh-face/performance`
    folder.

@@ -5,26 +5,26 @@ clear
 
 echo "Cloning the openface github respository"
 
-git clone –recursive https://github.com/cmusatyalab/openface.git
+    git clone –recursive https://github.com/cmusatyalab/openface.git
 
 echo "Installing dependencies first"
 
-sudo apt-get install python-numpy python-scipy
-sudo pip install -U scikit-learn
+    sudo apt-get install python-numpy python-scipy
+    sudo pip install -U scikit-learn
 
-sudo pip install bottleneck
-sudo apt-get install python-numexpr
-sudo pip install pandas
-
-
+    sudo pip install bottleneck
+    sudo apt-get install python-numexpr
+    sudo pip install pandas
 
 echo "Installing OpenCV" 
 
-        git clone https://github.com/Itseez/opencv.git 
+    git clone https://github.com/Itseez/opencv.git
 
-        cd ~/opencv 
+    cd ~/opencv
 
-        mkdir release cd release cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local 
+    mkdir release
+    cd release
+    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local
 
 	make 
 
@@ -36,23 +36,23 @@ echo "Installing OpenCV"
 echo "Installing dlib"
 
     #Install boost libraries first 
-        sudo apt-get install libboost-all-dev
+    sudo apt-get install libboost-all-dev
 
-        mkdir -p ~/src 
+    mkdir -p ~/src
 
-        cd ~/src tar xf dlib-18.16.tar.bz2 
+    cd ~/src tar xf dlib-18.16.tar.bz2
 
-        cd dlib-18.16/python_examples 
+    cd dlib-18.16/python_examples
 
-        mkdir build 
+    mkdir build
 
-        cd build 
+    cd build
 
-        cmake ../../tools/python 
+    cmake ../../tools/python
 
-        cmake --build . --config Release 
+    cmake --build . --config Release
 
-        sudo cp dlib.so /usr/local/lib/python2.7/dist-packages
+    sudo cp dlib.so /usr/local/lib/python2.7/dist-packages
 
 echo "Installing Torch to your home folder in ~/torch"
 
@@ -63,7 +63,7 @@ echo "Installing Torch to your home folder in ~/torch"
      ./install.sh
 
     # On Linux with bash 
-      source ~/.bashr
+      source ~/.bashrc
 
 echo "Installing openface"
         

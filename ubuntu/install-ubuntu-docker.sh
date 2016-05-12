@@ -5,7 +5,7 @@ clear
 
 echo "Cloning the openface github respository"
 
-git clone –recursive https://github.com/cmusatyalab/openface.git
+    git clone –recursive https://github.com/cmusatyalab/openface.git
 
 echo "Setting up Docker"
 

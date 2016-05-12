@@ -1,7 +1,16 @@
-DESCRIPTION
-============
+OpenFace Benchmark
+==================
+
+Contributors
+------------
+
+* Gregor von Laszewski (laszewski@gmail.com) (Project Lead)
+* Sonal Shrivastava (sshrivas@umail.iu.edu)
+* Suman Duvvuru (sduvvuru@umail.iu.edu)
+* Fugang Wang (kevinwangfg@gmail.com)
+
 Openface Software description
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------
 
 OpenFace is a Python and Torch implementation of face recognition with
 deep neural networks and is based on the CVPR 2015 paper FaceNet: A
@@ -46,7 +55,7 @@ be integrated once they become available The two key steps are:
 
 
 Prerequiste 
-=============
+-----------
 
 * Operating Systems: Linux or OSX
 
@@ -55,8 +64,8 @@ Prerequiste
   docker machine and connect your shell to it prior to building the
   container.
 
-Installation 
-==============
+Installation
+-------------
 
 
 * For Docker follow the instructions at
@@ -66,7 +75,7 @@ Installation
  
 
 Goals
-===========
+-----
 
 * automated deployment with docker on OSX
 * automated deployment on ubuntu
@@ -88,7 +97,8 @@ Goals
    * AWS
 
 Accessing clouds
-=================
+----------------
+
 We assume you create with some script (possibly an enhanced version of cloudmesh client that we work on right now) a number of vms that you will use to deploy the infrastructure
 
 * kilo you should have access to
@@ -102,7 +112,7 @@ We assume you create with some script (possibly an enhanced version of cloudmesh
 * Azure, I am not sure if they offer free hours please lete me know
 
 INSTALL
-========
+-------
 
 ::
    
@@ -116,13 +126,8 @@ INSTALL
 
 
 Refernces
-==========
+---------
+
 * https://cmusatyalab.github.io/openface/
 
-Contributors
-=============
 
-* Sonal Shrivastava (sshrivas@umail.iu.edu)
-* sduvvuru@umail.iu.edu
-* Gregor von Laszewski (laszewski@gmail.com)
-* Fugang Wang (kevinwangfg@gmail.com)

@@ -1,0 +1,4 @@
+cloudmesh_client
+numpy
+matplotlib
+pandas

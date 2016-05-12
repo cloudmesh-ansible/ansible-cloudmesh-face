@@ -1,5 +1,10 @@
-#! /usr/bin/env python
-
+#! /usr/local/bin/python
+#
+# ON OSX THERE IS A BUG USING MATPLOTLIB IN VIRTUALENV THUS WE JUST
+# USE THE USR LOCAL BASED MATPLOTLIB
+#
+# DO NOT USE /usr/bin/env python
+# ON OSX
 
 """Usage: boxplot.py --kind=KIND --os=OS --host=HOST
 
@@ -22,12 +27,14 @@ import numpy as np
 import pandas as pd
 from pandas import DataFrame
 import matplotlib.pyplot as plt
+from pprint import pprint
 
 import warnings;
 
 with warnings.catch_warnings():
     warnings.simplefilter("ignore");
     import matplotlib.pyplot as plt
+
 
 if __name__ == '__main__':
     arguments = docopt(__doc__)
@@ -94,20 +101,22 @@ if __name__ == '__main__':
                 d = pd.read_csv("{name}".format(**data))
                 for v in d.real:
                     data["value"] = v
-                    values.append([data['value'], "{os}_{host}".format(**data)])
+                    values.append([data['value'], "{os}\n{host}".format(**data)])
 
-    print(values)
+    pprint(values)
 
     df = DataFrame(values)
-    df.columns = ['time', 'host']
+    df.columns = ['Time in s', 'Host']
     print(df)
 
-    df.boxplot(column='time',
-               by='host')
+    df.boxplot(column='Time in s',
+               by='Host',
+               rot=0)
 
     plt.suptitle('Performance Comparison OpenFace: {}'.format(kind))
 
-    plt.savefig("test.pdf")
+    pdf = "boxplot-{}.png".format(kind)
+    plt.savefig(pdf)
     plt.close()
 
-    os.system("open test.pdf")
+    os.system("open {}".format(pdf))

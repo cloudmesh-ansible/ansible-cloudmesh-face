@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 now=$(date +"%m_%d_%Y_%H_%M_%S")
 
@@ -14,6 +14,7 @@ else
     echo "Date: $now"
     echo "Host: $HOST"
     echo "ID:   $NAME"
+    echo "Kind: compare"
 
     echo "real,user,sys" > results/docker_compare_$NAME.csv && \
     (for i in `seq $1`; do \

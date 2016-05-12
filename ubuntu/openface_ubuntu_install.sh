@@ -9,23 +9,23 @@ git clone --recursive https://github.com/cmusatyalab/openface.git
 
 echo "Installing dependencies first"
 
-sudo apt-get -y install python-pip
-sudo apt-get -y install python-numpy python-scipy
-sudo pip install -U scikit-learn
-sudo pip install bottleneck
-sudo apt-get -y install python-numexpr
-sudo pip install pandas
-sudo pip install dlib
-sudo apt-get -y install libboost-all-dev
+    sudo apt-get -y install python-pip
+    sudo apt-get -y install python-numpy python-scipy
+    sudo pip install -U scikit-learn
+    sudo pip install bottleneck
+    sudo apt-get -y install python-numexpr
+    sudo pip install pandas
+    sudo pip install dlib
+    sudo apt-get -y install libboost-all-dev
 
 echo "Installing OpenCV" 
 
-        git clone https://github.com/Itseez/opencv.git 
-        cd ~/opencv 
-        mkdir release cd release cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local 
-        make 
-        sudo make install
-        sudo apt-get -y install python-opencv
+    git clone https://github.com/Itseez/opencv.git
+    cd ~/opencv
+    mkdir release cd release cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local
+    make
+    sudo make install
+    sudo apt-get -y install python-opencv
 
 echo "Installing Torch to your home folder in ~/torch"
 
@@ -42,6 +42,6 @@ echo "Installing Torch to your home folder in ~/torch"
 
 echo "Installing openface"
         
-	cd ~/openface
-        sudo python2 setup.py install
-        models/get-models.sh
+	cd openface
+    sudo python2 setup.py install
+    models/get-models.sh

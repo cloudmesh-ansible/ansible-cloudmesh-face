@@ -1,58 +1,73 @@
-VM Replication steps
-====================
+Insatlation
+===========
 
-Step 0:
--------
+Please, download the code as follows and change to the appropriate directory:
 
-We assume that you are using the following ubuntu distribution::
-
-  Ubuntu Version 14.04
-
-You must make sure that you have enough memory available. In case you
-run it in a virtual machine you need at least::
-
-  20 GB
-
-On clouds such as kilo or chameloen this can be achieved with the
-flavor::
-
-  m1.small
-
-In case you run it on virtualbox you need at least::
-
-  20 GB
+    git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
+    cd ansible-cloudmesh-face/ubuntu
 
 
-Step 1:  Install Openface
--------------------------
+Step 1: Create 3 vms
+--------------------
 
-You can install openface either with ansible or a shell script.
+First, we assume that you have 3 virtual machines started on a cloud. To
+simplify the setup we have provided a cloudmesh script that does this and
+also creates an inventory file that can be used for the ansible script.
+Please change the cloud `cm` in the script to the cloud you like to use.
+You execute this script after you have installed cloudmesh_client::
 
-Step 1.a: Ansible
-^^^^^^^^^^^^^^^^^
+    cm boot-vms.cm
 
-Using the ansible script (ubuntu_openface.yml) that using ansible
-methods to install all the dependencies and the openface software::
-  
-    ansible-playbook  ubuntu_openface.yml -i inventory.txt -u cc 
-      
-Step 1.b: Shell script
-^^^^^^^^^^^^^^^^^^^^^^
+This will create the file `inventory.txt` that will be used by ansible
 
-This is an alternative install to the ansible script using just a
-shell script and installs directly into the VM. If you have done the
-ansible install, you can skip this step::
+It is advisable to ping the VMs wth ansible::
 
-    ./openface_ubuntu.install.sh
+    ansible all -i inventory.txt -m ping -u cc
+
+You should see that all listed vms return::
+
+   "ping": "pong"
+
+If this is not the case please make sure to remove faulty vms and add
+new once so you have 3 vms.
+
+Add the host to known_hosts::
+
+    ssh cc@129.114.111.57 uname
+    ...
+
+
+Step 2:  Install Openface with Ansible
+--------------------------------------
+
+Using the ansible script `ubuntu_openface.yml` we can now install all needed software into the VMs.
+
+2:50
+
+    ansible-playbook  ubuntu_openface.yml -i inventory.txt -u cc
+
+This procees while take some time.
+
+
+TODO: no mentioning how long this process will take
+TODO: how can we debug/verbose look at the install -vvv
+
+
+ -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+
 
 Step 2: Prepare Demos
 ---------------------
+
+TODO: not properly working as script needs to be modified with
+      ips to which the data needs to be copied.
+TODO: democopy should read form inventory.txt
 
 Copy Scripts for running demo2 (demo2b.sh) and demo3 (demo3b.sh) to
 VMs.  Once the installation is complete, run a script to copy the
 demo2, demo3 scripts to run on the example data and MUCT data::
 
-   ./democopy.sh
+   sh ./democopy.sh
 
     scp demo2b.sh username@vm-ip:^
     scp demo3b.sh username@vm-ip;^
@@ -61,6 +76,8 @@ demo2, demo3 scripts to run on the example data and MUCT data::
 
 Step 3:  Execute the demos
 --------------------------
+
+TODO: does not mention to run this in VM, should be able to run in local machine
 
 Execute the demo2 and demo 3 for a certain number of iterations on VMs
 (used N=50) ::
@@ -74,6 +91,8 @@ ubuntu_classifier_uid.csv ) are being generated
 Step 4: Copy the results
 ------------------------
 
+TODO: this step should be done automatically
+
 Copy the results to the local git directory at::
    
      ansible-cloudmesh-face/performance
@@ -85,6 +104,9 @@ for analysis::
 
 Step 5: Run the analysis
 ------------------------
+
+TODO: this script does not take into account that other OS and machines
+should be compared ina dynamic fashion
 
 Next you can run the analysis to generate descriptives and box
 plots. Once the files were generated then run the Rscripts to generate
@@ -100,6 +122,8 @@ results csv files::
 
 Step 6: Use bigger dataset
 --------------------------
+
+TODO: this shuld be integrated in another ansible script
 
 Test Openface on big dataset (MUCT) ::
 
@@ -175,7 +199,37 @@ On Linux with bash::
 
 Installing openface::
 
-     cd ~/openface
+     cd openface
      sudo python2 setup.py install
      models/get-models.sh
  
+NOW JUNK
+Step 1.b: Shell script
+^^^^^^^^^^^^^^^^^^^^^^
+
+TODO: DOES NOT WORK
+
+This is an alternative install to the ansible script using just a
+shell script and installs directly into the VM. If you have done the
+ansible install, you can skip this step::
+
+    cd ~/ansible-cloudmesh-face/ubuntu
+    ./openface_ubuntu_install.sh
+
+NOW JUNK: Step 0.1: Instalation on ubuntu server 14.0.4
+----------------------------------------------
+
+::
+
+    sudo apt-get install git -y
+    git clone https://github.com/cloudmesh/ansible-cloudmesh-face.git
+    cd ansible-cloudmesh-face/
+
+    wget --no-check-certificate https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
+    tar -xzf Python-2.7.11.tgz
+    cd Python-2.7.11
+    ./configure
+    make
+    sudo make install
+
+logout and login to activate the new python version.

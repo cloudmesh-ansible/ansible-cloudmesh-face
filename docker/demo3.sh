@@ -14,7 +14,7 @@ else
     echo "Date: $now"
     echo "Host: $HOST"
     echo "ID:   $NAME"
-
+    echo "Kind: classifier"
 
     echo "real,user,sys" > results/docker_classifier_$NAME.csv && \
     (for i in `seq $1`; do \
