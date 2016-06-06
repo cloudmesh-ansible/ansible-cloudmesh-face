@@ -29,9 +29,9 @@ if __name__ == '__main__':
 
 
     if arg.kind == "classifier":
-        arg['prg'] = "demo2.sh"
-    elif arg.kind == "compare":
         arg['prg'] = "demo3.sh"
+    elif arg.kind == "compare":
+        arg['prg'] = "demo2.sh"
     else:
         print ("ERROR: wrong kind")
         sys.exit()
@@ -44,4 +44,4 @@ if __name__ == '__main__':
               "--name openface "
               "-v $PWD:/root/openface/docker "
               "-ti bamos/openface /bin/bash -c \"cd /root/openface/docker; bash ./{prg} {n}\" ".format(**arg))
-    os.system("gather-csv.sh")
+    os.system("./gather-csv.sh")
