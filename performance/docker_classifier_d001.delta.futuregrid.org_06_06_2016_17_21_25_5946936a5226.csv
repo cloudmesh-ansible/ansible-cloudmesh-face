@@ -1,31 +1,11 @@
 real,user,sys
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.309,18.123,16.665
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.215,18.604,18.012
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.229,18.317,17.636
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.127,18.054,17.903
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.363,18.390,19.900
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.425,18.612,19.790
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.270,17.961,18.945
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.163,17.958,18.279
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.192,18.058,18.584
-/usr/local/lib/python2.7/dist-packages/sklearn/lda.py:4: DeprecationWarning: lda.LDA has been moved to discriminant_analysis.LinearDiscriminantAnalysis in 0.17 and will be removed in 0.19
-  "in 0.17 and will be removed in 0.19", DeprecationWarning)
 9.329,18.794,18.812
