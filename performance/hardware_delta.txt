@@ -1,0 +1,11 @@
+processor	: 11
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           X5660  @ 2.80GHz
+stepping	: 2
+microcode	: 0x14
+cpu MHz		: 2801.000
+cache size	: 12288 KB
+
+196G Mem
