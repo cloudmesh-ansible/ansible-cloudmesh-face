@@ -98,7 +98,15 @@ chameleon cloud.
 RHEL
 ^^^^^^^
 
-TBD in future
+In RHEL 7.2, installing these sysetem packages first:
+
+        $ sudo yum install libffi-devel, openssl-devel, sqlite-devel
+
+And then create a virtualenv. After enabling the virtualenv, install the pip prerequisite libraries:
+
+        $ pip install -r requirements.txt
+
+And then proceed to the docker installation and experiments running.
 
 
 1.  OpenFace Application: MULTI-SERVER REPLICATION STEPS
